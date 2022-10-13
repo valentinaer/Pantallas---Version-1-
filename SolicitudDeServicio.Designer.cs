@@ -36,7 +36,7 @@
             this.label1 = new System.Windows.Forms.Label();
             this.chkUrgente = new System.Windows.Forms.CheckBox();
             this.rboEntregaSucursal = new System.Windows.Forms.RadioButton();
-            this.button1 = new System.Windows.Forms.Button();
+            this.btnCotizar = new System.Windows.Forms.Button();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.groupBox4 = new System.Windows.Forms.GroupBox();
@@ -66,6 +66,7 @@
             this.comboBox2 = new System.Windows.Forms.ComboBox();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.rboRetiroDomicilio = new System.Windows.Forms.RadioButton();
+            this.lblMenuPrincipal = new System.Windows.Forms.Label();
             txtDirrecionDestino = new System.Windows.Forms.TextBox();
             txtAlturaDestino = new System.Windows.Forms.TextBox();
             txtOrigen = new System.Windows.Forms.TextBox();
@@ -111,7 +112,7 @@
             // chkUrgente
             // 
             this.chkUrgente.AutoSize = true;
-            this.chkUrgente.Location = new System.Drawing.Point(450, 32);
+            this.chkUrgente.Location = new System.Drawing.Point(456, 28);
             this.chkUrgente.Name = "chkUrgente";
             this.chkUrgente.Size = new System.Drawing.Size(186, 25);
             this.chkUrgente.TabIndex = 3;
@@ -124,21 +125,24 @@
             this.rboEntregaSucursal.AutoSize = true;
             this.rboEntregaSucursal.Location = new System.Drawing.Point(26, 19);
             this.rboEntregaSucursal.Name = "rboEntregaSucursal";
-            this.rboEntregaSucursal.Size = new System.Drawing.Size(165, 25);
+            this.rboEntregaSucursal.Size = new System.Drawing.Size(172, 25);
             this.rboEntregaSucursal.TabIndex = 4;
             this.rboEntregaSucursal.TabStop = true;
-            this.rboEntregaSucursal.Text = "Entrega en Sucursal";
+            this.rboEntregaSucursal.Text = "Entrega en Sucursal :";
             this.rboEntregaSucursal.UseVisualStyleBackColor = true;
             // 
-            // button1
+            // btnCotizar
             // 
-            this.button1.Location = new System.Drawing.Point(381, 426);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 6;
-            this.button1.Text = "button1";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.btnCotizar.BackColor = System.Drawing.SystemColors.ControlDark;
+            this.btnCotizar.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.btnCotizar.ForeColor = System.Drawing.Color.Green;
+            this.btnCotizar.Location = new System.Drawing.Point(364, 423);
+            this.btnCotizar.Name = "btnCotizar";
+            this.btnCotizar.Size = new System.Drawing.Size(198, 28);
+            this.btnCotizar.TabIndex = 6;
+            this.btnCotizar.Text = "Cotizar Servicio";
+            this.btnCotizar.UseVisualStyleBackColor = false;
+            this.btnCotizar.Click += new System.EventHandler(this.button1_Click);
             // 
             // groupBox1
             // 
@@ -146,19 +150,19 @@
             this.groupBox1.Controls.Add(this.cmbRangoPeso);
             this.groupBox1.Controls.Add(this.chkUrgente);
             this.groupBox1.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.groupBox1.Location = new System.Drawing.Point(12, 12);
+            this.groupBox1.Location = new System.Drawing.Point(12, 33);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(805, 73);
+            this.groupBox1.Size = new System.Drawing.Size(939, 65);
             this.groupBox1.TabIndex = 8;
             this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "groupBox1";
+            this.groupBox1.Text = "Caracteristica del Servicio";
             // 
             // groupBox2
             // 
             this.groupBox2.Controls.Add(this.groupBox4);
             this.groupBox2.Controls.Add(this.groupBox3);
             this.groupBox2.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.groupBox2.Location = new System.Drawing.Point(462, 91);
+            this.groupBox2.Location = new System.Drawing.Point(462, 104);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Size = new System.Drawing.Size(489, 313);
             this.groupBox2.TabIndex = 9;
@@ -220,7 +224,7 @@
             // cmbSucursales
             // 
             this.cmbSucursales.FormattingEnabled = true;
-            this.cmbSucursales.Location = new System.Drawing.Point(216, 15);
+            this.cmbSucursales.Location = new System.Drawing.Point(213, 15);
             this.cmbSucursales.Name = "cmbSucursales";
             this.cmbSucursales.Size = new System.Drawing.Size(234, 29);
             this.cmbSucursales.TabIndex = 5;
@@ -358,7 +362,7 @@
             this.groupBox5.Controls.Add(this.radioButton3);
             this.groupBox5.Controls.Add(this.label11);
             this.groupBox5.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.groupBox5.Location = new System.Drawing.Point(14, 91);
+            this.groupBox5.Location = new System.Drawing.Point(12, 104);
             this.groupBox5.Name = "groupBox5";
             this.groupBox5.Size = new System.Drawing.Size(442, 313);
             this.groupBox5.TabIndex = 10;
@@ -379,10 +383,10 @@
             this.radioButton3.AutoSize = true;
             this.radioButton3.Location = new System.Drawing.Point(22, 28);
             this.radioButton3.Name = "radioButton3";
-            this.radioButton3.Size = new System.Drawing.Size(172, 25);
+            this.radioButton3.Size = new System.Drawing.Size(183, 25);
             this.radioButton3.TabIndex = 4;
             this.radioButton3.TabStop = true;
-            this.radioButton3.Text = "Recibe en la sucursal";
+            this.radioButton3.Text = "Recibe en la sucursal : ";
             this.radioButton3.UseVisualStyleBackColor = true;
             // 
             // txtOrigen
@@ -463,15 +467,27 @@
             this.rboRetiroDomicilio.Text = "Retiro en Domicilio";
             this.rboRetiroDomicilio.UseVisualStyleBackColor = true;
             // 
+            // lblMenuPrincipal
+            // 
+            this.lblMenuPrincipal.AutoSize = true;
+            this.lblMenuPrincipal.Font = new System.Drawing.Font("Segoe UI", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lblMenuPrincipal.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
+            this.lblMenuPrincipal.Location = new System.Drawing.Point(212, 5);
+            this.lblMenuPrincipal.Name = "lblMenuPrincipal";
+            this.lblMenuPrincipal.Size = new System.Drawing.Size(540, 25);
+            this.lblMenuPrincipal.TabIndex = 11;
+            this.lblMenuPrincipal.Text = "Ingrese los Siguientes Datos para realizar la Cotizacion del Servicio:";
+            // 
             // SolicitudDeServicio
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1022, 450);
+            this.ClientSize = new System.Drawing.Size(1022, 463);
+            this.Controls.Add(this.lblMenuPrincipal);
             this.Controls.Add(this.groupBox5);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.btnCotizar);
             this.Name = "SolicitudDeServicio";
             this.Text = "Solicitud de Servicio";
             this.groupBox1.ResumeLayout(false);
@@ -488,6 +504,7 @@
             this.groupBox5.ResumeLayout(false);
             this.groupBox5.PerformLayout();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -498,7 +515,7 @@
         private Label label1;
         private CheckBox chkUrgente;
         private RadioButton rboEntregaSucursal;
-        private Button button1;
+        private Button btnCotizar;
         private GroupBox groupBox1;
         private GroupBox groupBox2;
         private GroupBox groupBox3;
@@ -528,5 +545,6 @@
         private Label label10;
         private Label label9;
         private Label label11;
+        private Label lblMenuPrincipal;
     }
 }
