@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-<<<<<<< HEAD
             this.label1 = new System.Windows.Forms.Label();
             this.lblNumeroTrackeo = new System.Windows.Forms.Label();
             this.textBox1 = new System.Windows.Forms.TextBox();
@@ -74,30 +73,19 @@
             this.btnBuscar.Text = "Buscar";
             this.btnBuscar.UseVisualStyleBackColor = false;
             // 
-=======
-            this.SuspendLayout();
-            // 
->>>>>>> f377e96c3ebee5aa0432286ec3cf2ff3dff2f2ba
             // EstadoDelServicio
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-<<<<<<< HEAD
             this.ClientSize = new System.Drawing.Size(438, 130);
             this.Controls.Add(this.btnBuscar);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.lblNumeroTrackeo);
             this.Controls.Add(this.label1);
             this.Name = "EstadoDelServicio";
-            this.Text = "EstadoDelServicio";
+            this.Text = "Estado del Servicio";
             this.ResumeLayout(false);
             this.PerformLayout();
-=======
-            this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Name = "EstadoDelServicio";
-            this.Text = "Estado Del Servicio";
-            this.ResumeLayout(false);
->>>>>>> f377e96c3ebee5aa0432286ec3cf2ff3dff2f2ba
 
         }
 
