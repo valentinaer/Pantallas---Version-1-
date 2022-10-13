@@ -49,7 +49,7 @@ namespace grupoB_TP
 
         private void cmbSucursales_SelectedIndexChanged(object sender, EventArgs e)
         {
-            cmbSucursales.Items.Add("1- Cordoba 6571, CABA");
+            cmbSucursalesDestino.Items.Add("1- Cordoba 6571, CABA");
 
         }
 
@@ -69,6 +69,11 @@ namespace grupoB_TP
         }
 
         private void cmbCiudad_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lblMenuPrincipal_Click(object sender, EventArgs e)
         {
 
         }

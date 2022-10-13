@@ -49,20 +49,20 @@
             this.label5 = new System.Windows.Forms.Label();
             this.rboInteracional = new System.Windows.Forms.RadioButton();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.cmbCiudad = new System.Windows.Forms.ComboBox();
+            this.cmbCiudadDestino = new System.Windows.Forms.ComboBox();
             this.cmbProvincia = new System.Windows.Forms.ComboBox();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.rboNacional = new System.Windows.Forms.RadioButton();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
-            this.cmbSucursales = new System.Windows.Forms.ComboBox();
+            this.cmbSucursalesDestino = new System.Windows.Forms.ComboBox();
             this.groupBox5 = new System.Windows.Forms.GroupBox();
             this.label9 = new System.Windows.Forms.Label();
-            this.cmbCiudadDestino = new System.Windows.Forms.ComboBox();
+            this.cmbCiudadOrigen = new System.Windows.Forms.ComboBox();
             this.label8 = new System.Windows.Forms.Label();
-            this.comboBox5 = new System.Windows.Forms.ComboBox();
+            this.cmbSucursalOrigen = new System.Windows.Forms.ComboBox();
             this.rboRetiroDomicilio = new System.Windows.Forms.RadioButton();
-            this.cmbProvinciaRecepcion = new System.Windows.Forms.ComboBox();
+            this.cmbProvinciaOrigen = new System.Windows.Forms.ComboBox();
             this.label10 = new System.Windows.Forms.Label();
             this.rboRecibeSucursal = new System.Windows.Forms.RadioButton();
             this.label11 = new System.Windows.Forms.Label();
@@ -114,7 +114,9 @@
             this.cmbRangoPeso.FormattingEnabled = true;
             this.cmbRangoPeso.Items.AddRange(new object[] {
             "Correspondencia  de Hasta 500 gr",
-            "Encomiendas de hasta 10 kg"});
+            "Encomiendas de Hasta 10 kg",
+            "Encomiendas de Hasta 20 kg",
+            "Encomiendas de Hasta 30 kg"});
             this.cmbRangoPeso.Location = new System.Drawing.Point(136, 26);
             this.cmbRangoPeso.Name = "cmbRangoPeso";
             this.cmbRangoPeso.Size = new System.Drawing.Size(262, 29);
@@ -240,6 +242,12 @@
             // cmbPaisInternacional
             // 
             this.cmbPaisInternacional.FormattingEnabled = true;
+            this.cmbPaisInternacional.Items.AddRange(new object[] {
+            "Madrid, España",
+            "Paris, Francia",
+            "Roma, Italia",
+            "Londres, UK",
+            "Berlin, Alemania"});
             this.cmbPaisInternacional.Location = new System.Drawing.Point(87, 78);
             this.cmbPaisInternacional.Name = "cmbPaisInternacional";
             this.cmbPaisInternacional.Size = new System.Drawing.Size(121, 29);
@@ -249,6 +257,12 @@
             // 
             this.cmbRegionInteracional.AccessibleRole = System.Windows.Forms.AccessibleRole.None;
             this.cmbRegionInteracional.FormattingEnabled = true;
+            this.cmbRegionInteracional.Items.AddRange(new object[] {
+            "Países limítrofes.",
+            "Resto de América Latina",
+            "America del Norte",
+            "Europa",
+            "Asia"});
             this.cmbRegionInteracional.Location = new System.Drawing.Point(87, 34);
             this.cmbRegionInteracional.Name = "cmbRegionInteracional";
             this.cmbRegionInteracional.Size = new System.Drawing.Size(121, 29);
@@ -286,7 +300,7 @@
             // 
             // panel1
             // 
-            this.panel1.Controls.Add(this.cmbCiudad);
+            this.panel1.Controls.Add(this.cmbCiudadDestino);
             this.panel1.Controls.Add(this.cmbProvincia);
             this.panel1.Controls.Add(this.label3);
             this.panel1.Controls.Add(this.label2);
@@ -296,18 +310,48 @@
             this.panel1.Size = new System.Drawing.Size(222, 113);
             this.panel1.TabIndex = 10;
             // 
-            // cmbCiudad
+            // cmbCiudadDestino
             // 
-            this.cmbCiudad.FormattingEnabled = true;
-            this.cmbCiudad.Location = new System.Drawing.Point(87, 78);
-            this.cmbCiudad.Name = "cmbCiudad";
-            this.cmbCiudad.Size = new System.Drawing.Size(121, 29);
-            this.cmbCiudad.TabIndex = 4;
-            this.cmbCiudad.SelectedIndexChanged += new System.EventHandler(this.cmbCiudad_SelectedIndexChanged);
+            this.cmbCiudadDestino.FormattingEnabled = true;
+            this.cmbCiudadDestino.Items.AddRange(new object[] {
+            "Mar del Plata",
+            "Quilmes",
+            "Bahia Blanca",
+            "Salto"});
+            this.cmbCiudadDestino.Location = new System.Drawing.Point(87, 78);
+            this.cmbCiudadDestino.Name = "cmbCiudadDestino";
+            this.cmbCiudadDestino.Size = new System.Drawing.Size(121, 29);
+            this.cmbCiudadDestino.TabIndex = 4;
+            this.cmbCiudadDestino.SelectedIndexChanged += new System.EventHandler(this.cmbCiudad_SelectedIndexChanged);
             // 
             // cmbProvincia
             // 
             this.cmbProvincia.FormattingEnabled = true;
+            this.cmbProvincia.Items.AddRange(new object[] {
+            "BUENOS AIRES",
+            "CIUDAD AUTÓNOMA DE BUENOS AIRES",
+            "CATAMARCA",
+            "CHACO",
+            "CHUBUT",
+            "CÓRDOBA",
+            "CORRIENTES",
+            "ENTRE RÍOS",
+            "FORMOSA",
+            "JUJUY",
+            "LA PAMPA",
+            "LA RIOJA",
+            "MENDOZA",
+            "MISIONES",
+            "NEUQUÉN",
+            "RÍO NEGRO",
+            "SALTA",
+            "SAN JUAN",
+            "SAN LUIS",
+            "SANTA CRUZ",
+            "SANTA FE",
+            "SANTIAGO DEL ESTERO",
+            "TIERRA DEL FUEGO, ANTÁRTIDA E ISLAS DEL ATLÁNTICO SUR",
+            "TUCUMÁN"});
             this.cmbProvincia.Location = new System.Drawing.Point(87, 34);
             this.cmbProvincia.Name = "cmbProvincia";
             this.cmbProvincia.Size = new System.Drawing.Size(121, 29);
@@ -345,7 +389,7 @@
             // 
             // groupBox3
             // 
-            this.groupBox3.Controls.Add(this.cmbSucursales);
+            this.groupBox3.Controls.Add(this.cmbSucursalesDestino);
             this.groupBox3.Controls.Add(this.rboEntregaSucursal);
             this.groupBox3.Location = new System.Drawing.Point(6, 27);
             this.groupBox3.Name = "groupBox3";
@@ -355,25 +399,30 @@
             this.groupBox3.Text = "Sucursal";
             this.groupBox3.Enter += new System.EventHandler(this.groupBox3_Enter);
             // 
-            // cmbSucursales
+            // cmbSucursalesDestino
             // 
-            this.cmbSucursales.FormattingEnabled = true;
-            this.cmbSucursales.Location = new System.Drawing.Point(213, 15);
-            this.cmbSucursales.Name = "cmbSucursales";
-            this.cmbSucursales.Size = new System.Drawing.Size(234, 29);
-            this.cmbSucursales.TabIndex = 5;
-            this.cmbSucursales.SelectedIndexChanged += new System.EventHandler(this.cmbSucursales_SelectedIndexChanged);
+            this.cmbSucursalesDestino.FormattingEnabled = true;
+            this.cmbSucursalesDestino.Items.AddRange(new object[] {
+            "1 - Cordoba 6571, CABA",
+            "2 - Av. San Martín 2871, Viedma, Rio Negro",
+            "3 - Juana Azurduy 850, Resistencia, Chaco",
+            "4 - Goyeneche 724, Córdoba, Córdoba"});
+            this.cmbSucursalesDestino.Location = new System.Drawing.Point(213, 15);
+            this.cmbSucursalesDestino.Name = "cmbSucursalesDestino";
+            this.cmbSucursalesDestino.Size = new System.Drawing.Size(234, 29);
+            this.cmbSucursalesDestino.TabIndex = 5;
+            this.cmbSucursalesDestino.SelectedIndexChanged += new System.EventHandler(this.cmbSucursales_SelectedIndexChanged);
             // 
             // groupBox5
             // 
             this.groupBox5.Controls.Add(txtDirrecionOrigen);
             this.groupBox5.Controls.Add(this.label9);
             this.groupBox5.Controls.Add(txtAlturaOrigen);
-            this.groupBox5.Controls.Add(this.cmbCiudadDestino);
+            this.groupBox5.Controls.Add(this.cmbCiudadOrigen);
             this.groupBox5.Controls.Add(this.label8);
-            this.groupBox5.Controls.Add(this.comboBox5);
+            this.groupBox5.Controls.Add(this.cmbSucursalOrigen);
             this.groupBox5.Controls.Add(this.rboRetiroDomicilio);
-            this.groupBox5.Controls.Add(this.cmbProvinciaRecepcion);
+            this.groupBox5.Controls.Add(this.cmbProvinciaOrigen);
             this.groupBox5.Controls.Add(this.label10);
             this.groupBox5.Controls.Add(this.rboRecibeSucursal);
             this.groupBox5.Controls.Add(this.label11);
@@ -395,13 +444,18 @@
             this.label9.TabIndex = 12;
             this.label9.Text = "Dirrecion : ";
             // 
-            // cmbCiudadDestino
+            // cmbCiudadOrigen
             // 
-            this.cmbCiudadDestino.FormattingEnabled = true;
-            this.cmbCiudadDestino.Location = new System.Drawing.Point(133, 146);
-            this.cmbCiudadDestino.Name = "cmbCiudadDestino";
-            this.cmbCiudadDestino.Size = new System.Drawing.Size(121, 29);
-            this.cmbCiudadDestino.TabIndex = 8;
+            this.cmbCiudadOrigen.FormattingEnabled = true;
+            this.cmbCiudadOrigen.Items.AddRange(new object[] {
+            "Mar del Plata",
+            "Quilmes",
+            "Bahia Blanca",
+            "Salto"});
+            this.cmbCiudadOrigen.Location = new System.Drawing.Point(133, 146);
+            this.cmbCiudadOrigen.Name = "cmbCiudadOrigen";
+            this.cmbCiudadOrigen.Size = new System.Drawing.Size(121, 29);
+            this.cmbCiudadOrigen.TabIndex = 8;
             // 
             // label8
             // 
@@ -412,13 +466,18 @@
             this.label8.TabIndex = 13;
             this.label8.Text = "Altura : ";
             // 
-            // comboBox5
+            // cmbSucursalOrigen
             // 
-            this.comboBox5.FormattingEnabled = true;
-            this.comboBox5.Location = new System.Drawing.Point(216, 28);
-            this.comboBox5.Name = "comboBox5";
-            this.comboBox5.Size = new System.Drawing.Size(211, 29);
-            this.comboBox5.TabIndex = 5;
+            this.cmbSucursalOrigen.FormattingEnabled = true;
+            this.cmbSucursalOrigen.Items.AddRange(new object[] {
+            "1 - Cordoba 6571, CABA",
+            "2 - Av. San Martín 2871, Viedma, Rio Negro",
+            "3 - Juana Azurduy 850, Resistencia, Chaco",
+            "4 - Goyeneche 724, Córdoba, Córdoba"});
+            this.cmbSucursalOrigen.Location = new System.Drawing.Point(216, 28);
+            this.cmbSucursalOrigen.Name = "cmbSucursalOrigen";
+            this.cmbSucursalOrigen.Size = new System.Drawing.Size(211, 29);
+            this.cmbSucursalOrigen.TabIndex = 5;
             // 
             // rboRetiroDomicilio
             // 
@@ -431,13 +490,38 @@
             this.rboRetiroDomicilio.Text = "Retiro en Domicilio";
             this.rboRetiroDomicilio.UseVisualStyleBackColor = true;
             // 
-            // cmbProvinciaRecepcion
+            // cmbProvinciaOrigen
             // 
-            this.cmbProvinciaRecepcion.FormattingEnabled = true;
-            this.cmbProvinciaRecepcion.Location = new System.Drawing.Point(133, 104);
-            this.cmbProvinciaRecepcion.Name = "cmbProvinciaRecepcion";
-            this.cmbProvinciaRecepcion.Size = new System.Drawing.Size(121, 29);
-            this.cmbProvinciaRecepcion.TabIndex = 7;
+            this.cmbProvinciaOrigen.FormattingEnabled = true;
+            this.cmbProvinciaOrigen.Items.AddRange(new object[] {
+            "BUENOS AIRES",
+            "CIUDAD AUTÓNOMA DE BUENOS AIRES",
+            "CATAMARCA",
+            "CHACO",
+            "CHUBUT",
+            "CÓRDOBA",
+            "CORRIENTES",
+            "ENTRE RÍOS",
+            "FORMOSA",
+            "JUJUY",
+            "LA PAMPA",
+            "LA RIOJA",
+            "MENDOZA",
+            "MISIONES",
+            "NEUQUÉN",
+            "RÍO NEGRO",
+            "SALTA",
+            "SAN JUAN",
+            "SAN LUIS",
+            "SANTA CRUZ",
+            "SANTA FE",
+            "SANTIAGO DEL ESTERO",
+            "TIERRA DEL FUEGO, ANTÁRTIDA E ISLAS DEL ATLÁNTICO SUR",
+            "TUCUMÁN"});
+            this.cmbProvinciaOrigen.Location = new System.Drawing.Point(133, 104);
+            this.cmbProvinciaOrigen.Name = "cmbProvinciaOrigen";
+            this.cmbProvinciaOrigen.Size = new System.Drawing.Size(121, 29);
+            this.cmbProvinciaOrigen.TabIndex = 7;
             // 
             // label10
             // 
@@ -472,12 +556,13 @@
             // 
             this.lblMenuPrincipal.AutoSize = true;
             this.lblMenuPrincipal.Font = new System.Drawing.Font("Segoe UI", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.lblMenuPrincipal.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
+            this.lblMenuPrincipal.ForeColor = System.Drawing.Color.Purple;
             this.lblMenuPrincipal.Location = new System.Drawing.Point(212, 5);
             this.lblMenuPrincipal.Name = "lblMenuPrincipal";
             this.lblMenuPrincipal.Size = new System.Drawing.Size(545, 25);
             this.lblMenuPrincipal.TabIndex = 11;
             this.lblMenuPrincipal.Text = "Ingrese los Siguientes Datos para realizar la Cotizacion del Servicio :";
+            this.lblMenuPrincipal.Click += new System.EventHandler(this.lblMenuPrincipal_Click);
             // 
             // SolicitudDeServicio
             // 
@@ -520,7 +605,7 @@
         private GroupBox groupBox1;
         private GroupBox groupBox2;
         private GroupBox groupBox3;
-        private ComboBox cmbSucursales;
+        private ComboBox cmbSucursalesDestino;
         private GroupBox groupBox4;
         private Panel panel1;
         private RadioButton rboNacional;
@@ -533,15 +618,15 @@
         private Label label4;
         private Label label5;
         private RadioButton rboInteracional;
-        private ComboBox cmbCiudad;
+        private ComboBox cmbCiudadDestino;
         private Label label6;
         private Label label7;
         private GroupBox groupBox5;
-        private ComboBox comboBox5;
+        private ComboBox cmbSucursalOrigen;
         private RadioButton rboRecibeSucursal;
         private RadioButton rboRetiroDomicilio;
-        private ComboBox cmbCiudadDestino;
-        private ComboBox cmbProvinciaRecepcion;
+        private ComboBox cmbCiudadOrigen;
+        private ComboBox cmbProvinciaOrigen;
         private Label label8;
         private Label label10;
         private Label label9;
