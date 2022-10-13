@@ -10,20 +10,11 @@ using System.Windows.Forms;
 
 namespace grupoB_TP
 {
-    public partial class MenuPrinciapl : Form
+    public partial class MenuPrincipal : Form
     {
-        public MenuPrinciapl()
+        public MenuPrincipal()
         {
             InitializeComponent();
-        }
-
-<<<<<<< HEAD
-        private void label1_Click(object sender, EventArgs e)
-=======
-        private void radioButton1_CheckedChanged(object sender, EventArgs e)
->>>>>>> 1a59a2a2edc874afedad3e6a874626dca32dae28
-        {
-
         }
     }
 }
