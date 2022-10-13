@@ -52,5 +52,10 @@ namespace grupoB_TP
             cmbSucursales.Items.Add("1- Cordoba 6571, CABA");
 
         }
+
+        private void groupBox5_Enter(object sender, EventArgs e)
+        {
+
+        }
     }
 }
