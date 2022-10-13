@@ -28,50 +28,81 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.radioButton1 = new System.Windows.Forms.RadioButton();
-            this.radioButton2 = new System.Windows.Forms.RadioButton();
-            this.button1 = new System.Windows.Forms.Button();
+            this.rboSolicitudDeServicio = new System.Windows.Forms.RadioButton();
+            this.rboConsultarEstadoDeServicio = new System.Windows.Forms.RadioButton();
+            this.btnContinuar = new System.Windows.Forms.Button();
+            this.btnSalir = new System.Windows.Forms.Button();
+            this.rboConsultarEstadoDeCuenta = new System.Windows.Forms.RadioButton();
             this.SuspendLayout();
             // 
-            // radioButton1
+            // rboSolicitudDeServicio
             // 
-            this.radioButton1.AutoSize = true;
-            this.radioButton1.Location = new System.Drawing.Point(49, 75);
-            this.radioButton1.Name = "radioButton1";
-            this.radioButton1.Size = new System.Drawing.Size(131, 19);
-            this.radioButton1.TabIndex = 0;
-            this.radioButton1.TabStop = true;
-            this.radioButton1.Text = "Solicitud de Servicio";
-            this.radioButton1.UseVisualStyleBackColor = true;
+            this.rboSolicitudDeServicio.AutoSize = true;
+            this.rboSolicitudDeServicio.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.rboSolicitudDeServicio.Location = new System.Drawing.Point(49, 67);
+            this.rboSolicitudDeServicio.Name = "rboSolicitudDeServicio";
+            this.rboSolicitudDeServicio.Size = new System.Drawing.Size(168, 25);
+            this.rboSolicitudDeServicio.TabIndex = 0;
+            this.rboSolicitudDeServicio.TabStop = true;
+            this.rboSolicitudDeServicio.Text = "Solicitud de Servicio";
+            this.rboSolicitudDeServicio.UseVisualStyleBackColor = true;
             // 
-            // radioButton2
+            // rboConsultarEstadoDeServicio
             // 
-            this.radioButton2.AutoSize = true;
-            this.radioButton2.Location = new System.Drawing.Point(49, 123);
-            this.radioButton2.Name = "radioButton2";
-            this.radioButton2.Size = new System.Drawing.Size(174, 19);
-            this.radioButton2.TabIndex = 1;
-            this.radioButton2.TabStop = true;
-            this.radioButton2.Text = "Consultar Estado de Servicio";
-            this.radioButton2.UseVisualStyleBackColor = true;
+            this.rboConsultarEstadoDeServicio.AutoSize = true;
+            this.rboConsultarEstadoDeServicio.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.rboConsultarEstadoDeServicio.Location = new System.Drawing.Point(49, 101);
+            this.rboConsultarEstadoDeServicio.Name = "rboConsultarEstadoDeServicio";
+            this.rboConsultarEstadoDeServicio.Size = new System.Drawing.Size(225, 25);
+            this.rboConsultarEstadoDeServicio.TabIndex = 1;
+            this.rboConsultarEstadoDeServicio.TabStop = true;
+            this.rboConsultarEstadoDeServicio.Text = "Consultar Estado de Servicio";
+            this.rboConsultarEstadoDeServicio.UseVisualStyleBackColor = true;
             // 
-            // button1
+            // btnContinuar
             // 
-            this.button1.Location = new System.Drawing.Point(90, 183);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 2;
-            this.button1.Text = "button1";
-            this.button1.UseVisualStyleBackColor = true;
+            this.btnContinuar.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.btnContinuar.Location = new System.Drawing.Point(35, 194);
+            this.btnContinuar.Name = "btnContinuar";
+            this.btnContinuar.Size = new System.Drawing.Size(125, 39);
+            this.btnContinuar.TabIndex = 2;
+            this.btnContinuar.Text = "Continuar";
+            this.btnContinuar.UseVisualStyleBackColor = true;
+            this.btnContinuar.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // btnSalir
+            // 
+            this.btnSalir.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.btnSalir.Location = new System.Drawing.Point(181, 194);
+            this.btnSalir.Name = "btnSalir";
+            this.btnSalir.Size = new System.Drawing.Size(125, 39);
+            this.btnSalir.TabIndex = 3;
+            this.btnSalir.Text = "Salir";
+            this.btnSalir.UseVisualStyleBackColor = true;
+            // 
+            // rboConsultarEstadoDeCuenta
+            // 
+            this.rboConsultarEstadoDeCuenta.AutoSize = true;
+            this.rboConsultarEstadoDeCuenta.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.rboConsultarEstadoDeCuenta.Location = new System.Drawing.Point(49, 137);
+            this.rboConsultarEstadoDeCuenta.Name = "rboConsultarEstadoDeCuenta";
+            this.rboConsultarEstadoDeCuenta.Size = new System.Drawing.Size(238, 25);
+            this.rboConsultarEstadoDeCuenta.TabIndex = 4;
+            this.rboConsultarEstadoDeCuenta.TabStop = true;
+            this.rboConsultarEstadoDeCuenta.Text = "Consulta del Estado de Cuenta";
+            this.rboConsultarEstadoDeCuenta.UseVisualStyleBackColor = true;
             // 
             // MenuPrincipal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(245, 295);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.radioButton2);
-            this.Controls.Add(this.radioButton1);
+            this.BackColor = System.Drawing.SystemColors.ButtonFace;
+            this.ClientSize = new System.Drawing.Size(348, 295);
+            this.Controls.Add(this.rboConsultarEstadoDeCuenta);
+            this.Controls.Add(this.btnSalir);
+            this.Controls.Add(this.btnContinuar);
+            this.Controls.Add(this.rboConsultarEstadoDeServicio);
+            this.Controls.Add(this.rboSolicitudDeServicio);
             this.Name = "MenuPrincipal";
             this.Text = "MenuPrincipal";
             this.ResumeLayout(false);
@@ -81,8 +112,10 @@
 
         #endregion
 
-        private RadioButton radioButton1;
-        private RadioButton radioButton2;
-        private Button button1;
+        private RadioButton rboSolicitudDeServicio;
+        private RadioButton rboConsultarEstadoDeServicio;
+        private Button btnContinuar;
+        private Button btnSalir;
+        private RadioButton rboConsultarEstadoDeCuenta;
     }
 }
