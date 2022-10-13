@@ -57,5 +57,15 @@ namespace grupoB_TP
         {
 
         }
+
+        private void txtOrigen_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void groupBox6_Enter(object sender, EventArgs e)
+        {
+
+        }
     }
 }

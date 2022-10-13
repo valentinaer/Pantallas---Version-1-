@@ -28,10 +28,10 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.TextBox txtDirrecion;
-            System.Windows.Forms.TextBox txtAltura;
-            System.Windows.Forms.TextBox textBox1;
-            System.Windows.Forms.TextBox textBox2;
+            System.Windows.Forms.TextBox txtDirrecionDestino;
+            System.Windows.Forms.TextBox txtAlturaDestino;
+            System.Windows.Forms.TextBox txtOrigen;
+            System.Windows.Forms.TextBox txtAlturaOrigen;
             this.cmbRangoPeso = new System.Windows.Forms.ComboBox();
             this.label1 = new System.Windows.Forms.Label();
             this.chkUrgente = new System.Windows.Forms.CheckBox();
@@ -57,28 +57,19 @@
             this.label6 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.groupBox5 = new System.Windows.Forms.GroupBox();
-            this.groupBox6 = new System.Windows.Forms.GroupBox();
-            this.label8 = new System.Windows.Forms.Label();
-            this.label9 = new System.Windows.Forms.Label();
-            this.panel3 = new System.Windows.Forms.Panel();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.comboBox2 = new System.Windows.Forms.ComboBox();
-            this.label10 = new System.Windows.Forms.Label();
-            this.label11 = new System.Windows.Forms.Label();
-            this.radioButton1 = new System.Windows.Forms.RadioButton();
-            this.panel4 = new System.Windows.Forms.Panel();
-            this.comboBox3 = new System.Windows.Forms.ComboBox();
-            this.comboBox4 = new System.Windows.Forms.ComboBox();
-            this.label12 = new System.Windows.Forms.Label();
-            this.label13 = new System.Windows.Forms.Label();
-            this.radioButton2 = new System.Windows.Forms.RadioButton();
-            this.groupBox7 = new System.Windows.Forms.GroupBox();
             this.comboBox5 = new System.Windows.Forms.ComboBox();
             this.radioButton3 = new System.Windows.Forms.RadioButton();
-            txtDirrecion = new System.Windows.Forms.TextBox();
-            txtAltura = new System.Windows.Forms.TextBox();
-            textBox1 = new System.Windows.Forms.TextBox();
-            textBox2 = new System.Windows.Forms.TextBox();
+            this.label11 = new System.Windows.Forms.Label();
+            this.label9 = new System.Windows.Forms.Label();
+            this.label10 = new System.Windows.Forms.Label();
+            this.label8 = new System.Windows.Forms.Label();
+            this.comboBox2 = new System.Windows.Forms.ComboBox();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.rboRetiroDomicilio = new System.Windows.Forms.RadioButton();
+            txtDirrecionDestino = new System.Windows.Forms.TextBox();
+            txtAlturaDestino = new System.Windows.Forms.TextBox();
+            txtOrigen = new System.Windows.Forms.TextBox();
+            txtAlturaOrigen = new System.Windows.Forms.TextBox();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox4.SuspendLayout();
@@ -86,10 +77,6 @@
             this.groupBox3.SuspendLayout();
             this.panel2.SuspendLayout();
             this.groupBox5.SuspendLayout();
-            this.groupBox6.SuspendLayout();
-            this.panel3.SuspendLayout();
-            this.panel4.SuspendLayout();
-            this.groupBox7.SuspendLayout();
             this.SuspendLayout();
             // 
             // cmbRangoPeso
@@ -98,18 +85,18 @@
             this.cmbRangoPeso.Items.AddRange(new object[] {
             "Correspondencia  de Hasta 500 gr",
             "Encomiendas de hasta 10 kg"});
-            this.cmbRangoPeso.Location = new System.Drawing.Point(131, 35);
+            this.cmbRangoPeso.Location = new System.Drawing.Point(135, 30);
             this.cmbRangoPeso.Name = "cmbRangoPeso";
-            this.cmbRangoPeso.Size = new System.Drawing.Size(121, 29);
+            this.cmbRangoPeso.Size = new System.Drawing.Size(262, 29);
             this.cmbRangoPeso.TabIndex = 0;
             this.cmbRangoPeso.SelectedIndexChanged += new System.EventHandler(this.cmbRangoPeso_SelectedIndexChanged);
             // 
-            // txtDirrecion
+            // txtDirrecionDestino
             // 
-            txtDirrecion.Location = new System.Drawing.Point(117, 152);
-            txtDirrecion.Name = "txtDirrecion";
-            txtDirrecion.Size = new System.Drawing.Size(333, 29);
-            txtDirrecion.TabIndex = 1;
+            txtDirrecionDestino.Location = new System.Drawing.Point(117, 152);
+            txtDirrecionDestino.Name = "txtDirrecionDestino";
+            txtDirrecionDestino.Size = new System.Drawing.Size(333, 29);
+            txtDirrecionDestino.TabIndex = 1;
             // 
             // label1
             // 
@@ -124,7 +111,7 @@
             // chkUrgente
             // 
             this.chkUrgente.AutoSize = true;
-            this.chkUrgente.Location = new System.Drawing.Point(391, 38);
+            this.chkUrgente.Location = new System.Drawing.Point(450, 32);
             this.chkUrgente.Name = "chkUrgente";
             this.chkUrgente.Size = new System.Drawing.Size(186, 25);
             this.chkUrgente.TabIndex = 3;
@@ -171,7 +158,7 @@
             this.groupBox2.Controls.Add(this.groupBox4);
             this.groupBox2.Controls.Add(this.groupBox3);
             this.groupBox2.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.groupBox2.Location = new System.Drawing.Point(509, 91);
+            this.groupBox2.Location = new System.Drawing.Point(462, 91);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Size = new System.Drawing.Size(489, 313);
             this.groupBox2.TabIndex = 9;
@@ -181,12 +168,12 @@
             // 
             // groupBox4
             // 
-            this.groupBox4.Controls.Add(txtAltura);
+            this.groupBox4.Controls.Add(txtAlturaDestino);
             this.groupBox4.Controls.Add(this.label7);
             this.groupBox4.Controls.Add(this.label6);
             this.groupBox4.Controls.Add(this.panel2);
             this.groupBox4.Controls.Add(this.panel1);
-            this.groupBox4.Controls.Add(txtDirrecion);
+            this.groupBox4.Controls.Add(txtDirrecionDestino);
             this.groupBox4.Location = new System.Drawing.Point(6, 82);
             this.groupBox4.Name = "groupBox4";
             this.groupBox4.Size = new System.Drawing.Size(470, 222);
@@ -233,9 +220,9 @@
             // cmbSucursales
             // 
             this.cmbSucursales.FormattingEnabled = true;
-            this.cmbSucursales.Location = new System.Drawing.Point(242, 15);
+            this.cmbSucursales.Location = new System.Drawing.Point(216, 15);
             this.cmbSucursales.Name = "cmbSucursales";
-            this.cmbSucursales.Size = new System.Drawing.Size(208, 29);
+            this.cmbSucursales.Size = new System.Drawing.Size(234, 29);
             this.cmbSucursales.TabIndex = 5;
             this.cmbSucursales.SelectedIndexChanged += new System.EventHandler(this.cmbSucursales_SelectedIndexChanged);
             // 
@@ -350,219 +337,131 @@
             this.label7.TabIndex = 13;
             this.label7.Text = "Altura : ";
             // 
-            // txtAltura
+            // txtAlturaDestino
             // 
-            txtAltura.Location = new System.Drawing.Point(117, 186);
-            txtAltura.Name = "txtAltura";
-            txtAltura.Size = new System.Drawing.Size(111, 29);
-            txtAltura.TabIndex = 14;
+            txtAlturaDestino.Location = new System.Drawing.Point(117, 186);
+            txtAlturaDestino.Name = "txtAlturaDestino";
+            txtAlturaDestino.Size = new System.Drawing.Size(111, 29);
+            txtAlturaDestino.TabIndex = 14;
             // 
             // groupBox5
             // 
-            this.groupBox5.Controls.Add(this.groupBox6);
-            this.groupBox5.Controls.Add(this.groupBox7);
+            this.groupBox5.Controls.Add(txtOrigen);
+            this.groupBox5.Controls.Add(this.label9);
+            this.groupBox5.Controls.Add(txtAlturaOrigen);
+            this.groupBox5.Controls.Add(this.comboBox1);
+            this.groupBox5.Controls.Add(this.label8);
+            this.groupBox5.Controls.Add(this.comboBox5);
+            this.groupBox5.Controls.Add(this.rboRetiroDomicilio);
+            this.groupBox5.Controls.Add(this.comboBox2);
+            this.groupBox5.Controls.Add(this.label10);
+            this.groupBox5.Controls.Add(this.radioButton3);
+            this.groupBox5.Controls.Add(this.label11);
             this.groupBox5.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.groupBox5.Location = new System.Drawing.Point(14, 91);
             this.groupBox5.Name = "groupBox5";
-            this.groupBox5.Size = new System.Drawing.Size(489, 313);
+            this.groupBox5.Size = new System.Drawing.Size(442, 313);
             this.groupBox5.TabIndex = 10;
             this.groupBox5.TabStop = false;
-            this.groupBox5.Text = "Tipo de Entrega";
+            this.groupBox5.Text = "Tipo de Recepcion";
             this.groupBox5.Enter += new System.EventHandler(this.groupBox5_Enter);
-            // 
-            // groupBox6
-            // 
-            this.groupBox6.Controls.Add(textBox1);
-            this.groupBox6.Controls.Add(this.label8);
-            this.groupBox6.Controls.Add(this.label9);
-            this.groupBox6.Controls.Add(this.panel3);
-            this.groupBox6.Controls.Add(this.panel4);
-            this.groupBox6.Controls.Add(textBox2);
-            this.groupBox6.Location = new System.Drawing.Point(6, 82);
-            this.groupBox6.Name = "groupBox6";
-            this.groupBox6.Size = new System.Drawing.Size(470, 222);
-            this.groupBox6.TabIndex = 1;
-            this.groupBox6.TabStop = false;
-            this.groupBox6.Text = "A domicilio";
-            // 
-            // textBox1
-            // 
-            textBox1.Location = new System.Drawing.Point(117, 186);
-            textBox1.Name = "textBox1";
-            textBox1.Size = new System.Drawing.Size(111, 29);
-            textBox1.TabIndex = 14;
-            // 
-            // label8
-            // 
-            this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(31, 189);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(63, 21);
-            this.label8.TabIndex = 13;
-            this.label8.Text = "Altura : ";
-            // 
-            // label9
-            // 
-            this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(26, 155);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(85, 21);
-            this.label9.TabIndex = 12;
-            this.label9.Text = "Dirrecion : ";
-            // 
-            // panel3
-            // 
-            this.panel3.Controls.Add(this.comboBox1);
-            this.panel3.Controls.Add(this.comboBox2);
-            this.panel3.Controls.Add(this.label10);
-            this.panel3.Controls.Add(this.label11);
-            this.panel3.Controls.Add(this.radioButton1);
-            this.panel3.Location = new System.Drawing.Point(239, 28);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(222, 113);
-            this.panel3.TabIndex = 11;
-            // 
-            // comboBox1
-            // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(87, 78);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(121, 29);
-            this.comboBox1.TabIndex = 4;
-            // 
-            // comboBox2
-            // 
-            this.comboBox2.AccessibleRole = System.Windows.Forms.AccessibleRole.None;
-            this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Location = new System.Drawing.Point(87, 34);
-            this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(121, 29);
-            this.comboBox2.TabIndex = 3;
-            // 
-            // label10
-            // 
-            this.label10.AutoSize = true;
-            this.label10.Location = new System.Drawing.Point(15, 81);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(48, 21);
-            this.label10.TabIndex = 2;
-            this.label10.Text = "Pais : ";
-            // 
-            // label11
-            // 
-            this.label11.AutoSize = true;
-            this.label11.Location = new System.Drawing.Point(3, 39);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(70, 21);
-            this.label11.TabIndex = 1;
-            this.label11.Text = "Region : ";
-            // 
-            // radioButton1
-            // 
-            this.radioButton1.AutoSize = true;
-            this.radioButton1.ForeColor = System.Drawing.Color.Purple;
-            this.radioButton1.Location = new System.Drawing.Point(45, 3);
-            this.radioButton1.Name = "radioButton1";
-            this.radioButton1.Size = new System.Drawing.Size(118, 25);
-            this.radioButton1.TabIndex = 0;
-            this.radioButton1.TabStop = true;
-            this.radioButton1.Text = "Internacional";
-            this.radioButton1.UseVisualStyleBackColor = true;
-            // 
-            // panel4
-            // 
-            this.panel4.Controls.Add(this.comboBox3);
-            this.panel4.Controls.Add(this.comboBox4);
-            this.panel4.Controls.Add(this.label12);
-            this.panel4.Controls.Add(this.label13);
-            this.panel4.Controls.Add(this.radioButton2);
-            this.panel4.Location = new System.Drawing.Point(6, 28);
-            this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(222, 113);
-            this.panel4.TabIndex = 10;
-            // 
-            // comboBox3
-            // 
-            this.comboBox3.FormattingEnabled = true;
-            this.comboBox3.Location = new System.Drawing.Point(87, 78);
-            this.comboBox3.Name = "comboBox3";
-            this.comboBox3.Size = new System.Drawing.Size(121, 29);
-            this.comboBox3.TabIndex = 4;
-            // 
-            // comboBox4
-            // 
-            this.comboBox4.FormattingEnabled = true;
-            this.comboBox4.Location = new System.Drawing.Point(87, 34);
-            this.comboBox4.Name = "comboBox4";
-            this.comboBox4.Size = new System.Drawing.Size(121, 29);
-            this.comboBox4.TabIndex = 3;
-            // 
-            // label12
-            // 
-            this.label12.AutoSize = true;
-            this.label12.Location = new System.Drawing.Point(15, 81);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(70, 21);
-            this.label12.TabIndex = 2;
-            this.label12.Text = "Ciudad : ";
-            // 
-            // label13
-            // 
-            this.label13.AutoSize = true;
-            this.label13.Location = new System.Drawing.Point(3, 39);
-            this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(85, 21);
-            this.label13.TabIndex = 1;
-            this.label13.Text = "Provincia : ";
-            // 
-            // radioButton2
-            // 
-            this.radioButton2.AutoSize = true;
-            this.radioButton2.ForeColor = System.Drawing.Color.Purple;
-            this.radioButton2.Location = new System.Drawing.Point(62, 3);
-            this.radioButton2.Name = "radioButton2";
-            this.radioButton2.Size = new System.Drawing.Size(89, 25);
-            this.radioButton2.TabIndex = 0;
-            this.radioButton2.TabStop = true;
-            this.radioButton2.Text = "Nacional";
-            this.radioButton2.UseVisualStyleBackColor = true;
-            // 
-            // textBox2
-            // 
-            textBox2.Location = new System.Drawing.Point(117, 152);
-            textBox2.Name = "textBox2";
-            textBox2.Size = new System.Drawing.Size(333, 29);
-            textBox2.TabIndex = 1;
-            // 
-            // groupBox7
-            // 
-            this.groupBox7.Controls.Add(this.comboBox5);
-            this.groupBox7.Controls.Add(this.radioButton3);
-            this.groupBox7.Location = new System.Drawing.Point(6, 27);
-            this.groupBox7.Name = "groupBox7";
-            this.groupBox7.Size = new System.Drawing.Size(470, 47);
-            this.groupBox7.TabIndex = 0;
-            this.groupBox7.TabStop = false;
-            this.groupBox7.Text = "Sucursal";
             // 
             // comboBox5
             // 
             this.comboBox5.FormattingEnabled = true;
-            this.comboBox5.Location = new System.Drawing.Point(242, 15);
+            this.comboBox5.Location = new System.Drawing.Point(216, 28);
             this.comboBox5.Name = "comboBox5";
-            this.comboBox5.Size = new System.Drawing.Size(208, 29);
+            this.comboBox5.Size = new System.Drawing.Size(211, 29);
             this.comboBox5.TabIndex = 5;
             // 
             // radioButton3
             // 
             this.radioButton3.AutoSize = true;
-            this.radioButton3.Location = new System.Drawing.Point(26, 19);
+            this.radioButton3.Location = new System.Drawing.Point(22, 28);
             this.radioButton3.Name = "radioButton3";
-            this.radioButton3.Size = new System.Drawing.Size(165, 25);
+            this.radioButton3.Size = new System.Drawing.Size(172, 25);
             this.radioButton3.TabIndex = 4;
             this.radioButton3.TabStop = true;
-            this.radioButton3.Text = "Entrega en Sucursal";
+            this.radioButton3.Text = "Recibe en la sucursal";
             this.radioButton3.UseVisualStyleBackColor = true;
+            // 
+            // txtOrigen
+            // 
+            txtOrigen.Location = new System.Drawing.Point(133, 194);
+            txtOrigen.Name = "txtOrigen";
+            txtOrigen.Size = new System.Drawing.Size(294, 29);
+            txtOrigen.TabIndex = 1;
+            txtOrigen.TextChanged += new System.EventHandler(this.txtOrigen_TextChanged);
+            // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.Location = new System.Drawing.Point(31, 112);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(85, 21);
+            this.label11.TabIndex = 5;
+            this.label11.Text = "Provincia : ";
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Location = new System.Drawing.Point(31, 197);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(85, 21);
+            this.label9.TabIndex = 12;
+            this.label9.Text = "Dirrecion : ";
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Location = new System.Drawing.Point(46, 152);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(70, 21);
+            this.label10.TabIndex = 6;
+            this.label10.Text = "Ciudad : ";
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Location = new System.Drawing.Point(46, 237);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(63, 21);
+            this.label8.TabIndex = 13;
+            this.label8.Text = "Altura : ";
+            // 
+            // comboBox2
+            // 
+            this.comboBox2.FormattingEnabled = true;
+            this.comboBox2.Location = new System.Drawing.Point(133, 104);
+            this.comboBox2.Name = "comboBox2";
+            this.comboBox2.Size = new System.Drawing.Size(121, 29);
+            this.comboBox2.TabIndex = 7;
+            // 
+            // txtAlturaOrigen
+            // 
+            txtAlturaOrigen.Location = new System.Drawing.Point(133, 234);
+            txtAlturaOrigen.Name = "txtAlturaOrigen";
+            txtAlturaOrigen.Size = new System.Drawing.Size(111, 29);
+            txtAlturaOrigen.TabIndex = 14;
+            // 
+            // comboBox1
+            // 
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Location = new System.Drawing.Point(133, 146);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(121, 29);
+            this.comboBox1.TabIndex = 8;
+            // 
+            // rboRetiroDomicilio
+            // 
+            this.rboRetiroDomicilio.AutoSize = true;
+            this.rboRetiroDomicilio.Location = new System.Drawing.Point(22, 73);
+            this.rboRetiroDomicilio.Name = "rboRetiroDomicilio";
+            this.rboRetiroDomicilio.Size = new System.Drawing.Size(161, 25);
+            this.rboRetiroDomicilio.TabIndex = 15;
+            this.rboRetiroDomicilio.TabStop = true;
+            this.rboRetiroDomicilio.Text = "Retiro en Domicilio";
+            this.rboRetiroDomicilio.UseVisualStyleBackColor = true;
             // 
             // SolicitudDeServicio
             // 
@@ -587,14 +486,7 @@
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
             this.groupBox5.ResumeLayout(false);
-            this.groupBox6.ResumeLayout(false);
-            this.groupBox6.PerformLayout();
-            this.panel3.ResumeLayout(false);
-            this.panel3.PerformLayout();
-            this.panel4.ResumeLayout(false);
-            this.panel4.PerformLayout();
-            this.groupBox7.ResumeLayout(false);
-            this.groupBox7.PerformLayout();
+            this.groupBox5.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -602,7 +494,7 @@
         #endregion
 
         private ComboBox cmbRangoPeso;
-        private TextBox txtDirrecion;
+        private TextBox txtDirrecionDestino;
         private Label label1;
         private CheckBox chkUrgente;
         private RadioButton rboEntregaSucursal;
@@ -627,23 +519,14 @@
         private Label label6;
         private Label label7;
         private GroupBox groupBox5;
-        private GroupBox groupBox6;
-        private Label label8;
-        private Label label9;
-        private Panel panel3;
-        private ComboBox comboBox1;
-        private ComboBox comboBox2;
-        private Label label10;
-        private Label label11;
-        private RadioButton radioButton1;
-        private Panel panel4;
-        private ComboBox comboBox3;
-        private ComboBox comboBox4;
-        private Label label12;
-        private Label label13;
-        private RadioButton radioButton2;
-        private GroupBox groupBox7;
         private ComboBox comboBox5;
         private RadioButton radioButton3;
+        private RadioButton rboRetiroDomicilio;
+        private ComboBox comboBox1;
+        private ComboBox comboBox2;
+        private Label label8;
+        private Label label10;
+        private Label label9;
+        private Label label11;
     }
 }
