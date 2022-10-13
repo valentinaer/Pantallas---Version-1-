@@ -16,5 +16,10 @@ namespace grupoB_TP
         {
             InitializeComponent();
         }
+
+        private void cmbRangoPeso_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
