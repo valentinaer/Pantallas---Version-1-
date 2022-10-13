@@ -40,32 +40,32 @@
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.groupBox4 = new System.Windows.Forms.GroupBox();
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.rboNacional = new System.Windows.Forms.RadioButton();
-            this.groupBox3 = new System.Windows.Forms.GroupBox();
-            this.cmbSucursales = new System.Windows.Forms.ComboBox();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.cmbProvincia = new System.Windows.Forms.ComboBox();
-            this.cmbCiudad = new System.Windows.Forms.ComboBox();
+            this.label7 = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
             this.cmbPaisInternacional = new System.Windows.Forms.ComboBox();
             this.cmbRegionInteracional = new System.Windows.Forms.ComboBox();
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.rboInteracional = new System.Windows.Forms.RadioButton();
-            this.label6 = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.cmbCiudad = new System.Windows.Forms.ComboBox();
+            this.cmbProvincia = new System.Windows.Forms.ComboBox();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.rboNacional = new System.Windows.Forms.RadioButton();
+            this.groupBox3 = new System.Windows.Forms.GroupBox();
+            this.cmbSucursales = new System.Windows.Forms.ComboBox();
             this.groupBox5 = new System.Windows.Forms.GroupBox();
+            this.label9 = new System.Windows.Forms.Label();
+            this.cmbCiudadDestino = new System.Windows.Forms.ComboBox();
+            this.label8 = new System.Windows.Forms.Label();
             this.comboBox5 = new System.Windows.Forms.ComboBox();
+            this.rboRetiroDomicilio = new System.Windows.Forms.RadioButton();
+            this.cmbProvinciaRecepcion = new System.Windows.Forms.ComboBox();
+            this.label10 = new System.Windows.Forms.Label();
             this.rboRecibeSucursal = new System.Windows.Forms.RadioButton();
             this.label11 = new System.Windows.Forms.Label();
-            this.label9 = new System.Windows.Forms.Label();
-            this.label10 = new System.Windows.Forms.Label();
-            this.label8 = new System.Windows.Forms.Label();
-            this.cmbProvinciaRecepcion = new System.Windows.Forms.ComboBox();
-            this.cmbCiudadDestino = new System.Windows.Forms.ComboBox();
-            this.rboRetiroDomicilio = new System.Windows.Forms.RadioButton();
             this.lblMenuPrincipal = new System.Windows.Forms.Label();
             txtDirrecionDestino = new System.Windows.Forms.TextBox();
             txtAlturaDestino = new System.Windows.Forms.TextBox();
@@ -74,23 +74,11 @@
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox4.SuspendLayout();
+            this.panel2.SuspendLayout();
             this.panel1.SuspendLayout();
             this.groupBox3.SuspendLayout();
-            this.panel2.SuspendLayout();
             this.groupBox5.SuspendLayout();
             this.SuspendLayout();
-            // 
-            // cmbRangoPeso
-            // 
-            this.cmbRangoPeso.FormattingEnabled = true;
-            this.cmbRangoPeso.Items.AddRange(new object[] {
-            "Correspondencia  de Hasta 500 gr",
-            "Encomiendas de hasta 10 kg"});
-            this.cmbRangoPeso.Location = new System.Drawing.Point(135, 26);
-            this.cmbRangoPeso.Name = "cmbRangoPeso";
-            this.cmbRangoPeso.Size = new System.Drawing.Size(262, 29);
-            this.cmbRangoPeso.TabIndex = 0;
-            this.cmbRangoPeso.SelectedIndexChanged += new System.EventHandler(this.cmbRangoPeso_SelectedIndexChanged);
             // 
             // txtDirrecionDestino
             // 
@@ -98,6 +86,40 @@
             txtDirrecionDestino.Name = "txtDirrecionDestino";
             txtDirrecionDestino.Size = new System.Drawing.Size(333, 29);
             txtDirrecionDestino.TabIndex = 1;
+            // 
+            // txtAlturaDestino
+            // 
+            txtAlturaDestino.Location = new System.Drawing.Point(117, 186);
+            txtAlturaDestino.Name = "txtAlturaDestino";
+            txtAlturaDestino.Size = new System.Drawing.Size(111, 29);
+            txtAlturaDestino.TabIndex = 14;
+            // 
+            // txtDirrecionOrigen
+            // 
+            txtDirrecionOrigen.Location = new System.Drawing.Point(133, 194);
+            txtDirrecionOrigen.Name = "txtDirrecionOrigen";
+            txtDirrecionOrigen.Size = new System.Drawing.Size(294, 29);
+            txtDirrecionOrigen.TabIndex = 1;
+            txtDirrecionOrigen.TextChanged += new System.EventHandler(this.txtOrigen_TextChanged);
+            // 
+            // txtAlturaOrigen
+            // 
+            txtAlturaOrigen.Location = new System.Drawing.Point(133, 234);
+            txtAlturaOrigen.Name = "txtAlturaOrigen";
+            txtAlturaOrigen.Size = new System.Drawing.Size(111, 29);
+            txtAlturaOrigen.TabIndex = 14;
+            // 
+            // cmbRangoPeso
+            // 
+            this.cmbRangoPeso.FormattingEnabled = true;
+            this.cmbRangoPeso.Items.AddRange(new object[] {
+            "Correspondencia  de Hasta 500 gr",
+            "Encomiendas de hasta 10 kg"});
+            this.cmbRangoPeso.Location = new System.Drawing.Point(136, 26);
+            this.cmbRangoPeso.Name = "cmbRangoPeso";
+            this.cmbRangoPeso.Size = new System.Drawing.Size(262, 29);
+            this.cmbRangoPeso.TabIndex = 0;
+            this.cmbRangoPeso.SelectedIndexChanged += new System.EventHandler(this.cmbRangoPeso_SelectedIndexChanged);
             // 
             // label1
             // 
@@ -185,85 +207,23 @@
             this.groupBox4.TabStop = false;
             this.groupBox4.Text = "A domicilio";
             // 
-            // panel1
+            // label7
             // 
-            this.panel1.Controls.Add(this.cmbCiudad);
-            this.panel1.Controls.Add(this.cmbProvincia);
-            this.panel1.Controls.Add(this.label3);
-            this.panel1.Controls.Add(this.label2);
-            this.panel1.Controls.Add(this.rboNacional);
-            this.panel1.Location = new System.Drawing.Point(6, 28);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(222, 113);
-            this.panel1.TabIndex = 10;
+            this.label7.AutoSize = true;
+            this.label7.Location = new System.Drawing.Point(31, 189);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(63, 21);
+            this.label7.TabIndex = 13;
+            this.label7.Text = "Altura : ";
             // 
-            // rboNacional
+            // label6
             // 
-            this.rboNacional.AutoSize = true;
-            this.rboNacional.ForeColor = System.Drawing.Color.Purple;
-            this.rboNacional.Location = new System.Drawing.Point(62, 3);
-            this.rboNacional.Name = "rboNacional";
-            this.rboNacional.Size = new System.Drawing.Size(89, 25);
-            this.rboNacional.TabIndex = 0;
-            this.rboNacional.TabStop = true;
-            this.rboNacional.Text = "Nacional";
-            this.rboNacional.UseVisualStyleBackColor = true;
-            // 
-            // groupBox3
-            // 
-            this.groupBox3.Controls.Add(this.cmbSucursales);
-            this.groupBox3.Controls.Add(this.rboEntregaSucursal);
-            this.groupBox3.Location = new System.Drawing.Point(6, 27);
-            this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Size = new System.Drawing.Size(470, 47);
-            this.groupBox3.TabIndex = 0;
-            this.groupBox3.TabStop = false;
-            this.groupBox3.Text = "Sucursal";
-            this.groupBox3.Enter += new System.EventHandler(this.groupBox3_Enter);
-            // 
-            // cmbSucursales
-            // 
-            this.cmbSucursales.FormattingEnabled = true;
-            this.cmbSucursales.Location = new System.Drawing.Point(213, 15);
-            this.cmbSucursales.Name = "cmbSucursales";
-            this.cmbSucursales.Size = new System.Drawing.Size(234, 29);
-            this.cmbSucursales.TabIndex = 5;
-            this.cmbSucursales.SelectedIndexChanged += new System.EventHandler(this.cmbSucursales_SelectedIndexChanged);
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(3, 39);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(85, 21);
-            this.label2.TabIndex = 1;
-            this.label2.Text = "Provincia : ";
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(15, 81);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(70, 21);
-            this.label3.TabIndex = 2;
-            this.label3.Text = "Ciudad : ";
-            // 
-            // cmbProvincia
-            // 
-            this.cmbProvincia.FormattingEnabled = true;
-            this.cmbProvincia.Location = new System.Drawing.Point(87, 34);
-            this.cmbProvincia.Name = "cmbProvincia";
-            this.cmbProvincia.Size = new System.Drawing.Size(121, 29);
-            this.cmbProvincia.TabIndex = 3;
-            // 
-            // cmbCiudad
-            // 
-            this.cmbCiudad.FormattingEnabled = true;
-            this.cmbCiudad.Location = new System.Drawing.Point(87, 78);
-            this.cmbCiudad.Name = "cmbCiudad";
-            this.cmbCiudad.Size = new System.Drawing.Size(121, 29);
-            this.cmbCiudad.TabIndex = 4;
-            this.cmbCiudad.SelectedIndexChanged += new System.EventHandler(this.cmbCiudad_SelectedIndexChanged);
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(26, 155);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(85, 21);
+            this.label6.TabIndex = 12;
+            this.label6.Text = "Dirrecion : ";
             // 
             // panel2
             // 
@@ -324,30 +284,85 @@
             this.rboInteracional.Text = "Internacional";
             this.rboInteracional.UseVisualStyleBackColor = true;
             // 
-            // label6
+            // panel1
             // 
-            this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(26, 155);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(85, 21);
-            this.label6.TabIndex = 12;
-            this.label6.Text = "Dirrecion : ";
+            this.panel1.Controls.Add(this.cmbCiudad);
+            this.panel1.Controls.Add(this.cmbProvincia);
+            this.panel1.Controls.Add(this.label3);
+            this.panel1.Controls.Add(this.label2);
+            this.panel1.Controls.Add(this.rboNacional);
+            this.panel1.Location = new System.Drawing.Point(6, 28);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(222, 113);
+            this.panel1.TabIndex = 10;
             // 
-            // label7
+            // cmbCiudad
             // 
-            this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(31, 189);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(63, 21);
-            this.label7.TabIndex = 13;
-            this.label7.Text = "Altura : ";
+            this.cmbCiudad.FormattingEnabled = true;
+            this.cmbCiudad.Location = new System.Drawing.Point(87, 78);
+            this.cmbCiudad.Name = "cmbCiudad";
+            this.cmbCiudad.Size = new System.Drawing.Size(121, 29);
+            this.cmbCiudad.TabIndex = 4;
+            this.cmbCiudad.SelectedIndexChanged += new System.EventHandler(this.cmbCiudad_SelectedIndexChanged);
             // 
-            // txtAlturaDestino
+            // cmbProvincia
             // 
-            txtAlturaDestino.Location = new System.Drawing.Point(117, 186);
-            txtAlturaDestino.Name = "txtAlturaDestino";
-            txtAlturaDestino.Size = new System.Drawing.Size(111, 29);
-            txtAlturaDestino.TabIndex = 14;
+            this.cmbProvincia.FormattingEnabled = true;
+            this.cmbProvincia.Location = new System.Drawing.Point(87, 34);
+            this.cmbProvincia.Name = "cmbProvincia";
+            this.cmbProvincia.Size = new System.Drawing.Size(121, 29);
+            this.cmbProvincia.TabIndex = 3;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(15, 81);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(70, 21);
+            this.label3.TabIndex = 2;
+            this.label3.Text = "Ciudad : ";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(3, 39);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(85, 21);
+            this.label2.TabIndex = 1;
+            this.label2.Text = "Provincia : ";
+            // 
+            // rboNacional
+            // 
+            this.rboNacional.AutoSize = true;
+            this.rboNacional.ForeColor = System.Drawing.Color.Purple;
+            this.rboNacional.Location = new System.Drawing.Point(62, 3);
+            this.rboNacional.Name = "rboNacional";
+            this.rboNacional.Size = new System.Drawing.Size(89, 25);
+            this.rboNacional.TabIndex = 0;
+            this.rboNacional.TabStop = true;
+            this.rboNacional.Text = "Nacional";
+            this.rboNacional.UseVisualStyleBackColor = true;
+            // 
+            // groupBox3
+            // 
+            this.groupBox3.Controls.Add(this.cmbSucursales);
+            this.groupBox3.Controls.Add(this.rboEntregaSucursal);
+            this.groupBox3.Location = new System.Drawing.Point(6, 27);
+            this.groupBox3.Name = "groupBox3";
+            this.groupBox3.Size = new System.Drawing.Size(470, 47);
+            this.groupBox3.TabIndex = 0;
+            this.groupBox3.TabStop = false;
+            this.groupBox3.Text = "Sucursal";
+            this.groupBox3.Enter += new System.EventHandler(this.groupBox3_Enter);
+            // 
+            // cmbSucursales
+            // 
+            this.cmbSucursales.FormattingEnabled = true;
+            this.cmbSucursales.Location = new System.Drawing.Point(213, 15);
+            this.cmbSucursales.Name = "cmbSucursales";
+            this.cmbSucursales.Size = new System.Drawing.Size(234, 29);
+            this.cmbSucursales.TabIndex = 5;
+            this.cmbSucursales.SelectedIndexChanged += new System.EventHandler(this.cmbSucursales_SelectedIndexChanged);
             // 
             // groupBox5
             // 
@@ -371,6 +386,32 @@
             this.groupBox5.Text = "Tipo de Recepcion";
             this.groupBox5.Enter += new System.EventHandler(this.groupBox5_Enter);
             // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Location = new System.Drawing.Point(31, 197);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(85, 21);
+            this.label9.TabIndex = 12;
+            this.label9.Text = "Dirrecion : ";
+            // 
+            // cmbCiudadDestino
+            // 
+            this.cmbCiudadDestino.FormattingEnabled = true;
+            this.cmbCiudadDestino.Location = new System.Drawing.Point(133, 146);
+            this.cmbCiudadDestino.Name = "cmbCiudadDestino";
+            this.cmbCiudadDestino.Size = new System.Drawing.Size(121, 29);
+            this.cmbCiudadDestino.TabIndex = 8;
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Location = new System.Drawing.Point(46, 237);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(63, 21);
+            this.label8.TabIndex = 13;
+            this.label8.Text = "Altura : ";
+            // 
             // comboBox5
             // 
             this.comboBox5.FormattingEnabled = true;
@@ -378,6 +419,34 @@
             this.comboBox5.Name = "comboBox5";
             this.comboBox5.Size = new System.Drawing.Size(211, 29);
             this.comboBox5.TabIndex = 5;
+            // 
+            // rboRetiroDomicilio
+            // 
+            this.rboRetiroDomicilio.AutoSize = true;
+            this.rboRetiroDomicilio.Location = new System.Drawing.Point(22, 73);
+            this.rboRetiroDomicilio.Name = "rboRetiroDomicilio";
+            this.rboRetiroDomicilio.Size = new System.Drawing.Size(161, 25);
+            this.rboRetiroDomicilio.TabIndex = 15;
+            this.rboRetiroDomicilio.TabStop = true;
+            this.rboRetiroDomicilio.Text = "Retiro en Domicilio";
+            this.rboRetiroDomicilio.UseVisualStyleBackColor = true;
+            // 
+            // cmbProvinciaRecepcion
+            // 
+            this.cmbProvinciaRecepcion.FormattingEnabled = true;
+            this.cmbProvinciaRecepcion.Location = new System.Drawing.Point(133, 104);
+            this.cmbProvinciaRecepcion.Name = "cmbProvinciaRecepcion";
+            this.cmbProvinciaRecepcion.Size = new System.Drawing.Size(121, 29);
+            this.cmbProvinciaRecepcion.TabIndex = 7;
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Location = new System.Drawing.Point(46, 152);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(70, 21);
+            this.label10.TabIndex = 6;
+            this.label10.Text = "Ciudad : ";
             // 
             // rboRecibeSucursal
             // 
@@ -390,14 +459,6 @@
             this.rboRecibeSucursal.Text = "Recibe en la sucursal : ";
             this.rboRecibeSucursal.UseVisualStyleBackColor = true;
             // 
-            // txtDirrecionOrigen
-            // 
-            txtDirrecionOrigen.Location = new System.Drawing.Point(133, 194);
-            txtDirrecionOrigen.Name = "txtDirrecionOrigen";
-            txtDirrecionOrigen.Size = new System.Drawing.Size(294, 29);
-            txtDirrecionOrigen.TabIndex = 1;
-            txtDirrecionOrigen.TextChanged += new System.EventHandler(this.txtOrigen_TextChanged);
-            // 
             // label11
             // 
             this.label11.AutoSize = true;
@@ -406,67 +467,6 @@
             this.label11.Size = new System.Drawing.Size(85, 21);
             this.label11.TabIndex = 5;
             this.label11.Text = "Provincia : ";
-            // 
-            // label9
-            // 
-            this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(31, 197);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(85, 21);
-            this.label9.TabIndex = 12;
-            this.label9.Text = "Dirrecion : ";
-            // 
-            // label10
-            // 
-            this.label10.AutoSize = true;
-            this.label10.Location = new System.Drawing.Point(46, 152);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(70, 21);
-            this.label10.TabIndex = 6;
-            this.label10.Text = "Ciudad : ";
-            // 
-            // label8
-            // 
-            this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(46, 237);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(63, 21);
-            this.label8.TabIndex = 13;
-            this.label8.Text = "Altura : ";
-            // 
-            // cmbProvinciaRecepcion
-            // 
-            this.cmbProvinciaRecepcion.FormattingEnabled = true;
-            this.cmbProvinciaRecepcion.Location = new System.Drawing.Point(133, 104);
-            this.cmbProvinciaRecepcion.Name = "cmbProvinciaRecepcion";
-            this.cmbProvinciaRecepcion.Size = new System.Drawing.Size(121, 29);
-            this.cmbProvinciaRecepcion.TabIndex = 7;
-            // 
-            // txtAlturaOrigen
-            // 
-            txtAlturaOrigen.Location = new System.Drawing.Point(133, 234);
-            txtAlturaOrigen.Name = "txtAlturaOrigen";
-            txtAlturaOrigen.Size = new System.Drawing.Size(111, 29);
-            txtAlturaOrigen.TabIndex = 14;
-            // 
-            // cmbCiudadDestino
-            // 
-            this.cmbCiudadDestino.FormattingEnabled = true;
-            this.cmbCiudadDestino.Location = new System.Drawing.Point(133, 146);
-            this.cmbCiudadDestino.Name = "cmbCiudadDestino";
-            this.cmbCiudadDestino.Size = new System.Drawing.Size(121, 29);
-            this.cmbCiudadDestino.TabIndex = 8;
-            // 
-            // rboRetiroDomicilio
-            // 
-            this.rboRetiroDomicilio.AutoSize = true;
-            this.rboRetiroDomicilio.Location = new System.Drawing.Point(22, 73);
-            this.rboRetiroDomicilio.Name = "rboRetiroDomicilio";
-            this.rboRetiroDomicilio.Size = new System.Drawing.Size(161, 25);
-            this.rboRetiroDomicilio.TabIndex = 15;
-            this.rboRetiroDomicilio.TabStop = true;
-            this.rboRetiroDomicilio.Text = "Retiro en Domicilio";
-            this.rboRetiroDomicilio.UseVisualStyleBackColor = true;
             // 
             // lblMenuPrincipal
             // 
@@ -496,12 +496,12 @@
             this.groupBox2.ResumeLayout(false);
             this.groupBox4.ResumeLayout(false);
             this.groupBox4.PerformLayout();
+            this.panel2.ResumeLayout(false);
+            this.panel2.PerformLayout();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.groupBox3.ResumeLayout(false);
             this.groupBox3.PerformLayout();
-            this.panel2.ResumeLayout(false);
-            this.panel2.PerformLayout();
             this.groupBox5.ResumeLayout(false);
             this.groupBox5.PerformLayout();
             this.ResumeLayout(false);
