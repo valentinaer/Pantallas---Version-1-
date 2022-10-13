@@ -1,6 +1,6 @@
 ﻿namespace grupoB_TP
 {
-    partial class MenuPrincipal
+    partial class AccesoAlSistema
     {
         /// <summary>
         ///  Required designer variable.

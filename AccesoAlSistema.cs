@@ -1,8 +1,8 @@
 namespace grupoB_TP
 {
-    public partial class MenuPrincipal : Form
+    public partial class AccesoAlSistema : Form
     {
-        public MenuPrincipal()
+        public AccesoAlSistema()
         {
             InitializeComponent();
         }
