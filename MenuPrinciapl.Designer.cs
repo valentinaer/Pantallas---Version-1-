@@ -44,6 +44,7 @@
             this.radioButton1.TabStop = true;
             this.radioButton1.Text = "radioButton1";
             this.radioButton1.UseVisualStyleBackColor = true;
+            this.radioButton1.CheckedChanged += new System.EventHandler(this.radioButton1_CheckedChanged);
             // 
             // radioButton2
             // 
@@ -99,5 +100,7 @@
         private RadioButton radioButton2;
         private RadioButton radioButton3;
         private Label label1;
+        private ListBox listBox1;
+        private ComboBox comboBox1;
     }
 }
