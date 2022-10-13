@@ -67,5 +67,10 @@ namespace grupoB_TP
         {
 
         }
+
+        private void cmbCiudad_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
