@@ -12,6 +12,8 @@ namespace grupoB_TP
             // see https://aka.ms/applicationconfiguration.
             ApplicationConfiguration.Initialize();
             Application.Run(new MenuPrincipal());
+
+            //prueba 2
         }
     }
 }
