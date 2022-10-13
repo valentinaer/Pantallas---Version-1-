@@ -38,6 +38,7 @@
             // 
             // txtIngresarDNI
             // 
+            this.txtIngresarDNI.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.txtIngresarDNI.Location = new System.Drawing.Point(42, 85);
             this.txtIngresarDNI.Name = "txtIngresarDNI";
             this.txtIngresarDNI.Size = new System.Drawing.Size(152, 23);
@@ -45,6 +46,7 @@
             // 
             // txtContraseña
             // 
+            this.txtContraseña.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.txtContraseña.Location = new System.Drawing.Point(42, 158);
             this.txtContraseña.Name = "txtContraseña";
             this.txtContraseña.Size = new System.Drawing.Size(152, 23);
@@ -74,9 +76,9 @@
             // 
             this.btnIngresar.BackColor = System.Drawing.SystemColors.ControlDark;
             this.btnIngresar.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.btnIngresar.Location = new System.Drawing.Point(75, 214);
+            this.btnIngresar.Location = new System.Drawing.Point(69, 202);
             this.btnIngresar.Name = "btnIngresar";
-            this.btnIngresar.Size = new System.Drawing.Size(87, 29);
+            this.btnIngresar.Size = new System.Drawing.Size(100, 31);
             this.btnIngresar.TabIndex = 4;
             this.btnIngresar.Text = "Ingresar";
             this.btnIngresar.UseVisualStyleBackColor = false;
