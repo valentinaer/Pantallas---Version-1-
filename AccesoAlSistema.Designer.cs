@@ -28,40 +28,83 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.radioButton1 = new System.Windows.Forms.RadioButton();
-            this.radioButton2 = new System.Windows.Forms.RadioButton();
+            this.txtIngresarDNI = new System.Windows.Forms.TextBox();
+            this.txtContraseña = new System.Windows.Forms.TextBox();
+            this.lblDNI = new System.Windows.Forms.Label();
+            this.lblContraseña = new System.Windows.Forms.Label();
+            this.btnIngresar = new System.Windows.Forms.Button();
+            this.label1 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
-            // radioButton1
+            // txtIngresarDNI
             // 
-            this.radioButton1.AutoSize = true;
-            this.radioButton1.Location = new System.Drawing.Point(45, 71);
-            this.radioButton1.Name = "radioButton1";
-            this.radioButton1.Size = new System.Drawing.Size(94, 19);
-            this.radioButton1.TabIndex = 0;
-            this.radioButton1.TabStop = true;
-            this.radioButton1.Text = "radioButton1";
-            this.radioButton1.UseVisualStyleBackColor = true;
+            this.txtIngresarDNI.Location = new System.Drawing.Point(42, 85);
+            this.txtIngresarDNI.Name = "txtIngresarDNI";
+            this.txtIngresarDNI.Size = new System.Drawing.Size(152, 23);
+            this.txtIngresarDNI.TabIndex = 0;
             // 
-            // radioButton2
+            // txtContraseña
             // 
-            this.radioButton2.AutoSize = true;
-            this.radioButton2.Location = new System.Drawing.Point(45, 114);
-            this.radioButton2.Name = "radioButton2";
-            this.radioButton2.Size = new System.Drawing.Size(94, 19);
-            this.radioButton2.TabIndex = 1;
-            this.radioButton2.TabStop = true;
-            this.radioButton2.Text = "radioButton2";
-            this.radioButton2.UseVisualStyleBackColor = true;
+            this.txtContraseña.Location = new System.Drawing.Point(42, 158);
+            this.txtContraseña.Name = "txtContraseña";
+            this.txtContraseña.Size = new System.Drawing.Size(152, 23);
+            this.txtContraseña.TabIndex = 1;
             // 
-            // Form1
+            // lblDNI
+            // 
+            this.lblDNI.AutoSize = true;
+            this.lblDNI.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lblDNI.Location = new System.Drawing.Point(42, 61);
+            this.lblDNI.Name = "lblDNI";
+            this.lblDNI.Size = new System.Drawing.Size(111, 21);
+            this.lblDNI.TabIndex = 2;
+            this.lblDNI.Text = "Ingrese el DNI:";
+            // 
+            // lblContraseña
+            // 
+            this.lblContraseña.AutoSize = true;
+            this.lblContraseña.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lblContraseña.Location = new System.Drawing.Point(42, 134);
+            this.lblContraseña.Name = "lblContraseña";
+            this.lblContraseña.Size = new System.Drawing.Size(160, 21);
+            this.lblContraseña.TabIndex = 3;
+            this.lblContraseña.Text = "Ingrese la contraseña:";
+            // 
+            // btnIngresar
+            // 
+            this.btnIngresar.BackColor = System.Drawing.SystemColors.ControlDark;
+            this.btnIngresar.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.btnIngresar.Location = new System.Drawing.Point(75, 214);
+            this.btnIngresar.Name = "btnIngresar";
+            this.btnIngresar.Size = new System.Drawing.Size(87, 29);
+            this.btnIngresar.TabIndex = 4;
+            this.btnIngresar.Text = "Ingresar";
+            this.btnIngresar.UseVisualStyleBackColor = false;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Segoe UI", 13.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label1.ForeColor = System.Drawing.Color.Navy;
+            this.label1.Location = new System.Drawing.Point(12, 20);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(221, 25);
+            this.label1.TabIndex = 5;
+            this.label1.Text = "¡Bienvenido/a al sistema!";
+            this.label1.Click += new System.EventHandler(this.label1_Click);
+            // 
+            // AccesoAlSistema
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.radioButton2);
-            this.Controls.Add(this.radioButton1);
-            this.Name = "Form1";
+            this.ClientSize = new System.Drawing.Size(238, 255);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.btnIngresar);
+            this.Controls.Add(this.lblContraseña);
+            this.Controls.Add(this.lblDNI);
+            this.Controls.Add(this.txtContraseña);
+            this.Controls.Add(this.txtIngresarDNI);
+            this.Name = "AccesoAlSistema";
             this.Text = "Form1";
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -70,7 +113,11 @@
 
         #endregion
 
-        private RadioButton radioButton1;
-        private RadioButton radioButton2;
+        private TextBox txtIngresarDNI;
+        private TextBox txtContraseña;
+        private Label lblDNI;
+        private Label lblContraseña;
+        private Button btnIngresar;
+        private Label label1;
     }
 }
