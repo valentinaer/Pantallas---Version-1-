@@ -31,10 +31,10 @@
             this.btnAtras = new System.Windows.Forms.Button();
             this.btnConfirmarPedido = new System.Windows.Forms.Button();
             this.gbDatosDelPedido = new System.Windows.Forms.GroupBox();
-            this.lblOrigen = new System.Windows.Forms.Label();
-            this.lblDestino = new System.Windows.Forms.Label();
-            this.lblUrgente = new System.Windows.Forms.Label();
             this.lblCotizacion = new System.Windows.Forms.Label();
+            this.lblUrgente = new System.Windows.Forms.Label();
+            this.lblDestino = new System.Windows.Forms.Label();
+            this.lblOrigen = new System.Windows.Forms.Label();
             this.gbDatosDelPedido.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -76,28 +76,16 @@
             this.gbDatosDelPedido.Text = "Datos del pedido";
             this.gbDatosDelPedido.Enter += new System.EventHandler(this.groupBox1_Enter);
             // 
-            // lblOrigen
+            // lblCotizacion
             // 
-            this.lblOrigen.AutoSize = true;
-            this.lblOrigen.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.lblOrigen.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.lblOrigen.Location = new System.Drawing.Point(22, 39);
-            this.lblOrigen.Name = "lblOrigen";
-            this.lblOrigen.Size = new System.Drawing.Size(61, 21);
-            this.lblOrigen.TabIndex = 0;
-            this.lblOrigen.Text = "Origen:";
-            this.lblOrigen.Click += new System.EventHandler(this.label1_Click_1);
-            // 
-            // lblDestino
-            // 
-            this.lblDestino.AutoSize = true;
-            this.lblDestino.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.lblDestino.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.lblDestino.Location = new System.Drawing.Point(22, 91);
-            this.lblDestino.Name = "lblDestino";
-            this.lblDestino.Size = new System.Drawing.Size(66, 21);
-            this.lblDestino.TabIndex = 1;
-            this.lblDestino.Text = "Destino:";
+            this.lblCotizacion.AutoSize = true;
+            this.lblCotizacion.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lblCotizacion.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.lblCotizacion.Location = new System.Drawing.Point(22, 186);
+            this.lblCotizacion.Name = "lblCotizacion";
+            this.lblCotizacion.Size = new System.Drawing.Size(85, 21);
+            this.lblCotizacion.TabIndex = 3;
+            this.lblCotizacion.Text = "Cotización:";
             // 
             // lblUrgente
             // 
@@ -110,16 +98,28 @@
             this.lblUrgente.TabIndex = 2;
             this.lblUrgente.Text = "Urgente:";
             // 
-            // lblCotizacion
+            // lblDestino
             // 
-            this.lblCotizacion.AutoSize = true;
-            this.lblCotizacion.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.lblCotizacion.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.lblCotizacion.Location = new System.Drawing.Point(22, 186);
-            this.lblCotizacion.Name = "lblCotizacion";
-            this.lblCotizacion.Size = new System.Drawing.Size(85, 21);
-            this.lblCotizacion.TabIndex = 3;
-            this.lblCotizacion.Text = "Cotización:";
+            this.lblDestino.AutoSize = true;
+            this.lblDestino.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lblDestino.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.lblDestino.Location = new System.Drawing.Point(22, 91);
+            this.lblDestino.Name = "lblDestino";
+            this.lblDestino.Size = new System.Drawing.Size(66, 21);
+            this.lblDestino.TabIndex = 1;
+            this.lblDestino.Text = "Destino:";
+            // 
+            // lblOrigen
+            // 
+            this.lblOrigen.AutoSize = true;
+            this.lblOrigen.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lblOrigen.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.lblOrigen.Location = new System.Drawing.Point(22, 39);
+            this.lblOrigen.Name = "lblOrigen";
+            this.lblOrigen.Size = new System.Drawing.Size(61, 21);
+            this.lblOrigen.TabIndex = 0;
+            this.lblOrigen.Text = "Origen:";
+            this.lblOrigen.Click += new System.EventHandler(this.label1_Click_1);
             // 
             // ConfirmacionDelServicio
             // 
@@ -129,8 +129,9 @@
             this.Controls.Add(this.gbDatosDelPedido);
             this.Controls.Add(this.btnConfirmarPedido);
             this.Controls.Add(this.btnAtras);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Name = "ConfirmacionDelServicio";
-            this.Text = "ConfirmacionDelServicio";
+            this.Text = "Confirmacion Del Servicio";
             this.Load += new System.EventHandler(this.ConfirmacionDelServicio_Load);
             this.gbDatosDelPedido.ResumeLayout(false);
             this.gbDatosDelPedido.PerformLayout();

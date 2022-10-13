@@ -30,7 +30,7 @@
         {
             System.Windows.Forms.TextBox txtDirrecionDestino;
             System.Windows.Forms.TextBox txtAlturaDestino;
-            System.Windows.Forms.TextBox txtOrigen;
+            System.Windows.Forms.TextBox txtDirrecionOrigen;
             System.Windows.Forms.TextBox txtAlturaOrigen;
             this.cmbRangoPeso = new System.Windows.Forms.ComboBox();
             this.label1 = new System.Windows.Forms.Label();
@@ -58,18 +58,18 @@
             this.label7 = new System.Windows.Forms.Label();
             this.groupBox5 = new System.Windows.Forms.GroupBox();
             this.comboBox5 = new System.Windows.Forms.ComboBox();
-            this.radioButton3 = new System.Windows.Forms.RadioButton();
+            this.rboRecibeSucursal = new System.Windows.Forms.RadioButton();
             this.label11 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
-            this.comboBox2 = new System.Windows.Forms.ComboBox();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.cmbProvinciaRecepcion = new System.Windows.Forms.ComboBox();
+            this.cmbCiudadDestino = new System.Windows.Forms.ComboBox();
             this.rboRetiroDomicilio = new System.Windows.Forms.RadioButton();
             this.lblMenuPrincipal = new System.Windows.Forms.Label();
             txtDirrecionDestino = new System.Windows.Forms.TextBox();
             txtAlturaDestino = new System.Windows.Forms.TextBox();
-            txtOrigen = new System.Windows.Forms.TextBox();
+            txtDirrecionOrigen = new System.Windows.Forms.TextBox();
             txtAlturaOrigen = new System.Windows.Forms.TextBox();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
@@ -86,7 +86,7 @@
             this.cmbRangoPeso.Items.AddRange(new object[] {
             "Correspondencia  de Hasta 500 gr",
             "Encomiendas de hasta 10 kg"});
-            this.cmbRangoPeso.Location = new System.Drawing.Point(135, 30);
+            this.cmbRangoPeso.Location = new System.Drawing.Point(135, 26);
             this.cmbRangoPeso.Name = "cmbRangoPeso";
             this.cmbRangoPeso.Size = new System.Drawing.Size(262, 29);
             this.cmbRangoPeso.TabIndex = 0;
@@ -102,7 +102,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(17, 38);
+            this.label1.Location = new System.Drawing.Point(17, 30);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(112, 21);
             this.label1.TabIndex = 2;
@@ -263,6 +263,7 @@
             this.cmbCiudad.Name = "cmbCiudad";
             this.cmbCiudad.Size = new System.Drawing.Size(121, 29);
             this.cmbCiudad.TabIndex = 4;
+            this.cmbCiudad.SelectedIndexChanged += new System.EventHandler(this.cmbCiudad_SelectedIndexChanged);
             // 
             // panel2
             // 
@@ -350,16 +351,16 @@
             // 
             // groupBox5
             // 
-            this.groupBox5.Controls.Add(txtOrigen);
+            this.groupBox5.Controls.Add(txtDirrecionOrigen);
             this.groupBox5.Controls.Add(this.label9);
             this.groupBox5.Controls.Add(txtAlturaOrigen);
-            this.groupBox5.Controls.Add(this.comboBox1);
+            this.groupBox5.Controls.Add(this.cmbCiudadDestino);
             this.groupBox5.Controls.Add(this.label8);
             this.groupBox5.Controls.Add(this.comboBox5);
             this.groupBox5.Controls.Add(this.rboRetiroDomicilio);
-            this.groupBox5.Controls.Add(this.comboBox2);
+            this.groupBox5.Controls.Add(this.cmbProvinciaRecepcion);
             this.groupBox5.Controls.Add(this.label10);
-            this.groupBox5.Controls.Add(this.radioButton3);
+            this.groupBox5.Controls.Add(this.rboRecibeSucursal);
             this.groupBox5.Controls.Add(this.label11);
             this.groupBox5.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.groupBox5.Location = new System.Drawing.Point(12, 104);
@@ -378,24 +379,24 @@
             this.comboBox5.Size = new System.Drawing.Size(211, 29);
             this.comboBox5.TabIndex = 5;
             // 
-            // radioButton3
+            // rboRecibeSucursal
             // 
-            this.radioButton3.AutoSize = true;
-            this.radioButton3.Location = new System.Drawing.Point(22, 28);
-            this.radioButton3.Name = "radioButton3";
-            this.radioButton3.Size = new System.Drawing.Size(183, 25);
-            this.radioButton3.TabIndex = 4;
-            this.radioButton3.TabStop = true;
-            this.radioButton3.Text = "Recibe en la sucursal : ";
-            this.radioButton3.UseVisualStyleBackColor = true;
+            this.rboRecibeSucursal.AutoSize = true;
+            this.rboRecibeSucursal.Location = new System.Drawing.Point(22, 28);
+            this.rboRecibeSucursal.Name = "rboRecibeSucursal";
+            this.rboRecibeSucursal.Size = new System.Drawing.Size(183, 25);
+            this.rboRecibeSucursal.TabIndex = 4;
+            this.rboRecibeSucursal.TabStop = true;
+            this.rboRecibeSucursal.Text = "Recibe en la sucursal : ";
+            this.rboRecibeSucursal.UseVisualStyleBackColor = true;
             // 
-            // txtOrigen
+            // txtDirrecionOrigen
             // 
-            txtOrigen.Location = new System.Drawing.Point(133, 194);
-            txtOrigen.Name = "txtOrigen";
-            txtOrigen.Size = new System.Drawing.Size(294, 29);
-            txtOrigen.TabIndex = 1;
-            txtOrigen.TextChanged += new System.EventHandler(this.txtOrigen_TextChanged);
+            txtDirrecionOrigen.Location = new System.Drawing.Point(133, 194);
+            txtDirrecionOrigen.Name = "txtDirrecionOrigen";
+            txtDirrecionOrigen.Size = new System.Drawing.Size(294, 29);
+            txtDirrecionOrigen.TabIndex = 1;
+            txtDirrecionOrigen.TextChanged += new System.EventHandler(this.txtOrigen_TextChanged);
             // 
             // label11
             // 
@@ -433,13 +434,13 @@
             this.label8.TabIndex = 13;
             this.label8.Text = "Altura : ";
             // 
-            // comboBox2
+            // cmbProvinciaRecepcion
             // 
-            this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Location = new System.Drawing.Point(133, 104);
-            this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(121, 29);
-            this.comboBox2.TabIndex = 7;
+            this.cmbProvinciaRecepcion.FormattingEnabled = true;
+            this.cmbProvinciaRecepcion.Location = new System.Drawing.Point(133, 104);
+            this.cmbProvinciaRecepcion.Name = "cmbProvinciaRecepcion";
+            this.cmbProvinciaRecepcion.Size = new System.Drawing.Size(121, 29);
+            this.cmbProvinciaRecepcion.TabIndex = 7;
             // 
             // txtAlturaOrigen
             // 
@@ -448,13 +449,13 @@
             txtAlturaOrigen.Size = new System.Drawing.Size(111, 29);
             txtAlturaOrigen.TabIndex = 14;
             // 
-            // comboBox1
+            // cmbCiudadDestino
             // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(133, 146);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(121, 29);
-            this.comboBox1.TabIndex = 8;
+            this.cmbCiudadDestino.FormattingEnabled = true;
+            this.cmbCiudadDestino.Location = new System.Drawing.Point(133, 146);
+            this.cmbCiudadDestino.Name = "cmbCiudadDestino";
+            this.cmbCiudadDestino.Size = new System.Drawing.Size(121, 29);
+            this.cmbCiudadDestino.TabIndex = 8;
             // 
             // rboRetiroDomicilio
             // 
@@ -474,9 +475,9 @@
             this.lblMenuPrincipal.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
             this.lblMenuPrincipal.Location = new System.Drawing.Point(212, 5);
             this.lblMenuPrincipal.Name = "lblMenuPrincipal";
-            this.lblMenuPrincipal.Size = new System.Drawing.Size(540, 25);
+            this.lblMenuPrincipal.Size = new System.Drawing.Size(545, 25);
             this.lblMenuPrincipal.TabIndex = 11;
-            this.lblMenuPrincipal.Text = "Ingrese los Siguientes Datos para realizar la Cotizacion del Servicio:";
+            this.lblMenuPrincipal.Text = "Ingrese los Siguientes Datos para realizar la Cotizacion del Servicio :";
             // 
             // SolicitudDeServicio
             // 
@@ -537,10 +538,10 @@
         private Label label7;
         private GroupBox groupBox5;
         private ComboBox comboBox5;
-        private RadioButton radioButton3;
+        private RadioButton rboRecibeSucursal;
         private RadioButton rboRetiroDomicilio;
-        private ComboBox comboBox1;
-        private ComboBox comboBox2;
+        private ComboBox cmbCiudadDestino;
+        private ComboBox cmbProvinciaRecepcion;
         private Label label8;
         private Label label10;
         private Label label9;

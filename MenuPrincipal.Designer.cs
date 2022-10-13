@@ -121,7 +121,7 @@
             this.Controls.Add(this.rboSolicitudDeServicio);
             this.ForeColor = System.Drawing.SystemColors.WindowText;
             this.Name = "MenuPrincipal";
-            this.Text = "MenuPrincipal";
+            this.Text = "Menu Principal";
             this.ResumeLayout(false);
             this.PerformLayout();
 

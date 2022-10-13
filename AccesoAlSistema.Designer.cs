@@ -106,7 +106,7 @@
             this.Controls.Add(this.txtContraseña);
             this.Controls.Add(this.txtIngresarDNI);
             this.Name = "AccesoAlSistema";
-            this.Text = "Form1";
+            this.Text = "Acceso al Sistema";
             this.ResumeLayout(false);
             this.PerformLayout();
 
