@@ -111,6 +111,7 @@
             // 
             // cmbRangoPeso
             // 
+            this.cmbRangoPeso.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmbRangoPeso.FormattingEnabled = true;
             this.cmbRangoPeso.Items.AddRange(new object[] {
             "Correspondencia  de Hasta 500 gr",
@@ -157,10 +158,10 @@
             // 
             // btnCotizar
             // 
-            this.btnCotizar.BackColor = System.Drawing.SystemColors.ControlDark;
+            this.btnCotizar.BackColor = System.Drawing.Color.Sienna;
             this.btnCotizar.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.btnCotizar.ForeColor = System.Drawing.Color.Green;
-            this.btnCotizar.Location = new System.Drawing.Point(364, 423);
+            this.btnCotizar.ForeColor = System.Drawing.Color.Gold;
+            this.btnCotizar.Location = new System.Drawing.Point(128, 423);
             this.btnCotizar.Name = "btnCotizar";
             this.btnCotizar.Size = new System.Drawing.Size(198, 28);
             this.btnCotizar.TabIndex = 6;
@@ -234,13 +235,14 @@
             this.panel2.Controls.Add(this.label4);
             this.panel2.Controls.Add(this.label5);
             this.panel2.Controls.Add(this.rboInteracional);
-            this.panel2.Location = new System.Drawing.Point(239, 28);
+            this.panel2.Location = new System.Drawing.Point(242, 28);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(222, 113);
             this.panel2.TabIndex = 11;
             // 
             // cmbPaisInternacional
             // 
+            this.cmbPaisInternacional.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmbPaisInternacional.FormattingEnabled = true;
             this.cmbPaisInternacional.Items.AddRange(new object[] {
             "Madrid, España",
@@ -256,6 +258,7 @@
             // cmbRegionInteracional
             // 
             this.cmbRegionInteracional.AccessibleRole = System.Windows.Forms.AccessibleRole.None;
+            this.cmbRegionInteracional.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmbRegionInteracional.FormattingEnabled = true;
             this.cmbRegionInteracional.Items.AddRange(new object[] {
             "Países limítrofes.",
@@ -312,6 +315,7 @@
             // 
             // cmbCiudadDestino
             // 
+            this.cmbCiudadDestino.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmbCiudadDestino.FormattingEnabled = true;
             this.cmbCiudadDestino.Items.AddRange(new object[] {
             "Mar del Plata",
@@ -326,6 +330,7 @@
             // 
             // cmbProvincia
             // 
+            this.cmbProvincia.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmbProvincia.FormattingEnabled = true;
             this.cmbProvincia.Items.AddRange(new object[] {
             "BUENOS AIRES",
@@ -401,6 +406,7 @@
             // 
             // cmbSucursalesDestino
             // 
+            this.cmbSucursalesDestino.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmbSucursalesDestino.FormattingEnabled = true;
             this.cmbSucursalesDestino.Items.AddRange(new object[] {
             "1 - Cordoba 6571, CABA",
@@ -446,6 +452,7 @@
             // 
             // cmbCiudadOrigen
             // 
+            this.cmbCiudadOrigen.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmbCiudadOrigen.FormattingEnabled = true;
             this.cmbCiudadOrigen.Items.AddRange(new object[] {
             "Mar del Plata",
@@ -468,6 +475,7 @@
             // 
             // cmbSucursalOrigen
             // 
+            this.cmbSucursalOrigen.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmbSucursalOrigen.FormattingEnabled = true;
             this.cmbSucursalOrigen.Items.AddRange(new object[] {
             "1 - Cordoba 6571, CABA",
@@ -492,6 +500,7 @@
             // 
             // cmbProvinciaOrigen
             // 
+            this.cmbProvinciaOrigen.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmbProvinciaOrigen.FormattingEnabled = true;
             this.cmbProvinciaOrigen.Items.AddRange(new object[] {
             "BUENOS AIRES",
@@ -568,6 +577,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
             this.ClientSize = new System.Drawing.Size(1022, 463);
             this.Controls.Add(this.lblMenuPrincipal);
             this.Controls.Add(this.groupBox5);
