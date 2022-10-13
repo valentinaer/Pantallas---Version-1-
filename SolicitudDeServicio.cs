@@ -46,5 +46,11 @@ namespace grupoB_TP
         {
 
         }
+
+        private void cmbSucursales_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            cmbSucursales.Items.Add("1- Cordoba 6571, CABA");
+
+        }
     }
 }
