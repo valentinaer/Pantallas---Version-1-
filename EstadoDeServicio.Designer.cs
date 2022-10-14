@@ -1,6 +1,6 @@
 ﻿namespace grupoB_TP
 {
-    partial class EstadoDelServicio
+    partial class EstadoDeServicio
     {
         /// <summary>
         /// Required designer variable.

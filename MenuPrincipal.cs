@@ -17,13 +17,22 @@ namespace grupoB_TP
             InitializeComponent();
         }
 
-        private void button1_Click(object sender, EventArgs e)
-        {
-            //if (rboConsultarEstadoDeCuenta)
-            {
 
+        private void btnContinuar_Click(object sender, EventArgs e)
+        {
+            if (rboSolicitarServicio.Checked)
+            {
+                new SolicitudDeServicio().ShowDialog();
             }
+            if (rboConsultarEstadoDeServicio.Checked)
+            {
+                new EstadoDeServicio().ShowDialog();
+            }
+            if (rboConsultarEstadoDeCuenta.Checked)
+            {
                 
+            }
+
         }
     }
 }

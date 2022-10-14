@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace grupoB_TP
 {
-    public partial class EstadoDelServicio : Form
+    public partial class EstadoDeServicio : Form
     {
-        public EstadoDelServicio()
+        public EstadoDeServicio()
         {
             InitializeComponent();
         }
