@@ -38,24 +38,24 @@
             // 
             // txtIngresarDNI
             // 
-            this.txtIngresarDNI.Location = new System.Drawing.Point(42, 85);
+            this.txtIngresarDNI.Location = new System.Drawing.Point(24, 85);
             this.txtIngresarDNI.Name = "txtIngresarDNI";
-            this.txtIngresarDNI.Size = new System.Drawing.Size(152, 23);
+            this.txtIngresarDNI.Size = new System.Drawing.Size(181, 23);
             this.txtIngresarDNI.TabIndex = 0;
             // 
             // txtContraseña
             // 
             this.txtContraseña.BackColor = System.Drawing.SystemColors.Control;
-            this.txtContraseña.Location = new System.Drawing.Point(42, 158);
+            this.txtContraseña.Location = new System.Drawing.Point(24, 158);
             this.txtContraseña.Name = "txtContraseña";
-            this.txtContraseña.Size = new System.Drawing.Size(152, 23);
+            this.txtContraseña.Size = new System.Drawing.Size(181, 23);
             this.txtContraseña.TabIndex = 1;
             // 
             // lblDNI
             // 
             this.lblDNI.AutoSize = true;
             this.lblDNI.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.lblDNI.Location = new System.Drawing.Point(42, 61);
+            this.lblDNI.Location = new System.Drawing.Point(51, 61);
             this.lblDNI.Name = "lblDNI";
             this.lblDNI.Size = new System.Drawing.Size(111, 21);
             this.lblDNI.TabIndex = 2;
@@ -65,7 +65,7 @@
             // 
             this.lblContraseña.AutoSize = true;
             this.lblContraseña.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.lblContraseña.Location = new System.Drawing.Point(42, 134);
+            this.lblContraseña.Location = new System.Drawing.Point(34, 134);
             this.lblContraseña.Name = "lblContraseña";
             this.lblContraseña.Size = new System.Drawing.Size(160, 21);
             this.lblContraseña.TabIndex = 3;
@@ -75,12 +75,13 @@
             // 
             this.btnIngresar.BackColor = System.Drawing.SystemColors.ControlDark;
             this.btnIngresar.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.btnIngresar.Location = new System.Drawing.Point(69, 202);
+            this.btnIngresar.Location = new System.Drawing.Point(51, 200);
             this.btnIngresar.Name = "btnIngresar";
-            this.btnIngresar.Size = new System.Drawing.Size(100, 31);
+            this.btnIngresar.Size = new System.Drawing.Size(143, 31);
             this.btnIngresar.TabIndex = 4;
-            this.btnIngresar.Text = "Ingresar";
+            this.btnIngresar.Text = "Ingresar al Sistema";
             this.btnIngresar.UseVisualStyleBackColor = false;
+            this.btnIngresar.Click += new System.EventHandler(this.btnIngresar_Click);
             // 
             // label1
             // 
@@ -98,6 +99,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
             this.ClientSize = new System.Drawing.Size(238, 255);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.btnIngresar);

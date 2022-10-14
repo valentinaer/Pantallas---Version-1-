@@ -11,5 +11,11 @@ namespace grupoB_TP
         {
 
         }
+
+        private void btnIngresar_Click(object sender, EventArgs e)
+        {
+            new MenuPrincipal().ShowDialog();
+            
+        }
     }
 }
