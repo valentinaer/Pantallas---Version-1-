@@ -73,7 +73,7 @@
             // 
             // btnIngresar
             // 
-            this.btnIngresar.BackColor = System.Drawing.SystemColors.ControlDark;
+            this.btnIngresar.BackColor = System.Drawing.Color.DodgerBlue;
             this.btnIngresar.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.btnIngresar.Location = new System.Drawing.Point(51, 200);
             this.btnIngresar.Name = "btnIngresar";

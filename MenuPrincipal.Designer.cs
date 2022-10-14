@@ -102,7 +102,7 @@
             // 
             // btnContinuar
             // 
-            this.btnContinuar.BackColor = System.Drawing.SystemColors.ControlDark;
+            this.btnContinuar.BackColor = System.Drawing.Color.DodgerBlue;
             this.btnContinuar.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.btnContinuar.Location = new System.Drawing.Point(129, 220);
             this.btnContinuar.Name = "btnContinuar";

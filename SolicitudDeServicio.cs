@@ -84,5 +84,10 @@ namespace grupoB_TP
         {
 
         }
+
+        private void groupBox10_Enter(object sender, EventArgs e)
+        {
+
+        }
     }
 }

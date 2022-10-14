@@ -64,7 +64,7 @@
             // 
             // btnBuscar
             // 
-            this.btnBuscar.BackColor = System.Drawing.SystemColors.ControlDark;
+            this.btnBuscar.BackColor = System.Drawing.Color.DodgerBlue;
             this.btnBuscar.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.btnBuscar.Location = new System.Drawing.Point(172, 95);
             this.btnBuscar.Name = "btnBuscar";
@@ -73,16 +73,17 @@
             this.btnBuscar.Text = "Buscar";
             this.btnBuscar.UseVisualStyleBackColor = false;
             // 
-            // EstadoDelServicio
+            // EstadoDeServicio
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
             this.ClientSize = new System.Drawing.Size(438, 130);
             this.Controls.Add(this.btnBuscar);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.lblNumeroTrackeo);
             this.Controls.Add(this.label1);
-            this.Name = "EstadoDelServicio";
+            this.Name = "EstadoDeServicio";
             this.Text = "Estado del Servicio";
             this.ResumeLayout(false);
             this.PerformLayout();
