@@ -22,10 +22,6 @@ namespace grupoB_TP
 
         }
 
-        private void button1_Click(object sender, EventArgs e)
-        {
-
-        }
 
         private void checkBox1_CheckedChanged(object sender, EventArgs e)
         {
@@ -75,6 +71,12 @@ namespace grupoB_TP
 
         private void lblMenuPrincipal_Click(object sender, EventArgs e)
         {
+
+        }
+
+        private void btnCotizar_Click(object sender, EventArgs e)
+        {
+            grpCotizacion.Visible = true;
 
         }
     }

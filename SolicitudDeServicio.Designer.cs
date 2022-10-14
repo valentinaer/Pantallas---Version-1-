@@ -36,7 +36,6 @@
             this.label1 = new System.Windows.Forms.Label();
             this.chkUrgente = new System.Windows.Forms.CheckBox();
             this.rboEntregaSucursal = new System.Windows.Forms.RadioButton();
-            this.btnCotizar = new System.Windows.Forms.Button();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.groupBox4 = new System.Windows.Forms.GroupBox();
@@ -67,6 +66,21 @@
             this.rboRecibeSucursal = new System.Windows.Forms.RadioButton();
             this.label11 = new System.Windows.Forms.Label();
             this.lblMenuPrincipal = new System.Windows.Forms.Label();
+            this.btnCotizar = new System.Windows.Forms.Button();
+            this.grpCotizacion = new System.Windows.Forms.GroupBox();
+            this.label15 = new System.Windows.Forms.Label();
+            this.label14 = new System.Windows.Forms.Label();
+            this.label13 = new System.Windows.Forms.Label();
+            this.label12 = new System.Windows.Forms.Label();
+            this.groupBox6 = new System.Windows.Forms.GroupBox();
+            this.lblOrigen = new System.Windows.Forms.Label();
+            this.groupBox7 = new System.Windows.Forms.GroupBox();
+            this.lblDestino = new System.Windows.Forms.Label();
+            this.groupBox8 = new System.Windows.Forms.GroupBox();
+            this.lblUrgente = new System.Windows.Forms.Label();
+            this.groupBox9 = new System.Windows.Forms.GroupBox();
+            this.lblCotizacion = new System.Windows.Forms.Label();
+            this.btnConfirmar = new System.Windows.Forms.Button();
             txtDirrecionDestino = new System.Windows.Forms.TextBox();
             txtAlturaDestino = new System.Windows.Forms.TextBox();
             txtDirrecionOrigen = new System.Windows.Forms.TextBox();
@@ -78,6 +92,11 @@
             this.panel1.SuspendLayout();
             this.groupBox3.SuspendLayout();
             this.groupBox5.SuspendLayout();
+            this.grpCotizacion.SuspendLayout();
+            this.groupBox6.SuspendLayout();
+            this.groupBox7.SuspendLayout();
+            this.groupBox8.SuspendLayout();
+            this.groupBox9.SuspendLayout();
             this.SuspendLayout();
             // 
             // txtDirrecionDestino
@@ -155,19 +174,6 @@
             this.rboEntregaSucursal.TabStop = true;
             this.rboEntregaSucursal.Text = "Entrega en Sucursal :";
             this.rboEntregaSucursal.UseVisualStyleBackColor = true;
-            // 
-            // btnCotizar
-            // 
-            this.btnCotizar.BackColor = System.Drawing.Color.Sienna;
-            this.btnCotizar.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.btnCotizar.ForeColor = System.Drawing.Color.Gold;
-            this.btnCotizar.Location = new System.Drawing.Point(128, 423);
-            this.btnCotizar.Name = "btnCotizar";
-            this.btnCotizar.Size = new System.Drawing.Size(198, 28);
-            this.btnCotizar.TabIndex = 6;
-            this.btnCotizar.Text = "Cotizar Servicio";
-            this.btnCotizar.UseVisualStyleBackColor = false;
-            this.btnCotizar.Click += new System.EventHandler(this.button1_Click);
             // 
             // groupBox1
             // 
@@ -573,17 +579,179 @@
             this.lblMenuPrincipal.Text = "Ingrese los Siguientes Datos para realizar la Cotizacion del Servicio :";
             this.lblMenuPrincipal.Click += new System.EventHandler(this.lblMenuPrincipal_Click);
             // 
+            // btnCotizar
+            // 
+            this.btnCotizar.BackColor = System.Drawing.Color.Chocolate;
+            this.btnCotizar.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.btnCotizar.Location = new System.Drawing.Point(150, 421);
+            this.btnCotizar.Name = "btnCotizar";
+            this.btnCotizar.Size = new System.Drawing.Size(151, 30);
+            this.btnCotizar.TabIndex = 12;
+            this.btnCotizar.Text = "Cotizar";
+            this.btnCotizar.UseVisualStyleBackColor = false;
+            this.btnCotizar.Click += new System.EventHandler(this.btnCotizar_Click);
+            // 
+            // grpCotizacion
+            // 
+            this.grpCotizacion.Controls.Add(this.btnConfirmar);
+            this.grpCotizacion.Controls.Add(this.groupBox9);
+            this.grpCotizacion.Controls.Add(this.groupBox8);
+            this.grpCotizacion.Controls.Add(this.groupBox7);
+            this.grpCotizacion.Controls.Add(this.groupBox6);
+            this.grpCotizacion.Controls.Add(this.label15);
+            this.grpCotizacion.Controls.Add(this.label14);
+            this.grpCotizacion.Controls.Add(this.label13);
+            this.grpCotizacion.Controls.Add(this.label12);
+            this.grpCotizacion.Font = new System.Drawing.Font("Segoe UI", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.grpCotizacion.ForeColor = System.Drawing.Color.Purple;
+            this.grpCotizacion.Location = new System.Drawing.Point(974, 104);
+            this.grpCotizacion.Name = "grpCotizacion";
+            this.grpCotizacion.Size = new System.Drawing.Size(265, 275);
+            this.grpCotizacion.TabIndex = 13;
+            this.grpCotizacion.TabStop = false;
+            this.grpCotizacion.Text = "Datos del pedido";
+            this.grpCotizacion.Visible = false;
+            // 
+            // label15
+            // 
+            this.label15.AutoSize = true;
+            this.label15.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label15.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.label15.Location = new System.Drawing.Point(8, 186);
+            this.label15.Name = "label15";
+            this.label15.Size = new System.Drawing.Size(85, 21);
+            this.label15.TabIndex = 3;
+            this.label15.Text = "Cotización:";
+            // 
+            // label14
+            // 
+            this.label14.AutoSize = true;
+            this.label14.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label14.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.label14.Location = new System.Drawing.Point(8, 135);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(69, 21);
+            this.label14.TabIndex = 2;
+            this.label14.Text = "Urgente:";
+            // 
+            // label13
+            // 
+            this.label13.AutoSize = true;
+            this.label13.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label13.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.label13.Location = new System.Drawing.Point(8, 82);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(66, 21);
+            this.label13.TabIndex = 1;
+            this.label13.Text = "Destino:";
+            // 
+            // label12
+            // 
+            this.label12.AutoSize = true;
+            this.label12.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label12.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.label12.Location = new System.Drawing.Point(8, 42);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(61, 21);
+            this.label12.TabIndex = 0;
+            this.label12.Text = "Origen:";
+            // 
+            // groupBox6
+            // 
+            this.groupBox6.Controls.Add(this.lblOrigen);
+            this.groupBox6.Location = new System.Drawing.Point(99, 27);
+            this.groupBox6.Name = "groupBox6";
+            this.groupBox6.Size = new System.Drawing.Size(146, 39);
+            this.groupBox6.TabIndex = 4;
+            this.groupBox6.TabStop = false;
+            // 
+            // lblOrigen
+            // 
+            this.lblOrigen.AutoSize = true;
+            this.lblOrigen.Location = new System.Drawing.Point(21, 11);
+            this.lblOrigen.Name = "lblOrigen";
+            this.lblOrigen.Size = new System.Drawing.Size(20, 25);
+            this.lblOrigen.TabIndex = 0;
+            this.lblOrigen.Text = "x";
+            // 
+            // groupBox7
+            // 
+            this.groupBox7.Controls.Add(this.lblDestino);
+            this.groupBox7.Location = new System.Drawing.Point(99, 72);
+            this.groupBox7.Name = "groupBox7";
+            this.groupBox7.Size = new System.Drawing.Size(146, 39);
+            this.groupBox7.TabIndex = 5;
+            this.groupBox7.TabStop = false;
+            // 
+            // lblDestino
+            // 
+            this.lblDestino.AutoSize = true;
+            this.lblDestino.Location = new System.Drawing.Point(21, 11);
+            this.lblDestino.Name = "lblDestino";
+            this.lblDestino.Size = new System.Drawing.Size(20, 25);
+            this.lblDestino.TabIndex = 0;
+            this.lblDestino.Text = "x";
+            // 
+            // groupBox8
+            // 
+            this.groupBox8.Controls.Add(this.lblUrgente);
+            this.groupBox8.Location = new System.Drawing.Point(99, 117);
+            this.groupBox8.Name = "groupBox8";
+            this.groupBox8.Size = new System.Drawing.Size(146, 39);
+            this.groupBox8.TabIndex = 6;
+            this.groupBox8.TabStop = false;
+            // 
+            // lblUrgente
+            // 
+            this.lblUrgente.AutoSize = true;
+            this.lblUrgente.Location = new System.Drawing.Point(21, 11);
+            this.lblUrgente.Name = "lblUrgente";
+            this.lblUrgente.Size = new System.Drawing.Size(20, 25);
+            this.lblUrgente.TabIndex = 0;
+            this.lblUrgente.Text = "x";
+            // 
+            // groupBox9
+            // 
+            this.groupBox9.Controls.Add(this.lblCotizacion);
+            this.groupBox9.Location = new System.Drawing.Point(99, 168);
+            this.groupBox9.Name = "groupBox9";
+            this.groupBox9.Size = new System.Drawing.Size(146, 39);
+            this.groupBox9.TabIndex = 7;
+            this.groupBox9.TabStop = false;
+            // 
+            // lblCotizacion
+            // 
+            this.lblCotizacion.AutoSize = true;
+            this.lblCotizacion.Location = new System.Drawing.Point(21, 11);
+            this.lblCotizacion.Name = "lblCotizacion";
+            this.lblCotizacion.Size = new System.Drawing.Size(20, 25);
+            this.lblCotizacion.TabIndex = 0;
+            this.lblCotizacion.Text = "x";
+            // 
+            // btnConfirmar
+            // 
+            this.btnConfirmar.BackColor = System.Drawing.Color.Chocolate;
+            this.btnConfirmar.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.btnConfirmar.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.btnConfirmar.Location = new System.Drawing.Point(81, 226);
+            this.btnConfirmar.Name = "btnConfirmar";
+            this.btnConfirmar.Size = new System.Drawing.Size(97, 32);
+            this.btnConfirmar.TabIndex = 14;
+            this.btnConfirmar.Text = "Confirmar";
+            this.btnConfirmar.UseVisualStyleBackColor = false;
+            // 
             // SolicitudDeServicio
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
-            this.ClientSize = new System.Drawing.Size(1022, 463);
+            this.ClientSize = new System.Drawing.Size(1251, 463);
+            this.Controls.Add(this.grpCotizacion);
+            this.Controls.Add(this.btnCotizar);
             this.Controls.Add(this.lblMenuPrincipal);
             this.Controls.Add(this.groupBox5);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
-            this.Controls.Add(this.btnCotizar);
             this.Name = "SolicitudDeServicio";
             this.Text = "Solicitud de Servicio";
             this.groupBox1.ResumeLayout(false);
@@ -599,6 +767,16 @@
             this.groupBox3.PerformLayout();
             this.groupBox5.ResumeLayout(false);
             this.groupBox5.PerformLayout();
+            this.grpCotizacion.ResumeLayout(false);
+            this.grpCotizacion.PerformLayout();
+            this.groupBox6.ResumeLayout(false);
+            this.groupBox6.PerformLayout();
+            this.groupBox7.ResumeLayout(false);
+            this.groupBox7.PerformLayout();
+            this.groupBox8.ResumeLayout(false);
+            this.groupBox8.PerformLayout();
+            this.groupBox9.ResumeLayout(false);
+            this.groupBox9.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -611,7 +789,6 @@
         private Label label1;
         private CheckBox chkUrgente;
         private RadioButton rboEntregaSucursal;
-        private Button btnCotizar;
         private GroupBox groupBox1;
         private GroupBox groupBox2;
         private GroupBox groupBox3;
@@ -642,5 +819,20 @@
         private Label label9;
         private Label label11;
         private Label lblMenuPrincipal;
+        private Button btnCotizar;
+        private GroupBox grpCotizacion;
+        private Label label15;
+        private Label label14;
+        private Label label13;
+        private Label label12;
+        private GroupBox groupBox6;
+        private Label lblOrigen;
+        private GroupBox groupBox9;
+        private Label lblCotizacion;
+        private GroupBox groupBox8;
+        private Label lblUrgente;
+        private GroupBox groupBox7;
+        private Label lblDestino;
+        private Button btnConfirmar;
     }
 }
