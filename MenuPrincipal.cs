@@ -30,7 +30,7 @@ namespace grupoB_TP
             }
             if (rboConsultarEstadoDeCuenta.Checked)
             {
-                
+                new EstadoDeCuenta().ShowDialog();
             }
 
         }

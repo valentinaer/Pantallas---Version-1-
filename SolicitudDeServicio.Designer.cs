@@ -68,19 +68,19 @@
             this.lblMenuPrincipal = new System.Windows.Forms.Label();
             this.btnCotizar = new System.Windows.Forms.Button();
             this.grpCotizacion = new System.Windows.Forms.GroupBox();
+            this.btnConfirmar = new System.Windows.Forms.Button();
+            this.groupBox9 = new System.Windows.Forms.GroupBox();
+            this.lblCotizacion = new System.Windows.Forms.Label();
+            this.groupBox8 = new System.Windows.Forms.GroupBox();
+            this.lblUrgente = new System.Windows.Forms.Label();
+            this.groupBox7 = new System.Windows.Forms.GroupBox();
+            this.lblDestino = new System.Windows.Forms.Label();
+            this.groupBox6 = new System.Windows.Forms.GroupBox();
+            this.lblOrigen = new System.Windows.Forms.Label();
             this.label15 = new System.Windows.Forms.Label();
             this.label14 = new System.Windows.Forms.Label();
             this.label13 = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
-            this.groupBox6 = new System.Windows.Forms.GroupBox();
-            this.lblOrigen = new System.Windows.Forms.Label();
-            this.groupBox7 = new System.Windows.Forms.GroupBox();
-            this.lblDestino = new System.Windows.Forms.Label();
-            this.groupBox8 = new System.Windows.Forms.GroupBox();
-            this.lblUrgente = new System.Windows.Forms.Label();
-            this.groupBox9 = new System.Windows.Forms.GroupBox();
-            this.lblCotizacion = new System.Windows.Forms.Label();
-            this.btnConfirmar = new System.Windows.Forms.Button();
             txtDirrecionDestino = new System.Windows.Forms.TextBox();
             txtAlturaDestino = new System.Windows.Forms.TextBox();
             txtDirrecionOrigen = new System.Windows.Forms.TextBox();
@@ -93,10 +93,10 @@
             this.groupBox3.SuspendLayout();
             this.groupBox5.SuspendLayout();
             this.grpCotizacion.SuspendLayout();
-            this.groupBox6.SuspendLayout();
-            this.groupBox7.SuspendLayout();
-            this.groupBox8.SuspendLayout();
             this.groupBox9.SuspendLayout();
+            this.groupBox8.SuspendLayout();
+            this.groupBox7.SuspendLayout();
+            this.groupBox6.SuspendLayout();
             this.SuspendLayout();
             // 
             // txtDirrecionDestino
@@ -169,10 +169,10 @@
             this.rboEntregaSucursal.AutoSize = true;
             this.rboEntregaSucursal.Location = new System.Drawing.Point(26, 19);
             this.rboEntregaSucursal.Name = "rboEntregaSucursal";
-            this.rboEntregaSucursal.Size = new System.Drawing.Size(172, 25);
+            this.rboEntregaSucursal.Size = new System.Drawing.Size(109, 25);
             this.rboEntregaSucursal.TabIndex = 4;
             this.rboEntregaSucursal.TabStop = true;
-            this.rboEntregaSucursal.Text = "Entrega en Sucursal :";
+            this.rboEntregaSucursal.Text = "Entrega en :";
             this.rboEntregaSucursal.UseVisualStyleBackColor = true;
             // 
             // groupBox1
@@ -256,9 +256,9 @@
             "Roma, Italia",
             "Londres, UK",
             "Berlin, Alemania"});
-            this.cmbPaisInternacional.Location = new System.Drawing.Point(87, 78);
+            this.cmbPaisInternacional.Location = new System.Drawing.Point(75, 71);
             this.cmbPaisInternacional.Name = "cmbPaisInternacional";
-            this.cmbPaisInternacional.Size = new System.Drawing.Size(121, 29);
+            this.cmbPaisInternacional.Size = new System.Drawing.Size(144, 29);
             this.cmbPaisInternacional.TabIndex = 4;
             // 
             // cmbRegionInteracional
@@ -272,9 +272,9 @@
             "America del Norte",
             "Europa",
             "Asia"});
-            this.cmbRegionInteracional.Location = new System.Drawing.Point(87, 34);
+            this.cmbRegionInteracional.Location = new System.Drawing.Point(75, 36);
             this.cmbRegionInteracional.Name = "cmbRegionInteracional";
-            this.cmbRegionInteracional.Size = new System.Drawing.Size(121, 29);
+            this.cmbRegionInteracional.Size = new System.Drawing.Size(144, 29);
             this.cmbRegionInteracional.TabIndex = 3;
             // 
             // label4
@@ -419,9 +419,9 @@
             "2 - Av. San Martín 2871, Viedma, Rio Negro",
             "3 - Juana Azurduy 850, Resistencia, Chaco",
             "4 - Goyeneche 724, Córdoba, Córdoba"});
-            this.cmbSucursalesDestino.Location = new System.Drawing.Point(213, 15);
+            this.cmbSucursalesDestino.Location = new System.Drawing.Point(141, 15);
             this.cmbSucursalesDestino.Name = "cmbSucursalesDestino";
-            this.cmbSucursalesDestino.Size = new System.Drawing.Size(234, 29);
+            this.cmbSucursalesDestino.Size = new System.Drawing.Size(323, 29);
             this.cmbSucursalesDestino.TabIndex = 5;
             this.cmbSucursalesDestino.SelectedIndexChanged += new System.EventHandler(this.cmbSucursales_SelectedIndexChanged);
             // 
@@ -488,20 +488,20 @@
             "2 - Av. San Martín 2871, Viedma, Rio Negro",
             "3 - Juana Azurduy 850, Resistencia, Chaco",
             "4 - Goyeneche 724, Córdoba, Córdoba"});
-            this.cmbSucursalOrigen.Location = new System.Drawing.Point(216, 28);
+            this.cmbSucursalOrigen.Location = new System.Drawing.Point(116, 28);
             this.cmbSucursalOrigen.Name = "cmbSucursalOrigen";
-            this.cmbSucursalOrigen.Size = new System.Drawing.Size(211, 29);
+            this.cmbSucursalOrigen.Size = new System.Drawing.Size(320, 29);
             this.cmbSucursalOrigen.TabIndex = 5;
             // 
             // rboRetiroDomicilio
             // 
             this.rboRetiroDomicilio.AutoSize = true;
-            this.rboRetiroDomicilio.Location = new System.Drawing.Point(22, 73);
+            this.rboRetiroDomicilio.Location = new System.Drawing.Point(6, 72);
             this.rboRetiroDomicilio.Name = "rboRetiroDomicilio";
-            this.rboRetiroDomicilio.Size = new System.Drawing.Size(161, 25);
+            this.rboRetiroDomicilio.Size = new System.Drawing.Size(152, 25);
             this.rboRetiroDomicilio.TabIndex = 15;
             this.rboRetiroDomicilio.TabStop = true;
-            this.rboRetiroDomicilio.Text = "Retiro en Domicilio";
+            this.rboRetiroDomicilio.Text = "Retiro a Domicilio";
             this.rboRetiroDomicilio.UseVisualStyleBackColor = true;
             // 
             // cmbProvinciaOrigen
@@ -550,13 +550,14 @@
             // rboRecibeSucursal
             // 
             this.rboRecibeSucursal.AutoSize = true;
-            this.rboRecibeSucursal.Location = new System.Drawing.Point(22, 28);
+            this.rboRecibeSucursal.Location = new System.Drawing.Point(6, 27);
             this.rboRecibeSucursal.Name = "rboRecibeSucursal";
-            this.rboRecibeSucursal.Size = new System.Drawing.Size(183, 25);
+            this.rboRecibeSucursal.Size = new System.Drawing.Size(113, 25);
             this.rboRecibeSucursal.TabIndex = 4;
             this.rboRecibeSucursal.TabStop = true;
-            this.rboRecibeSucursal.Text = "Recibe en la sucursal : ";
+            this.rboRecibeSucursal.Text = "En sucursal: ";
             this.rboRecibeSucursal.UseVisualStyleBackColor = true;
+            this.rboRecibeSucursal.CheckedChanged += new System.EventHandler(this.rboRecibeSucursal_CheckedChanged);
             // 
             // label11
             // 
@@ -612,6 +613,90 @@
             this.grpCotizacion.Text = "Datos del pedido";
             this.grpCotizacion.Visible = false;
             // 
+            // btnConfirmar
+            // 
+            this.btnConfirmar.BackColor = System.Drawing.Color.Chocolate;
+            this.btnConfirmar.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.btnConfirmar.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.btnConfirmar.Location = new System.Drawing.Point(81, 226);
+            this.btnConfirmar.Name = "btnConfirmar";
+            this.btnConfirmar.Size = new System.Drawing.Size(97, 32);
+            this.btnConfirmar.TabIndex = 14;
+            this.btnConfirmar.Text = "Confirmar";
+            this.btnConfirmar.UseVisualStyleBackColor = false;
+            // 
+            // groupBox9
+            // 
+            this.groupBox9.Controls.Add(this.lblCotizacion);
+            this.groupBox9.Location = new System.Drawing.Point(99, 168);
+            this.groupBox9.Name = "groupBox9";
+            this.groupBox9.Size = new System.Drawing.Size(146, 39);
+            this.groupBox9.TabIndex = 7;
+            this.groupBox9.TabStop = false;
+            // 
+            // lblCotizacion
+            // 
+            this.lblCotizacion.AutoSize = true;
+            this.lblCotizacion.Location = new System.Drawing.Point(21, 11);
+            this.lblCotizacion.Name = "lblCotizacion";
+            this.lblCotizacion.Size = new System.Drawing.Size(20, 25);
+            this.lblCotizacion.TabIndex = 0;
+            this.lblCotizacion.Text = "x";
+            // 
+            // groupBox8
+            // 
+            this.groupBox8.Controls.Add(this.lblUrgente);
+            this.groupBox8.Location = new System.Drawing.Point(99, 117);
+            this.groupBox8.Name = "groupBox8";
+            this.groupBox8.Size = new System.Drawing.Size(146, 39);
+            this.groupBox8.TabIndex = 6;
+            this.groupBox8.TabStop = false;
+            // 
+            // lblUrgente
+            // 
+            this.lblUrgente.AutoSize = true;
+            this.lblUrgente.Location = new System.Drawing.Point(21, 11);
+            this.lblUrgente.Name = "lblUrgente";
+            this.lblUrgente.Size = new System.Drawing.Size(20, 25);
+            this.lblUrgente.TabIndex = 0;
+            this.lblUrgente.Text = "x";
+            // 
+            // groupBox7
+            // 
+            this.groupBox7.Controls.Add(this.lblDestino);
+            this.groupBox7.Location = new System.Drawing.Point(99, 72);
+            this.groupBox7.Name = "groupBox7";
+            this.groupBox7.Size = new System.Drawing.Size(146, 39);
+            this.groupBox7.TabIndex = 5;
+            this.groupBox7.TabStop = false;
+            // 
+            // lblDestino
+            // 
+            this.lblDestino.AutoSize = true;
+            this.lblDestino.Location = new System.Drawing.Point(21, 11);
+            this.lblDestino.Name = "lblDestino";
+            this.lblDestino.Size = new System.Drawing.Size(20, 25);
+            this.lblDestino.TabIndex = 0;
+            this.lblDestino.Text = "x";
+            // 
+            // groupBox6
+            // 
+            this.groupBox6.Controls.Add(this.lblOrigen);
+            this.groupBox6.Location = new System.Drawing.Point(99, 27);
+            this.groupBox6.Name = "groupBox6";
+            this.groupBox6.Size = new System.Drawing.Size(146, 39);
+            this.groupBox6.TabIndex = 4;
+            this.groupBox6.TabStop = false;
+            // 
+            // lblOrigen
+            // 
+            this.lblOrigen.AutoSize = true;
+            this.lblOrigen.Location = new System.Drawing.Point(21, 11);
+            this.lblOrigen.Name = "lblOrigen";
+            this.lblOrigen.Size = new System.Drawing.Size(20, 25);
+            this.lblOrigen.TabIndex = 0;
+            this.lblOrigen.Text = "x";
+            // 
             // label15
             // 
             this.label15.AutoSize = true;
@@ -656,90 +741,6 @@
             this.label12.TabIndex = 0;
             this.label12.Text = "Origen:";
             // 
-            // groupBox6
-            // 
-            this.groupBox6.Controls.Add(this.lblOrigen);
-            this.groupBox6.Location = new System.Drawing.Point(99, 27);
-            this.groupBox6.Name = "groupBox6";
-            this.groupBox6.Size = new System.Drawing.Size(146, 39);
-            this.groupBox6.TabIndex = 4;
-            this.groupBox6.TabStop = false;
-            // 
-            // lblOrigen
-            // 
-            this.lblOrigen.AutoSize = true;
-            this.lblOrigen.Location = new System.Drawing.Point(21, 11);
-            this.lblOrigen.Name = "lblOrigen";
-            this.lblOrigen.Size = new System.Drawing.Size(20, 25);
-            this.lblOrigen.TabIndex = 0;
-            this.lblOrigen.Text = "x";
-            // 
-            // groupBox7
-            // 
-            this.groupBox7.Controls.Add(this.lblDestino);
-            this.groupBox7.Location = new System.Drawing.Point(99, 72);
-            this.groupBox7.Name = "groupBox7";
-            this.groupBox7.Size = new System.Drawing.Size(146, 39);
-            this.groupBox7.TabIndex = 5;
-            this.groupBox7.TabStop = false;
-            // 
-            // lblDestino
-            // 
-            this.lblDestino.AutoSize = true;
-            this.lblDestino.Location = new System.Drawing.Point(21, 11);
-            this.lblDestino.Name = "lblDestino";
-            this.lblDestino.Size = new System.Drawing.Size(20, 25);
-            this.lblDestino.TabIndex = 0;
-            this.lblDestino.Text = "x";
-            // 
-            // groupBox8
-            // 
-            this.groupBox8.Controls.Add(this.lblUrgente);
-            this.groupBox8.Location = new System.Drawing.Point(99, 117);
-            this.groupBox8.Name = "groupBox8";
-            this.groupBox8.Size = new System.Drawing.Size(146, 39);
-            this.groupBox8.TabIndex = 6;
-            this.groupBox8.TabStop = false;
-            // 
-            // lblUrgente
-            // 
-            this.lblUrgente.AutoSize = true;
-            this.lblUrgente.Location = new System.Drawing.Point(21, 11);
-            this.lblUrgente.Name = "lblUrgente";
-            this.lblUrgente.Size = new System.Drawing.Size(20, 25);
-            this.lblUrgente.TabIndex = 0;
-            this.lblUrgente.Text = "x";
-            // 
-            // groupBox9
-            // 
-            this.groupBox9.Controls.Add(this.lblCotizacion);
-            this.groupBox9.Location = new System.Drawing.Point(99, 168);
-            this.groupBox9.Name = "groupBox9";
-            this.groupBox9.Size = new System.Drawing.Size(146, 39);
-            this.groupBox9.TabIndex = 7;
-            this.groupBox9.TabStop = false;
-            // 
-            // lblCotizacion
-            // 
-            this.lblCotizacion.AutoSize = true;
-            this.lblCotizacion.Location = new System.Drawing.Point(21, 11);
-            this.lblCotizacion.Name = "lblCotizacion";
-            this.lblCotizacion.Size = new System.Drawing.Size(20, 25);
-            this.lblCotizacion.TabIndex = 0;
-            this.lblCotizacion.Text = "x";
-            // 
-            // btnConfirmar
-            // 
-            this.btnConfirmar.BackColor = System.Drawing.Color.Chocolate;
-            this.btnConfirmar.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.btnConfirmar.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.btnConfirmar.Location = new System.Drawing.Point(81, 226);
-            this.btnConfirmar.Name = "btnConfirmar";
-            this.btnConfirmar.Size = new System.Drawing.Size(97, 32);
-            this.btnConfirmar.TabIndex = 14;
-            this.btnConfirmar.Text = "Confirmar";
-            this.btnConfirmar.UseVisualStyleBackColor = false;
-            // 
             // SolicitudDeServicio
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
@@ -769,14 +770,14 @@
             this.groupBox5.PerformLayout();
             this.grpCotizacion.ResumeLayout(false);
             this.grpCotizacion.PerformLayout();
-            this.groupBox6.ResumeLayout(false);
-            this.groupBox6.PerformLayout();
-            this.groupBox7.ResumeLayout(false);
-            this.groupBox7.PerformLayout();
-            this.groupBox8.ResumeLayout(false);
-            this.groupBox8.PerformLayout();
             this.groupBox9.ResumeLayout(false);
             this.groupBox9.PerformLayout();
+            this.groupBox8.ResumeLayout(false);
+            this.groupBox8.PerformLayout();
+            this.groupBox7.ResumeLayout(false);
+            this.groupBox7.PerformLayout();
+            this.groupBox6.ResumeLayout(false);
+            this.groupBox6.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 

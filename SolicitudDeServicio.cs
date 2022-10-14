@@ -79,5 +79,10 @@ namespace grupoB_TP
             grpCotizacion.Visible = true;
 
         }
+
+        private void rboRecibeSucursal_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
