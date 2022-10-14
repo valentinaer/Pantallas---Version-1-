@@ -467,7 +467,7 @@
             "Salto"});
             this.cmbCiudadOrigen.Location = new System.Drawing.Point(133, 146);
             this.cmbCiudadOrigen.Name = "cmbCiudadOrigen";
-            this.cmbCiudadOrigen.Size = new System.Drawing.Size(121, 29);
+            this.cmbCiudadOrigen.Size = new System.Drawing.Size(180, 29);
             this.cmbCiudadOrigen.TabIndex = 8;
             // 
             // label8
@@ -535,7 +535,7 @@
             "TUCUMÁN"});
             this.cmbProvinciaOrigen.Location = new System.Drawing.Point(133, 104);
             this.cmbProvinciaOrigen.Name = "cmbProvinciaOrigen";
-            this.cmbProvinciaOrigen.Size = new System.Drawing.Size(121, 29);
+            this.cmbProvinciaOrigen.Size = new System.Drawing.Size(180, 29);
             this.cmbProvinciaOrigen.TabIndex = 7;
             // 
             // label10
