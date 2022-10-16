@@ -196,7 +196,7 @@
             this.groupBox1.Controls.Add(this.cmbRangoPeso);
             this.groupBox1.Controls.Add(this.chkUrgenteN);
             this.groupBox1.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.groupBox1.Location = new System.Drawing.Point(12, 33);
+            this.groupBox1.Location = new System.Drawing.Point(18, 64);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(939, 65);
             this.groupBox1.TabIndex = 8;
@@ -240,7 +240,7 @@
             this.groupBox2.Controls.Add(txtDirrecionDestino);
             this.groupBox2.Controls.Add(this.cmbCiudadDestino);
             this.groupBox2.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.groupBox2.Location = new System.Drawing.Point(462, 104);
+            this.groupBox2.Location = new System.Drawing.Point(468, 135);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Size = new System.Drawing.Size(489, 362);
             this.groupBox2.TabIndex = 9;
@@ -251,7 +251,7 @@
             // label16
             // 
             this.label16.AutoSize = true;
-            this.label16.Location = new System.Drawing.Point(50, 287);
+            this.label16.Location = new System.Drawing.Point(43, 287);
             this.label16.Name = "label16";
             this.label16.Size = new System.Drawing.Size(156, 21);
             this.label16.TabIndex = 15;
@@ -282,7 +282,7 @@
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(50, 248);
+            this.label7.Location = new System.Drawing.Point(43, 248);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(63, 21);
             this.label7.TabIndex = 13;
@@ -306,7 +306,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(50, 124);
+            this.label2.Location = new System.Drawing.Point(43, 125);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(85, 21);
             this.label2.TabIndex = 1;
@@ -315,7 +315,7 @@
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(49, 209);
+            this.label6.Location = new System.Drawing.Point(43, 204);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(79, 21);
             this.label6.TabIndex = 12;
@@ -358,7 +358,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(50, 168);
+            this.label3.Location = new System.Drawing.Point(43, 165);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(70, 21);
             this.label3.TabIndex = 2;
@@ -395,7 +395,7 @@
             this.groupBox5.Controls.Add(this.rboRecibeSucursal);
             this.groupBox5.Controls.Add(this.label11);
             this.groupBox5.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.groupBox5.Location = new System.Drawing.Point(12, 104);
+            this.groupBox5.Location = new System.Drawing.Point(18, 135);
             this.groupBox5.Name = "groupBox5";
             this.groupBox5.Size = new System.Drawing.Size(442, 362);
             this.groupBox5.TabIndex = 10;
@@ -453,7 +453,7 @@
             "2 - Av. San Martín 2871, Viedma, Rio Negro",
             "3 - Juana Azurduy 850, Resistencia, Chaco",
             "4 - Goyeneche 724, Córdoba, Córdoba"});
-            this.cmbSucursalOrigen.Location = new System.Drawing.Point(116, 28);
+            this.cmbSucursalOrigen.Location = new System.Drawing.Point(116, 31);
             this.cmbSucursalOrigen.Name = "cmbSucursalOrigen";
             this.cmbSucursalOrigen.Size = new System.Drawing.Size(320, 29);
             this.cmbSucursalOrigen.TabIndex = 5;
@@ -461,7 +461,7 @@
             // rboRetiroDomicilio
             // 
             this.rboRetiroDomicilio.AutoSize = true;
-            this.rboRetiroDomicilio.Location = new System.Drawing.Point(6, 72);
+            this.rboRetiroDomicilio.Location = new System.Drawing.Point(6, 78);
             this.rboRetiroDomicilio.Name = "rboRetiroDomicilio";
             this.rboRetiroDomicilio.Size = new System.Drawing.Size(152, 25);
             this.rboRetiroDomicilio.TabIndex = 15;
@@ -498,7 +498,7 @@
             "SANTIAGO DEL ESTERO",
             "TIERRA DEL FUEGO, ANTÁRTIDA E ISLAS DEL ATLÁNTICO SUR",
             "TUCUMÁN"});
-            this.cmbProvinciaOrigen.Location = new System.Drawing.Point(133, 116);
+            this.cmbProvinciaOrigen.Location = new System.Drawing.Point(133, 121);
             this.cmbProvinciaOrigen.Name = "cmbProvinciaOrigen";
             this.cmbProvinciaOrigen.Size = new System.Drawing.Size(294, 29);
             this.cmbProvinciaOrigen.TabIndex = 7;
@@ -515,7 +515,7 @@
             // rboRecibeSucursal
             // 
             this.rboRecibeSucursal.AutoSize = true;
-            this.rboRecibeSucursal.Location = new System.Drawing.Point(6, 27);
+            this.rboRecibeSucursal.Location = new System.Drawing.Point(6, 35);
             this.rboRecibeSucursal.Name = "rboRecibeSucursal";
             this.rboRecibeSucursal.Size = new System.Drawing.Size(113, 25);
             this.rboRecibeSucursal.TabIndex = 4;
@@ -538,7 +538,7 @@
             this.lblMenuPrincipal.AutoSize = true;
             this.lblMenuPrincipal.Font = new System.Drawing.Font("Segoe UI", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.lblMenuPrincipal.ForeColor = System.Drawing.Color.Purple;
-            this.lblMenuPrincipal.Location = new System.Drawing.Point(212, 5);
+            this.lblMenuPrincipal.Location = new System.Drawing.Point(218, 36);
             this.lblMenuPrincipal.Name = "lblMenuPrincipal";
             this.lblMenuPrincipal.Size = new System.Drawing.Size(545, 25);
             this.lblMenuPrincipal.TabIndex = 11;
@@ -549,11 +549,11 @@
             // 
             this.btnCotizar.BackColor = System.Drawing.Color.DodgerBlue;
             this.btnCotizar.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.btnCotizar.Location = new System.Drawing.Point(376, 501);
+            this.btnCotizar.Location = new System.Drawing.Point(382, 532);
             this.btnCotizar.Name = "btnCotizar";
-            this.btnCotizar.Size = new System.Drawing.Size(172, 30);
+            this.btnCotizar.Size = new System.Drawing.Size(206, 30);
             this.btnCotizar.TabIndex = 12;
-            this.btnCotizar.Text = "Cotizar";
+            this.btnCotizar.Text = "Cotizar envio nacional";
             this.btnCotizar.UseVisualStyleBackColor = false;
             this.btnCotizar.Click += new System.EventHandler(this.btnCotizar_Click);
             // 
@@ -572,7 +572,7 @@
             this.grpCotizacion.Controls.Add(this.label12);
             this.grpCotizacion.Font = new System.Drawing.Font("Segoe UI", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.grpCotizacion.ForeColor = System.Drawing.Color.Purple;
-            this.grpCotizacion.Location = new System.Drawing.Point(974, 51);
+            this.grpCotizacion.Location = new System.Drawing.Point(980, 82);
             this.grpCotizacion.Name = "grpCotizacion";
             this.grpCotizacion.Size = new System.Drawing.Size(265, 312);
             this.grpCotizacion.TabIndex = 13;
@@ -613,11 +613,11 @@
             this.btnConfirmar.BackColor = System.Drawing.Color.DodgerBlue;
             this.btnConfirmar.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.btnConfirmar.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.btnConfirmar.Location = new System.Drawing.Point(88, 266);
+            this.btnConfirmar.Location = new System.Drawing.Point(39, 262);
             this.btnConfirmar.Name = "btnConfirmar";
-            this.btnConfirmar.Size = new System.Drawing.Size(97, 32);
+            this.btnConfirmar.Size = new System.Drawing.Size(199, 32);
             this.btnConfirmar.TabIndex = 14;
-            this.btnConfirmar.Text = "Confirmar";
+            this.btnConfirmar.Text = "Confirmar envio nacional";
             this.btnConfirmar.UseVisualStyleBackColor = false;
             // 
             // groupBox9
@@ -719,7 +719,7 @@
             this.label13.AutoSize = true;
             this.label13.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label13.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label13.Location = new System.Drawing.Point(15, 122);
+            this.label13.Location = new System.Drawing.Point(15, 127);
             this.label13.Name = "label13";
             this.label13.Size = new System.Drawing.Size(66, 21);
             this.label13.TabIndex = 1;
@@ -741,7 +741,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
-            this.ClientSize = new System.Drawing.Size(1251, 543);
+            this.ClientSize = new System.Drawing.Size(1251, 572);
             this.Controls.Add(this.grpCotizacion);
             this.Controls.Add(this.btnCotizar);
             this.Controls.Add(this.lblMenuPrincipal);
