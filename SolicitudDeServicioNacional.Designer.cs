@@ -39,6 +39,7 @@
             this.label1 = new System.Windows.Forms.Label();
             this.chkUrgenteN = new System.Windows.Forms.CheckBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.cmbCantidadBultosN = new System.Windows.Forms.ComboBox();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.label16 = new System.Windows.Forms.Label();
             this.radioButton2 = new System.Windows.Forms.RadioButton();
@@ -64,6 +65,9 @@
             this.lblMenuPrincipal = new System.Windows.Forms.Label();
             this.btnCotizar = new System.Windows.Forms.Button();
             this.grpCotizacion = new System.Windows.Forms.GroupBox();
+            this.groupBox3 = new System.Windows.Forms.GroupBox();
+            this.lblCuitI = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
             this.btnConfirmar = new System.Windows.Forms.Button();
             this.groupBox9 = new System.Windows.Forms.GroupBox();
             this.lblCotizacion = new System.Windows.Forms.Label();
@@ -77,10 +81,6 @@
             this.label14 = new System.Windows.Forms.Label();
             this.label13 = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
-            this.cmbCantidadBultosN = new System.Windows.Forms.ComboBox();
-            this.groupBox3 = new System.Windows.Forms.GroupBox();
-            this.lblCuitI = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
             txtDirrecionDestino = new System.Windows.Forms.TextBox();
             txtAlturaDestino = new System.Windows.Forms.TextBox();
             txtDirrecionOrigen = new System.Windows.Forms.TextBox();
@@ -92,11 +92,11 @@
             this.groupBox2.SuspendLayout();
             this.groupBox5.SuspendLayout();
             this.grpCotizacion.SuspendLayout();
+            this.groupBox3.SuspendLayout();
             this.groupBox9.SuspendLayout();
             this.groupBox8.SuspendLayout();
             this.groupBox7.SuspendLayout();
             this.groupBox6.SuspendLayout();
-            this.groupBox3.SuspendLayout();
             this.SuspendLayout();
             // 
             // txtDirrecionDestino
@@ -141,6 +141,16 @@
             txtPisoDepartamentoRecepcion.Name = "txtPisoDepartamentoRecepcion";
             txtPisoDepartamentoRecepcion.Size = new System.Drawing.Size(132, 29);
             txtPisoDepartamentoRecepcion.TabIndex = 17;
+            // 
+            // label18
+            // 
+            label18.AutoSize = true;
+            label18.Location = new System.Drawing.Point(427, 31);
+            label18.Name = "label18";
+            label18.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            label18.Size = new System.Drawing.Size(140, 21);
+            label18.TabIndex = 8;
+            label18.Text = "Cantidad de bultos";
             // 
             // cmbRangoPeso
             // 
@@ -192,6 +202,27 @@
             this.groupBox1.TabIndex = 8;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Caracteristica del Servicio";
+            // 
+            // cmbCantidadBultosN
+            // 
+            this.cmbCantidadBultosN.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbCantidadBultosN.FormattingEnabled = true;
+            this.cmbCantidadBultosN.Items.AddRange(new object[] {
+            "1",
+            "2",
+            "3",
+            "4",
+            "5",
+            "6",
+            "7",
+            "8",
+            "9",
+            "10"});
+            this.cmbCantidadBultosN.Location = new System.Drawing.Point(573, 27);
+            this.cmbCantidadBultosN.Name = "cmbCantidadBultosN";
+            this.cmbCantidadBultosN.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.cmbCantidadBultosN.Size = new System.Drawing.Size(117, 29);
+            this.cmbCantidadBultosN.TabIndex = 9;
             // 
             // groupBox2
             // 
@@ -321,7 +352,7 @@
             "TUCUMÁN"});
             this.cmbProvincia.Location = new System.Drawing.Point(163, 122);
             this.cmbProvincia.Name = "cmbProvincia";
-            this.cmbProvincia.Size = new System.Drawing.Size(197, 29);
+            this.cmbProvincia.Size = new System.Drawing.Size(307, 29);
             this.cmbProvincia.TabIndex = 3;
             // 
             // label3
@@ -344,7 +375,7 @@
             "Salto"});
             this.cmbCiudadDestino.Location = new System.Drawing.Point(163, 160);
             this.cmbCiudadDestino.Name = "cmbCiudadDestino";
-            this.cmbCiudadDestino.Size = new System.Drawing.Size(197, 29);
+            this.cmbCiudadDestino.Size = new System.Drawing.Size(307, 29);
             this.cmbCiudadDestino.TabIndex = 4;
             this.cmbCiudadDestino.SelectedIndexChanged += new System.EventHandler(this.cmbCiudad_SelectedIndexChanged);
             // 
@@ -401,7 +432,7 @@
             "Salto"});
             this.cmbCiudadOrigen.Location = new System.Drawing.Point(133, 165);
             this.cmbCiudadOrigen.Name = "cmbCiudadOrigen";
-            this.cmbCiudadOrigen.Size = new System.Drawing.Size(180, 29);
+            this.cmbCiudadOrigen.Size = new System.Drawing.Size(294, 29);
             this.cmbCiudadOrigen.TabIndex = 8;
             // 
             // label8
@@ -469,7 +500,7 @@
             "TUCUMÁN"});
             this.cmbProvinciaOrigen.Location = new System.Drawing.Point(133, 116);
             this.cmbProvinciaOrigen.Name = "cmbProvinciaOrigen";
-            this.cmbProvinciaOrigen.Size = new System.Drawing.Size(180, 29);
+            this.cmbProvinciaOrigen.Size = new System.Drawing.Size(294, 29);
             this.cmbProvinciaOrigen.TabIndex = 7;
             // 
             // label10
@@ -548,6 +579,34 @@
             this.grpCotizacion.TabStop = false;
             this.grpCotizacion.Text = "Datos del pedido";
             this.grpCotizacion.Visible = false;
+            // 
+            // groupBox3
+            // 
+            this.groupBox3.Controls.Add(this.lblCuitI);
+            this.groupBox3.Location = new System.Drawing.Point(106, 26);
+            this.groupBox3.Name = "groupBox3";
+            this.groupBox3.Size = new System.Drawing.Size(146, 36);
+            this.groupBox3.TabIndex = 18;
+            this.groupBox3.TabStop = false;
+            // 
+            // lblCuitI
+            // 
+            this.lblCuitI.AutoSize = true;
+            this.lblCuitI.Location = new System.Drawing.Point(21, 8);
+            this.lblCuitI.Name = "lblCuitI";
+            this.lblCuitI.Size = new System.Drawing.Size(20, 25);
+            this.lblCuitI.TabIndex = 0;
+            this.lblCuitI.Text = "x";
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.label5.Location = new System.Drawing.Point(15, 40);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(53, 25);
+            this.label5.TabIndex = 17;
+            this.label5.Text = "CUIT:";
             // 
             // btnConfirmar
             // 
@@ -677,64 +736,6 @@
             this.label12.TabIndex = 0;
             this.label12.Text = "Origen:";
             // 
-            // cmbCantidadBultosN
-            // 
-            this.cmbCantidadBultosN.FormattingEnabled = true;
-            this.cmbCantidadBultosN.Items.AddRange(new object[] {
-            "1",
-            "2",
-            "3",
-            "4",
-            "5",
-            "6",
-            "7",
-            "8",
-            "9",
-            "10"});
-            this.cmbCantidadBultosN.Location = new System.Drawing.Point(573, 27);
-            this.cmbCantidadBultosN.Name = "cmbCantidadBultosN";
-            this.cmbCantidadBultosN.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.cmbCantidadBultosN.Size = new System.Drawing.Size(142, 29);
-            this.cmbCantidadBultosN.TabIndex = 9;
-            // 
-            // label18
-            // 
-            label18.AutoSize = true;
-            label18.Location = new System.Drawing.Point(427, 31);
-            label18.Name = "label18";
-            label18.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            label18.Size = new System.Drawing.Size(140, 21);
-            label18.TabIndex = 8;
-            label18.Text = "Cantidad de bultos";
-            // 
-            // groupBox3
-            // 
-            this.groupBox3.Controls.Add(this.lblCuitI);
-            this.groupBox3.Location = new System.Drawing.Point(106, 26);
-            this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Size = new System.Drawing.Size(146, 36);
-            this.groupBox3.TabIndex = 18;
-            this.groupBox3.TabStop = false;
-            // 
-            // lblCuitI
-            // 
-            this.lblCuitI.AutoSize = true;
-            this.lblCuitI.Location = new System.Drawing.Point(21, 8);
-            this.lblCuitI.Name = "lblCuitI";
-            this.lblCuitI.Size = new System.Drawing.Size(20, 25);
-            this.lblCuitI.TabIndex = 0;
-            this.lblCuitI.Text = "x";
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label5.Location = new System.Drawing.Point(15, 40);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(53, 25);
-            this.label5.TabIndex = 17;
-            this.label5.Text = "CUIT:";
-            // 
             // SolicitudDeServicioNacional
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
@@ -757,6 +758,8 @@
             this.groupBox5.PerformLayout();
             this.grpCotizacion.ResumeLayout(false);
             this.grpCotizacion.PerformLayout();
+            this.groupBox3.ResumeLayout(false);
+            this.groupBox3.PerformLayout();
             this.groupBox9.ResumeLayout(false);
             this.groupBox9.PerformLayout();
             this.groupBox8.ResumeLayout(false);
@@ -765,8 +768,6 @@
             this.groupBox7.PerformLayout();
             this.groupBox6.ResumeLayout(false);
             this.groupBox6.PerformLayout();
-            this.groupBox3.ResumeLayout(false);
-            this.groupBox3.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
