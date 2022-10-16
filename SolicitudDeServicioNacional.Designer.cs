@@ -1,6 +1,6 @@
 ﻿namespace grupoB_TP
 {
-    partial class SolicitudDeServicio
+    partial class SolicitudDeServicioNacional
     {
         /// <summary>
         /// Required designer variable.
@@ -37,26 +37,11 @@
             this.cmbRangoPeso = new System.Windows.Forms.ComboBox();
             this.label1 = new System.Windows.Forms.Label();
             this.chkUrgente = new System.Windows.Forms.CheckBox();
-            this.rboEntregaSucursal = new System.Windows.Forms.RadioButton();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.groupBox4 = new System.Windows.Forms.GroupBox();
             this.label16 = new System.Windows.Forms.Label();
-            this.groupBox10 = new System.Windows.Forms.GroupBox();
-            this.cmbPaisInternacional = new System.Windows.Forms.ComboBox();
-            this.cmbCiudadDestino = new System.Windows.Forms.ComboBox();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.cmbRegionInteracional = new System.Windows.Forms.ComboBox();
-            this.rboNacional = new System.Windows.Forms.RadioButton();
-            this.cmbProvincia = new System.Windows.Forms.ComboBox();
-            this.rboInteracional = new System.Windows.Forms.RadioButton();
-            this.label5 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
-            this.groupBox3 = new System.Windows.Forms.GroupBox();
-            this.cmbSucursalesDestino = new System.Windows.Forms.ComboBox();
             this.groupBox5 = new System.Windows.Forms.GroupBox();
             this.label17 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
@@ -84,6 +69,13 @@
             this.label14 = new System.Windows.Forms.Label();
             this.label13 = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
+            this.cmbSucursalesDestino = new System.Windows.Forms.ComboBox();
+            this.cmbProvincia = new System.Windows.Forms.ComboBox();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.cmbCiudadDestino = new System.Windows.Forms.ComboBox();
+            this.radioButton1 = new System.Windows.Forms.RadioButton();
+            this.radioButton2 = new System.Windows.Forms.RadioButton();
             txtDirrecionDestino = new System.Windows.Forms.TextBox();
             txtAlturaDestino = new System.Windows.Forms.TextBox();
             txtDirrecionOrigen = new System.Windows.Forms.TextBox();
@@ -92,9 +84,6 @@
             txtPisoDepartamentoRecepcion = new System.Windows.Forms.TextBox();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
-            this.groupBox4.SuspendLayout();
-            this.groupBox10.SuspendLayout();
-            this.groupBox3.SuspendLayout();
             this.groupBox5.SuspendLayout();
             this.grpCotizacion.SuspendLayout();
             this.groupBox9.SuspendLayout();
@@ -105,14 +94,14 @@
             // 
             // txtDirrecionDestino
             // 
-            txtDirrecionDestino.Location = new System.Drawing.Point(117, 163);
+            txtDirrecionDestino.Location = new System.Drawing.Point(163, 201);
             txtDirrecionDestino.Name = "txtDirrecionDestino";
-            txtDirrecionDestino.Size = new System.Drawing.Size(333, 29);
+            txtDirrecionDestino.Size = new System.Drawing.Size(307, 29);
             txtDirrecionDestino.TabIndex = 1;
             // 
             // txtAlturaDestino
             // 
-            txtAlturaDestino.Location = new System.Drawing.Point(117, 197);
+            txtAlturaDestino.Location = new System.Drawing.Point(163, 240);
             txtAlturaDestino.Name = "txtAlturaDestino";
             txtAlturaDestino.Size = new System.Drawing.Size(111, 29);
             txtAlturaDestino.TabIndex = 14;
@@ -134,7 +123,7 @@
             // 
             // txtPisoDepartamentoEntrega
             // 
-            txtPisoDepartamentoEntrega.Location = new System.Drawing.Point(209, 232);
+            txtPisoDepartamentoEntrega.Location = new System.Drawing.Point(212, 279);
             txtPisoDepartamentoEntrega.Name = "txtPisoDepartamentoEntrega";
             txtPisoDepartamentoEntrega.Size = new System.Drawing.Size(135, 29);
             txtPisoDepartamentoEntrega.TabIndex = 16;
@@ -182,17 +171,6 @@
             this.chkUrgente.UseVisualStyleBackColor = true;
             this.chkUrgente.CheckedChanged += new System.EventHandler(this.checkBox1_CheckedChanged);
             // 
-            // rboEntregaSucursal
-            // 
-            this.rboEntregaSucursal.AutoSize = true;
-            this.rboEntregaSucursal.Location = new System.Drawing.Point(26, 19);
-            this.rboEntregaSucursal.Name = "rboEntregaSucursal";
-            this.rboEntregaSucursal.Size = new System.Drawing.Size(109, 25);
-            this.rboEntregaSucursal.TabIndex = 4;
-            this.rboEntregaSucursal.TabStop = true;
-            this.rboEntregaSucursal.Text = "Entrega en :";
-            this.rboEntregaSucursal.UseVisualStyleBackColor = true;
-            // 
             // groupBox1
             // 
             this.groupBox1.Controls.Add(this.label1);
@@ -208,8 +186,19 @@
             // 
             // groupBox2
             // 
-            this.groupBox2.Controls.Add(this.groupBox4);
-            this.groupBox2.Controls.Add(this.groupBox3);
+            this.groupBox2.Controls.Add(txtPisoDepartamentoEntrega);
+            this.groupBox2.Controls.Add(this.label16);
+            this.groupBox2.Controls.Add(this.radioButton2);
+            this.groupBox2.Controls.Add(this.radioButton1);
+            this.groupBox2.Controls.Add(this.label7);
+            this.groupBox2.Controls.Add(txtAlturaDestino);
+            this.groupBox2.Controls.Add(this.cmbSucursalesDestino);
+            this.groupBox2.Controls.Add(this.label2);
+            this.groupBox2.Controls.Add(this.label6);
+            this.groupBox2.Controls.Add(this.cmbProvincia);
+            this.groupBox2.Controls.Add(this.label3);
+            this.groupBox2.Controls.Add(txtDirrecionDestino);
+            this.groupBox2.Controls.Add(this.cmbCiudadDestino);
             this.groupBox2.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.groupBox2.Location = new System.Drawing.Point(462, 104);
             this.groupBox2.Name = "groupBox2";
@@ -219,194 +208,19 @@
             this.groupBox2.Text = "Tipo de Entrega";
             this.groupBox2.Enter += new System.EventHandler(this.groupBox2_Enter);
             // 
-            // groupBox4
-            // 
-            this.groupBox4.Controls.Add(txtPisoDepartamentoEntrega);
-            this.groupBox4.Controls.Add(this.label16);
-            this.groupBox4.Controls.Add(this.groupBox10);
-            this.groupBox4.Controls.Add(txtAlturaDestino);
-            this.groupBox4.Controls.Add(this.label7);
-            this.groupBox4.Controls.Add(this.label6);
-            this.groupBox4.Controls.Add(txtDirrecionDestino);
-            this.groupBox4.Location = new System.Drawing.Point(6, 82);
-            this.groupBox4.Name = "groupBox4";
-            this.groupBox4.Size = new System.Drawing.Size(470, 274);
-            this.groupBox4.TabIndex = 1;
-            this.groupBox4.TabStop = false;
-            this.groupBox4.Text = "A domicilio";
-            // 
             // label16
             // 
             this.label16.AutoSize = true;
-            this.label16.Location = new System.Drawing.Point(26, 238);
+            this.label16.Location = new System.Drawing.Point(50, 287);
             this.label16.Name = "label16";
             this.label16.Size = new System.Drawing.Size(156, 21);
             this.label16.TabIndex = 15;
             this.label16.Text = "Piso / Departamento:";
             // 
-            // groupBox10
-            // 
-            this.groupBox10.Controls.Add(this.cmbPaisInternacional);
-            this.groupBox10.Controls.Add(this.cmbCiudadDestino);
-            this.groupBox10.Controls.Add(this.label3);
-            this.groupBox10.Controls.Add(this.label4);
-            this.groupBox10.Controls.Add(this.label2);
-            this.groupBox10.Controls.Add(this.cmbRegionInteracional);
-            this.groupBox10.Controls.Add(this.rboNacional);
-            this.groupBox10.Controls.Add(this.cmbProvincia);
-            this.groupBox10.Controls.Add(this.rboInteracional);
-            this.groupBox10.Controls.Add(this.label5);
-            this.groupBox10.Location = new System.Drawing.Point(6, 22);
-            this.groupBox10.Name = "groupBox10";
-            this.groupBox10.Size = new System.Drawing.Size(458, 135);
-            this.groupBox10.TabIndex = 5;
-            this.groupBox10.TabStop = false;
-            this.groupBox10.Enter += new System.EventHandler(this.groupBox10_Enter);
-            // 
-            // cmbPaisInternacional
-            // 
-            this.cmbPaisInternacional.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cmbPaisInternacional.FormattingEnabled = true;
-            this.cmbPaisInternacional.Items.AddRange(new object[] {
-            "Madrid, España",
-            "Paris, Francia",
-            "Roma, Italia",
-            "Londres, UK",
-            "Berlin, Alemania"});
-            this.cmbPaisInternacional.Location = new System.Drawing.Point(300, 85);
-            this.cmbPaisInternacional.Name = "cmbPaisInternacional";
-            this.cmbPaisInternacional.Size = new System.Drawing.Size(144, 29);
-            this.cmbPaisInternacional.TabIndex = 4;
-            // 
-            // cmbCiudadDestino
-            // 
-            this.cmbCiudadDestino.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cmbCiudadDestino.FormattingEnabled = true;
-            this.cmbCiudadDestino.Items.AddRange(new object[] {
-            "Mar del Plata",
-            "Quilmes",
-            "Bahia Blanca",
-            "Salto"});
-            this.cmbCiudadDestino.Location = new System.Drawing.Point(90, 85);
-            this.cmbCiudadDestino.Name = "cmbCiudadDestino";
-            this.cmbCiudadDestino.Size = new System.Drawing.Size(132, 29);
-            this.cmbCiudadDestino.TabIndex = 4;
-            this.cmbCiudadDestino.SelectedIndexChanged += new System.EventHandler(this.cmbCiudad_SelectedIndexChanged);
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(6, 88);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(70, 21);
-            this.label3.TabIndex = 2;
-            this.label3.Text = "Ciudad : ";
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(224, 93);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(48, 21);
-            this.label4.TabIndex = 2;
-            this.label4.Text = "Pais : ";
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(6, 52);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(85, 21);
-            this.label2.TabIndex = 1;
-            this.label2.Text = "Provincia : ";
-            // 
-            // cmbRegionInteracional
-            // 
-            this.cmbRegionInteracional.AccessibleRole = System.Windows.Forms.AccessibleRole.None;
-            this.cmbRegionInteracional.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cmbRegionInteracional.FormattingEnabled = true;
-            this.cmbRegionInteracional.Items.AddRange(new object[] {
-            "Países limítrofes.",
-            "Resto de América Latina",
-            "America del Norte",
-            "Europa",
-            "Asia"});
-            this.cmbRegionInteracional.Location = new System.Drawing.Point(300, 44);
-            this.cmbRegionInteracional.Name = "cmbRegionInteracional";
-            this.cmbRegionInteracional.Size = new System.Drawing.Size(144, 29);
-            this.cmbRegionInteracional.TabIndex = 3;
-            // 
-            // rboNacional
-            // 
-            this.rboNacional.AutoSize = true;
-            this.rboNacional.ForeColor = System.Drawing.Color.Purple;
-            this.rboNacional.Location = new System.Drawing.Point(54, 13);
-            this.rboNacional.Name = "rboNacional";
-            this.rboNacional.Size = new System.Drawing.Size(89, 25);
-            this.rboNacional.TabIndex = 0;
-            this.rboNacional.TabStop = true;
-            this.rboNacional.Text = "Nacional";
-            this.rboNacional.UseVisualStyleBackColor = true;
-            // 
-            // cmbProvincia
-            // 
-            this.cmbProvincia.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cmbProvincia.FormattingEnabled = true;
-            this.cmbProvincia.Items.AddRange(new object[] {
-            "BUENOS AIRES",
-            "CIUDAD AUTÓNOMA DE BUENOS AIRES",
-            "CATAMARCA",
-            "CHACO",
-            "CHUBUT",
-            "CÓRDOBA",
-            "CORRIENTES",
-            "ENTRE RÍOS",
-            "FORMOSA",
-            "JUJUY",
-            "LA PAMPA",
-            "LA RIOJA",
-            "MENDOZA",
-            "MISIONES",
-            "NEUQUÉN",
-            "RÍO NEGRO",
-            "SALTA",
-            "SAN JUAN",
-            "SAN LUIS",
-            "SANTA CRUZ",
-            "SANTA FE",
-            "SANTIAGO DEL ESTERO",
-            "TIERRA DEL FUEGO, ANTÁRTIDA E ISLAS DEL ATLÁNTICO SUR",
-            "TUCUMÁN"});
-            this.cmbProvincia.Location = new System.Drawing.Point(90, 49);
-            this.cmbProvincia.Name = "cmbProvincia";
-            this.cmbProvincia.Size = new System.Drawing.Size(132, 29);
-            this.cmbProvincia.TabIndex = 3;
-            // 
-            // rboInteracional
-            // 
-            this.rboInteracional.AutoSize = true;
-            this.rboInteracional.ForeColor = System.Drawing.Color.Purple;
-            this.rboInteracional.Location = new System.Drawing.Point(264, 16);
-            this.rboInteracional.Name = "rboInteracional";
-            this.rboInteracional.Size = new System.Drawing.Size(118, 25);
-            this.rboInteracional.TabIndex = 0;
-            this.rboInteracional.TabStop = true;
-            this.rboInteracional.Text = "Internacional";
-            this.rboInteracional.UseVisualStyleBackColor = true;
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(224, 52);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(70, 21);
-            this.label5.TabIndex = 1;
-            this.label5.Text = "Region : ";
-            // 
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(26, 205);
+            this.label7.Location = new System.Drawing.Point(50, 248);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(63, 21);
             this.label7.TabIndex = 13;
@@ -415,38 +229,11 @@
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(26, 172);
+            this.label6.Location = new System.Drawing.Point(49, 209);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(85, 21);
+            this.label6.Size = new System.Drawing.Size(79, 21);
             this.label6.TabIndex = 12;
-            this.label6.Text = "Dirrecion : ";
-            // 
-            // groupBox3
-            // 
-            this.groupBox3.Controls.Add(this.cmbSucursalesDestino);
-            this.groupBox3.Controls.Add(this.rboEntregaSucursal);
-            this.groupBox3.Location = new System.Drawing.Point(6, 27);
-            this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Size = new System.Drawing.Size(470, 47);
-            this.groupBox3.TabIndex = 0;
-            this.groupBox3.TabStop = false;
-            this.groupBox3.Text = "Sucursal";
-            this.groupBox3.Enter += new System.EventHandler(this.groupBox3_Enter);
-            // 
-            // cmbSucursalesDestino
-            // 
-            this.cmbSucursalesDestino.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cmbSucursalesDestino.FormattingEnabled = true;
-            this.cmbSucursalesDestino.Items.AddRange(new object[] {
-            "1 - Cordoba 6571, CABA",
-            "2 - Av. San Martín 2871, Viedma, Rio Negro",
-            "3 - Juana Azurduy 850, Resistencia, Chaco",
-            "4 - Goyeneche 724, Córdoba, Córdoba"});
-            this.cmbSucursalesDestino.Location = new System.Drawing.Point(141, 15);
-            this.cmbSucursalesDestino.Name = "cmbSucursalesDestino";
-            this.cmbSucursalesDestino.Size = new System.Drawing.Size(323, 29);
-            this.cmbSucursalesDestino.TabIndex = 5;
-            this.cmbSucursalesDestino.SelectedIndexChanged += new System.EventHandler(this.cmbSucursales_SelectedIndexChanged);
+            this.label6.Text = "Direcion : ";
             // 
             // groupBox5
             // 
@@ -618,7 +405,7 @@
             // 
             this.btnCotizar.BackColor = System.Drawing.Color.DodgerBlue;
             this.btnCotizar.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.btnCotizar.Location = new System.Drawing.Point(385, 501);
+            this.btnCotizar.Location = new System.Drawing.Point(376, 501);
             this.btnCotizar.Name = "btnCotizar";
             this.btnCotizar.Size = new System.Drawing.Size(172, 30);
             this.btnCotizar.TabIndex = 12;
@@ -775,6 +562,110 @@
             this.label12.TabIndex = 0;
             this.label12.Text = "Origen:";
             // 
+            // cmbSucursalesDestino
+            // 
+            this.cmbSucursalesDestino.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbSucursalesDestino.FormattingEnabled = true;
+            this.cmbSucursalesDestino.Items.AddRange(new object[] {
+            "1 - Cordoba 6571, CABA",
+            "2 - Av. San Martín 2871, Viedma, Rio Negro",
+            "3 - Juana Azurduy 850, Resistencia, Chaco",
+            "4 - Goyeneche 724, Córdoba, Córdoba"});
+            this.cmbSucursalesDestino.Location = new System.Drawing.Point(147, 31);
+            this.cmbSucursalesDestino.Name = "cmbSucursalesDestino";
+            this.cmbSucursalesDestino.Size = new System.Drawing.Size(323, 29);
+            this.cmbSucursalesDestino.TabIndex = 5;
+            this.cmbSucursalesDestino.SelectedIndexChanged += new System.EventHandler(this.cmbSucursales_SelectedIndexChanged);
+            // 
+            // cmbProvincia
+            // 
+            this.cmbProvincia.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbProvincia.FormattingEnabled = true;
+            this.cmbProvincia.Items.AddRange(new object[] {
+            "BUENOS AIRES",
+            "CIUDAD AUTÓNOMA DE BUENOS AIRES",
+            "CATAMARCA",
+            "CHACO",
+            "CHUBUT",
+            "CÓRDOBA",
+            "CORRIENTES",
+            "ENTRE RÍOS",
+            "FORMOSA",
+            "JUJUY",
+            "LA PAMPA",
+            "LA RIOJA",
+            "MENDOZA",
+            "MISIONES",
+            "NEUQUÉN",
+            "RÍO NEGRO",
+            "SALTA",
+            "SAN JUAN",
+            "SAN LUIS",
+            "SANTA CRUZ",
+            "SANTA FE",
+            "SANTIAGO DEL ESTERO",
+            "TIERRA DEL FUEGO, ANTÁRTIDA E ISLAS DEL ATLÁNTICO SUR",
+            "TUCUMÁN"});
+            this.cmbProvincia.Location = new System.Drawing.Point(163, 122);
+            this.cmbProvincia.Name = "cmbProvincia";
+            this.cmbProvincia.Size = new System.Drawing.Size(197, 29);
+            this.cmbProvincia.TabIndex = 3;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(50, 124);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(85, 21);
+            this.label2.TabIndex = 1;
+            this.label2.Text = "Provincia : ";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(50, 168);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(70, 21);
+            this.label3.TabIndex = 2;
+            this.label3.Text = "Ciudad : ";
+            // 
+            // cmbCiudadDestino
+            // 
+            this.cmbCiudadDestino.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbCiudadDestino.FormattingEnabled = true;
+            this.cmbCiudadDestino.Items.AddRange(new object[] {
+            "Mar del Plata",
+            "Quilmes",
+            "Bahia Blanca",
+            "Salto"});
+            this.cmbCiudadDestino.Location = new System.Drawing.Point(163, 160);
+            this.cmbCiudadDestino.Name = "cmbCiudadDestino";
+            this.cmbCiudadDestino.Size = new System.Drawing.Size(197, 29);
+            this.cmbCiudadDestino.TabIndex = 4;
+            this.cmbCiudadDestino.SelectedIndexChanged += new System.EventHandler(this.cmbCiudad_SelectedIndexChanged);
+            // 
+            // radioButton1
+            // 
+            this.radioButton1.AutoSize = true;
+            this.radioButton1.Location = new System.Drawing.Point(26, 35);
+            this.radioButton1.Name = "radioButton1";
+            this.radioButton1.Size = new System.Drawing.Size(113, 25);
+            this.radioButton1.TabIndex = 6;
+            this.radioButton1.TabStop = true;
+            this.radioButton1.Text = "En sucursal: ";
+            this.radioButton1.UseVisualStyleBackColor = true;
+            // 
+            // radioButton2
+            // 
+            this.radioButton2.AutoSize = true;
+            this.radioButton2.Location = new System.Drawing.Point(26, 78);
+            this.radioButton2.Name = "radioButton2";
+            this.radioButton2.Size = new System.Drawing.Size(152, 25);
+            this.radioButton2.TabIndex = 7;
+            this.radioButton2.TabStop = true;
+            this.radioButton2.Text = "Retiro a Domicilio";
+            this.radioButton2.UseVisualStyleBackColor = true;
+            // 
             // SolicitudDeServicio
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
@@ -792,12 +683,7 @@
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.groupBox2.ResumeLayout(false);
-            this.groupBox4.ResumeLayout(false);
-            this.groupBox4.PerformLayout();
-            this.groupBox10.ResumeLayout(false);
-            this.groupBox10.PerformLayout();
-            this.groupBox3.ResumeLayout(false);
-            this.groupBox3.PerformLayout();
+            this.groupBox2.PerformLayout();
             this.groupBox5.ResumeLayout(false);
             this.groupBox5.PerformLayout();
             this.grpCotizacion.ResumeLayout(false);
@@ -821,17 +707,8 @@
         private TextBox txtDirrecionDestino;
         private Label label1;
         private CheckBox chkUrgente;
-        private RadioButton rboEntregaSucursal;
         private GroupBox groupBox1;
         private GroupBox groupBox2;
-        private GroupBox groupBox3;
-        private ComboBox cmbSucursalesDestino;
-        private GroupBox groupBox4;
-        private ComboBox cmbPaisInternacional;
-        private ComboBox cmbRegionInteracional;
-        private Label label4;
-        private Label label5;
-        private RadioButton rboInteracional;
         private Label label6;
         private Label label7;
         private GroupBox groupBox5;
@@ -861,12 +738,13 @@
         private Label lblDestino;
         private Button btnConfirmar;
         private Label label16;
-        private GroupBox groupBox10;
-        private ComboBox cmbCiudadDestino;
+        private Label label17;
+        private RadioButton radioButton2;
+        private RadioButton radioButton1;
+        private ComboBox cmbSucursalesDestino;
+        private Label label2;
         private ComboBox cmbProvincia;
         private Label label3;
-        private Label label2;
-        private RadioButton rboNacional;
-        private Label label17;
+        private ComboBox cmbCiudadDestino;
     }
 }

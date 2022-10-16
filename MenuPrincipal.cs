@@ -22,7 +22,7 @@ namespace grupoB_TP
         {
             if (rboSolicitarServicio.Checked)
             {
-                new SolicitudDeServicio().ShowDialog();
+                new SolicitudDeServicioNacional().ShowDialog();
             }
             if (rboConsultarEstadoDeServicio.Checked)
             {
