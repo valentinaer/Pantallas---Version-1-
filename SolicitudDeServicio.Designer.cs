@@ -43,16 +43,16 @@
             this.groupBox4 = new System.Windows.Forms.GroupBox();
             this.label16 = new System.Windows.Forms.Label();
             this.groupBox10 = new System.Windows.Forms.GroupBox();
-            this.cmbCiudadDestino = new System.Windows.Forms.ComboBox();
-            this.cmbProvincia = new System.Windows.Forms.ComboBox();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.rboNacional = new System.Windows.Forms.RadioButton();
             this.cmbPaisInternacional = new System.Windows.Forms.ComboBox();
-            this.cmbRegionInteracional = new System.Windows.Forms.ComboBox();
+            this.cmbCiudadDestino = new System.Windows.Forms.ComboBox();
+            this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.cmbRegionInteracional = new System.Windows.Forms.ComboBox();
+            this.rboNacional = new System.Windows.Forms.RadioButton();
+            this.cmbProvincia = new System.Windows.Forms.ComboBox();
             this.rboInteracional = new System.Windows.Forms.RadioButton();
+            this.label5 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
@@ -263,6 +263,21 @@
             this.groupBox10.TabStop = false;
             this.groupBox10.Enter += new System.EventHandler(this.groupBox10_Enter);
             // 
+            // cmbPaisInternacional
+            // 
+            this.cmbPaisInternacional.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbPaisInternacional.FormattingEnabled = true;
+            this.cmbPaisInternacional.Items.AddRange(new object[] {
+            "Madrid, España",
+            "Paris, Francia",
+            "Roma, Italia",
+            "Londres, UK",
+            "Berlin, Alemania"});
+            this.cmbPaisInternacional.Location = new System.Drawing.Point(300, 85);
+            this.cmbPaisInternacional.Name = "cmbPaisInternacional";
+            this.cmbPaisInternacional.Size = new System.Drawing.Size(144, 29);
+            this.cmbPaisInternacional.TabIndex = 4;
+            // 
             // cmbCiudadDestino
             // 
             this.cmbCiudadDestino.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
@@ -277,6 +292,61 @@
             this.cmbCiudadDestino.Size = new System.Drawing.Size(132, 29);
             this.cmbCiudadDestino.TabIndex = 4;
             this.cmbCiudadDestino.SelectedIndexChanged += new System.EventHandler(this.cmbCiudad_SelectedIndexChanged);
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(6, 88);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(70, 21);
+            this.label3.TabIndex = 2;
+            this.label3.Text = "Ciudad : ";
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(224, 93);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(48, 21);
+            this.label4.TabIndex = 2;
+            this.label4.Text = "Pais : ";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(6, 52);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(85, 21);
+            this.label2.TabIndex = 1;
+            this.label2.Text = "Provincia : ";
+            // 
+            // cmbRegionInteracional
+            // 
+            this.cmbRegionInteracional.AccessibleRole = System.Windows.Forms.AccessibleRole.None;
+            this.cmbRegionInteracional.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbRegionInteracional.FormattingEnabled = true;
+            this.cmbRegionInteracional.Items.AddRange(new object[] {
+            "Países limítrofes.",
+            "Resto de América Latina",
+            "America del Norte",
+            "Europa",
+            "Asia"});
+            this.cmbRegionInteracional.Location = new System.Drawing.Point(300, 44);
+            this.cmbRegionInteracional.Name = "cmbRegionInteracional";
+            this.cmbRegionInteracional.Size = new System.Drawing.Size(144, 29);
+            this.cmbRegionInteracional.TabIndex = 3;
+            // 
+            // rboNacional
+            // 
+            this.rboNacional.AutoSize = true;
+            this.rboNacional.ForeColor = System.Drawing.Color.Purple;
+            this.rboNacional.Location = new System.Drawing.Point(54, 13);
+            this.rboNacional.Name = "rboNacional";
+            this.rboNacional.Size = new System.Drawing.Size(89, 25);
+            this.rboNacional.TabIndex = 0;
+            this.rboNacional.TabStop = true;
+            this.rboNacional.Text = "Nacional";
+            this.rboNacional.UseVisualStyleBackColor = true;
             // 
             // cmbProvincia
             // 
@@ -312,85 +382,6 @@
             this.cmbProvincia.Size = new System.Drawing.Size(132, 29);
             this.cmbProvincia.TabIndex = 3;
             // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(6, 52);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(70, 21);
-            this.label3.TabIndex = 2;
-            this.label3.Text = "Ciudad : ";
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(6, 93);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(85, 21);
-            this.label2.TabIndex = 1;
-            this.label2.Text = "Provincia : ";
-            // 
-            // rboNacional
-            // 
-            this.rboNacional.AutoSize = true;
-            this.rboNacional.ForeColor = System.Drawing.Color.Purple;
-            this.rboNacional.Location = new System.Drawing.Point(54, 13);
-            this.rboNacional.Name = "rboNacional";
-            this.rboNacional.Size = new System.Drawing.Size(89, 25);
-            this.rboNacional.TabIndex = 0;
-            this.rboNacional.TabStop = true;
-            this.rboNacional.Text = "Nacional";
-            this.rboNacional.UseVisualStyleBackColor = true;
-            // 
-            // cmbPaisInternacional
-            // 
-            this.cmbPaisInternacional.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cmbPaisInternacional.FormattingEnabled = true;
-            this.cmbPaisInternacional.Items.AddRange(new object[] {
-            "Madrid, España",
-            "Paris, Francia",
-            "Roma, Italia",
-            "Londres, UK",
-            "Berlin, Alemania"});
-            this.cmbPaisInternacional.Location = new System.Drawing.Point(300, 85);
-            this.cmbPaisInternacional.Name = "cmbPaisInternacional";
-            this.cmbPaisInternacional.Size = new System.Drawing.Size(144, 29);
-            this.cmbPaisInternacional.TabIndex = 4;
-            // 
-            // cmbRegionInteracional
-            // 
-            this.cmbRegionInteracional.AccessibleRole = System.Windows.Forms.AccessibleRole.None;
-            this.cmbRegionInteracional.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cmbRegionInteracional.FormattingEnabled = true;
-            this.cmbRegionInteracional.Items.AddRange(new object[] {
-            "Países limítrofes.",
-            "Resto de América Latina",
-            "America del Norte",
-            "Europa",
-            "Asia"});
-            this.cmbRegionInteracional.Location = new System.Drawing.Point(300, 44);
-            this.cmbRegionInteracional.Name = "cmbRegionInteracional";
-            this.cmbRegionInteracional.Size = new System.Drawing.Size(144, 29);
-            this.cmbRegionInteracional.TabIndex = 3;
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(224, 93);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(48, 21);
-            this.label4.TabIndex = 2;
-            this.label4.Text = "Pais : ";
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(224, 52);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(70, 21);
-            this.label5.TabIndex = 1;
-            this.label5.Text = "Region : ";
-            // 
             // rboInteracional
             // 
             this.rboInteracional.AutoSize = true;
@@ -402,6 +393,15 @@
             this.rboInteracional.TabStop = true;
             this.rboInteracional.Text = "Internacional";
             this.rboInteracional.UseVisualStyleBackColor = true;
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(224, 52);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(70, 21);
+            this.label5.TabIndex = 1;
+            this.label5.Text = "Region : ";
             // 
             // label7
             // 
