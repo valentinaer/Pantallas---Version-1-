@@ -538,11 +538,11 @@
             this.lblMenuPrincipal.AutoSize = true;
             this.lblMenuPrincipal.Font = new System.Drawing.Font("Segoe UI", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.lblMenuPrincipal.ForeColor = System.Drawing.Color.Purple;
-            this.lblMenuPrincipal.Location = new System.Drawing.Point(218, 36);
+            this.lblMenuPrincipal.Location = new System.Drawing.Point(227, 26);
             this.lblMenuPrincipal.Name = "lblMenuPrincipal";
-            this.lblMenuPrincipal.Size = new System.Drawing.Size(545, 25);
+            this.lblMenuPrincipal.Size = new System.Drawing.Size(536, 25);
             this.lblMenuPrincipal.TabIndex = 11;
-            this.lblMenuPrincipal.Text = "Ingrese los Siguientes Datos para realizar la Cotizacion del Servicio :";
+            this.lblMenuPrincipal.Text = "Ingrese los siguientes datos para realizar la cotizacion del servicio: ";
             this.lblMenuPrincipal.Click += new System.EventHandler(this.lblMenuPrincipal_Click);
             // 
             // btnCotizar
@@ -749,7 +749,7 @@
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
             this.Name = "SolicitudDeServicioNacional";
-            this.Text = "Solicitud de Servicio";
+            this.Text = "Ha seleccionado solicitud de servicio NACIONAL";
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.groupBox2.ResumeLayout(false);
