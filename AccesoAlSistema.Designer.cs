@@ -40,8 +40,12 @@
             // 
             this.txtIngresarDNI.Location = new System.Drawing.Point(24, 85);
             this.txtIngresarDNI.Name = "txtIngresarDNI";
+            this.txtIngresarDNI.PlaceholderText = "Documento";
             this.txtIngresarDNI.Size = new System.Drawing.Size(181, 23);
             this.txtIngresarDNI.TabIndex = 0;
+            this.txtIngresarDNI.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBox1_KeyPress);
+
+
             // 
             // txtContraseña
             // 
@@ -49,7 +53,9 @@
             this.txtContraseña.Location = new System.Drawing.Point(24, 158);
             this.txtContraseña.Name = "txtContraseña";
             this.txtContraseña.Size = new System.Drawing.Size(181, 23);
+            this.txtContraseña.PlaceholderText = "Contraseña";
             this.txtContraseña.TabIndex = 1;
+            
             // 
             // lblDNI
             // 
@@ -60,6 +66,8 @@
             this.lblDNI.Size = new System.Drawing.Size(111, 21);
             this.lblDNI.TabIndex = 2;
             this.lblDNI.Text = "Ingrese el DNI:";
+            
+
             // 
             // lblContraseña
             // 
@@ -112,6 +120,21 @@
             this.ResumeLayout(false);
             this.PerformLayout();
 
+        }
+
+        private void textBox1_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar) &&
+                (e.KeyChar != '.'))
+            {
+                    e.Handled = true;
+            }
+
+            // only allow one decimal point
+            if ((e.KeyChar == '.') && ((sender as TextBox).Text.IndexOf('.') > -1))
+            {
+                e.Handled = true;
+            }
         }
 
         #endregion

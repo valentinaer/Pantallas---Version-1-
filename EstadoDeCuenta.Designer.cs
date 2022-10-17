@@ -98,6 +98,7 @@
             this.label2.Size = new System.Drawing.Size(93, 21);
             this.label2.TabIndex = 2;
             this.label2.Text = "N° de CUIT: ";
+            
             // 
             // lblNombreCliente
             // 
@@ -220,6 +221,21 @@
             this.grpEstadoDeCuenta.PerformLayout();
             this.ResumeLayout(false);
 
+        }
+
+        private void textBox1_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar) &&
+                (e.KeyChar != '.'))
+            {
+                    e.Handled = true;
+            }
+
+            // only allow one decimal point
+            if ((e.KeyChar == '.') && ((sender as TextBox).Text.IndexOf('.') > -1))
+            {
+                e.Handled = true;
+            }
         }
 
         #endregion

@@ -13,7 +13,6 @@ namespace grupoB_TP
             ApplicationConfiguration.Initialize();
             Application.Run(new AccesoAlSistema());
 
-            //prueba 2
         }
     }
 }

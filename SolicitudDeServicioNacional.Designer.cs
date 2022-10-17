@@ -319,7 +319,7 @@
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(79, 21);
             this.label6.TabIndex = 12;
-            this.label6.Text = "Direcion : ";
+            this.label6.Text = "Dirección : ";
             // 
             // cmbProvincia
             // 
@@ -419,7 +419,7 @@
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(85, 21);
             this.label9.TabIndex = 12;
-            this.label9.Text = "Dirrecion : ";
+            this.label9.Text = "Dirección : ";
             // 
             // cmbCiudadOrigen
             // 

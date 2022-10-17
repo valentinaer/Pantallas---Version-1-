@@ -22,21 +22,24 @@ namespace grupoB_TP
         {
             if (rboSolicitarServicioNacional.Checked)
             {
+                this.Hide();
                 new SolicitudDeServicioNacional().ShowDialog();
             }
             if (rboSolicitarServicioInternacional.Checked)
             {
+                this.Hide();
                 new SolicitudDeServicioInternacional().ShowDialog();
             }
             if (rboConsultarEstadoDeServicio.Checked)
             {
+                this.Hide();
                 new EstadoDeServicio().ShowDialog();
             }
             if (rboConsultarEstadoDeCuenta.Checked)
             {
+                this.Hide();
                 new EstadoDeCuenta().ShowDialog();
             }
-
         }
     }
 }
