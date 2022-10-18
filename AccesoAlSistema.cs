@@ -22,8 +22,8 @@ namespace grupoB_TP
             string Contraseña = txtContraseña.Text;
             //Validamos que esten Vacios
 
-            mensaje = Usuario.PedirVacio("DNI", DNI) + "/n";
-            mensaje += Usuario.PedirVacio("Contraseña", Contraseña) + "/n";
+            mensaje = Usuario.PedirVacio("DNI", DNI);
+            mensaje += Usuario.PedirVacio("Contraseña", Contraseña);
 
             if (DNI.Length != 8)
             {
@@ -35,7 +35,7 @@ namespace grupoB_TP
             }
 
 
-            mensaje += Usuario.PedirEntero("DNI", 0, 99999999, DNI) +"/n";
+            mensaje += Usuario.PedirEntero("DNI", 0, 99999999, DNI);
             if(mensaje !="" )
             {
                 MessageBox.Show(mensaje);

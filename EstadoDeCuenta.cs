@@ -16,10 +16,9 @@ namespace grupoB_TP
         {
             InitializeComponent();
         }
-
         private void label3_Click(object sender, EventArgs e)
         {
-
         }
+        
     }
 }
