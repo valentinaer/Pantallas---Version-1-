@@ -16,27 +16,41 @@ namespace grupoB_TP
 
         private void btnIngresar_Click(object sender, EventArgs e)
         {
-            string mensaje;
+            string mensaje="";
                         
             string DNI = txtIngresarDNI.Text;
+            string Contraseña = txtContraseña.Text;
             //Validamos que esten Vacios
-            if (txtIngresarDNI.Text == "" || txtContraseña.Text == "")
+
+            mensaje = Usuario.PedirVacio("DNI", DNI) + "/n";
+            mensaje += Usuario.PedirVacio("Contraseña", Contraseña) + "/n";
+
+            if (DNI.Length != 8)
             {
-                MessageBox.Show("Los campos no pueden estar vacíos");
+                mensaje += "El DNI está incompleto debe tener 8 caracteres";
+            }
+            if (Contraseña.Length >30)
+            {
+                mensaje += "La contraseña debe tener como máximo 30 caracteres";
             }
 
-            if (txtIngresarDNI.Text.Length != 8)
-            {
-                MessageBox.Show("El DNI está incompleto debe tener 8 caracteres");
-            }
-            mensaje = Usuario.PedirVacio("DNI", txtIngresarDNI.Text) +"/n";
-            mensaje += Usuario.PedirVacio("Contraseña", txtContraseña.Text)+ "/n";
-            mensaje += Usuario.PedirLongitudFija("DNI", 8, txtIngresarDNI.Text) +"/n";
-            mensaje += Usuario.PedirEntero("DNI", 0, 99999999)+"/n";
 
+            mensaje += Usuario.PedirEntero("DNI", 0, 99999999, DNI) +"/n";
+            if(mensaje !="" )
+            {
+                MessageBox.Show(mensaje);
+            }
+            
+            else if (DNI == "12345678" && Contraseña == "1234")
+            {
+                this.Hide();
+                MessageBox.Show("Bienvenido/a " + DNI);
+                new MenuPrincipal().ShowDialog();
+
+            }
             /*
             else
-            {
+            
                 try
                 {
                     int dni = int.Parse(txtIngresarDNI.Text);
@@ -50,11 +64,9 @@ namespace grupoB_TP
                         if (txtIngresarDNI.Text == "12345678" && txtContraseña.Text == "1234")
                         {
                             //hide initializecomponent
-
                             this.Hide();
                             MessageBox.Show("Bienvenido/a " + txtIngresarDNI.Text);
                             new MenuPrincipal().ShowDialog();
-
                         }
                         else
                         {

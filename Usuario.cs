@@ -8,17 +8,17 @@ namespace grupoB_TP
 {
     static class Usuario
     {
-        internal static string PedirEntero(string campo, int min, int max)
+        internal static string PedirEntero(string campo, int min, int max, string valor)
         {
             throw new NotImplementedException();
         }
 
-        internal static string PedirLongitudFija(string v1, int v2, string text)
+        internal static string PedirLongitudFija(string campo, int longitud, string text)
         {
             throw new NotImplementedException();
         }
 
-        internal static string PedirVacio(string v, string text)
+        internal static string PedirVacio(string campo, string text)
         {
             throw new NotImplementedException();
         }
