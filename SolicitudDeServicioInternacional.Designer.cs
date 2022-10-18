@@ -337,6 +337,7 @@
             this.btnCotizar.TabIndex = 19;
             this.btnCotizar.Text = "Cotizar envio internacional";
             this.btnCotizar.UseVisualStyleBackColor = false;
+            this.btnCotizar.Click += new System.EventHandler(this.btnCotizar_Click);
             // 
             // lblMenuPrincipal
             // 
@@ -515,7 +516,7 @@
             this.groupBox2.Controls.Add(txtDirrecionDestino);
             this.groupBox2.Controls.Add(this.cmbPaisCiudadDestino);
             this.groupBox2.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.groupBox2.Location = new System.Drawing.Point(469, 136);
+            this.groupBox2.Location = new System.Drawing.Point(467, 136);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Size = new System.Drawing.Size(489, 362);
             this.groupBox2.TabIndex = 16;

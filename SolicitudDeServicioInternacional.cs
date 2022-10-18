@@ -21,5 +21,10 @@ namespace grupoB_TP
         {
 
         }
+
+        private void btnCotizar_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

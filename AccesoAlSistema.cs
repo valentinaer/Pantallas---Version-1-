@@ -36,13 +36,13 @@ namespace grupoB_TP
                     {
                         //if the user is in the database, the system will show a message
                         if (txtIngresarDNI.Text == "12345678" && txtContraseña.Text == "1234")
-                        {   
+                        {
                             //hide initializecomponent
 
                             this.Hide();
                             MessageBox.Show("Bienvenido/a " + txtIngresarDNI.Text);
                             new MenuPrincipal().ShowDialog();
-                            
+
                         }
                         else
                         {
@@ -55,8 +55,21 @@ namespace grupoB_TP
                     MessageBox.Show("DNI incorrecto");
                 }
             }
-        
-            
+
+
         }
+
+
+        /*
+        private void btnIngresar_Click(object sender, EventArgs e)
+        {
+            if (IsNullOrEmpty.(txtIngresarDNI.Text))
+            {
+
+
+            }
+
+        }
+        */
     }
 }

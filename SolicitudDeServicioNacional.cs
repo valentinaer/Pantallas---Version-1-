@@ -89,5 +89,15 @@ namespace grupoB_TP
         {
 
         }
+
+        private void grpCotizacion_Enter(object sender, EventArgs e)
+        {
+
+        }
+
+        private void SolicitudDeServicioNacional_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
