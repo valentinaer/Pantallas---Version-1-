@@ -122,6 +122,17 @@
 
         }
 
+
+
+        #endregion
+
+        private TextBox txtIngresarDNI;
+        private TextBox txtContraseña;
+        private Label lblDNI;
+        private Label lblContraseña;
+        private Button btnIngresar;
+        private Label label1;
+
         private void textBox1_KeyPress(object sender, KeyPressEventArgs e)
         {
             if (!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar) &&
@@ -136,14 +147,5 @@
                 e.Handled = true;
             }
         }
-
-        #endregion
-
-        private TextBox txtIngresarDNI;
-        private TextBox txtContraseña;
-        private Label lblDNI;
-        private Label lblContraseña;
-        private Button btnIngresar;
-        private Label label1;
     }
 }

@@ -1,3 +1,5 @@
+using System.Net;
+
 namespace grupoB_TP
 {
     public partial class AccesoAlSistema : Form
@@ -14,15 +16,25 @@ namespace grupoB_TP
 
         private void btnIngresar_Click(object sender, EventArgs e)
         {
-
-            // user must enter a DNI as interger in between 0 and 99999999
-            // pasword must exist in the database
-            // if the user is not in the database, the system will show a message
-
+            string mensaje;
+                        
+            string DNI = txtIngresarDNI.Text;
+            //Validamos que esten Vacios
             if (txtIngresarDNI.Text == "" || txtContraseña.Text == "")
             {
-                MessageBox.Show("Debe completar todos los campos");
+                MessageBox.Show("Los campos no pueden estar vacíos");
             }
+
+            if (txtIngresarDNI.Text.Length != 8)
+            {
+                MessageBox.Show("El DNI está incompleto debe tener 8 caracteres");
+            }
+            mensaje = Usuario.PedirVacio("DNI", txtIngresarDNI.Text) +"/n";
+            mensaje += Usuario.PedirVacio("Contraseña", txtContraseña.Text)+ "/n";
+            mensaje += Usuario.PedirLongitudFija("DNI", 8, txtIngresarDNI.Text) +"/n";
+            mensaje += Usuario.PedirEntero("DNI", 0, 99999999)+"/n";
+
+            /*
             else
             {
                 try
@@ -56,7 +68,7 @@ namespace grupoB_TP
                 }
             }
 
-
+            */
         }
 
 
