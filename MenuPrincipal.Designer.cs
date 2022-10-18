@@ -28,35 +28,34 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.rboSolicitarServicioNacional = new System.Windows.Forms.RadioButton();
+            this.rboSolicitarServicio = new System.Windows.Forms.RadioButton();
             this.rboConsultarEstadoDeCuenta = new System.Windows.Forms.RadioButton();
             this.rboConsultarEstadoDeServicio = new System.Windows.Forms.RadioButton();
             this.lblMenuPrincipal = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.rboSolicitarServicioInternacional = new System.Windows.Forms.RadioButton();
             this.btnContinuar = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
-            // rboSolicitarServicioNacional
+            // rboSolicitarServicio
             // 
-            this.rboSolicitarServicioNacional.AutoSize = true;
-            this.rboSolicitarServicioNacional.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.rboSolicitarServicioNacional.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.rboSolicitarServicioNacional.Location = new System.Drawing.Point(23, 42);
-            this.rboSolicitarServicioNacional.Name = "rboSolicitarServicioNacional";
-            this.rboSolicitarServicioNacional.Size = new System.Drawing.Size(225, 25);
-            this.rboSolicitarServicioNacional.TabIndex = 0;
-            this.rboSolicitarServicioNacional.TabStop = true;
-            this.rboSolicitarServicioNacional.Text = "Solicitar Servicio NACIONAL";
-            this.rboSolicitarServicioNacional.UseVisualStyleBackColor = true;
+            this.rboSolicitarServicio.AutoSize = true;
+            this.rboSolicitarServicio.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.rboSolicitarServicio.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.rboSolicitarServicio.Location = new System.Drawing.Point(23, 42);
+            this.rboSolicitarServicio.Name = "rboSolicitarServicio";
+            this.rboSolicitarServicio.Size = new System.Drawing.Size(147, 25);
+            this.rboSolicitarServicio.TabIndex = 0;
+            this.rboSolicitarServicio.TabStop = true;
+            this.rboSolicitarServicio.Text = "Solicitar Servicio ";
+            this.rboSolicitarServicio.UseVisualStyleBackColor = true;
             // 
             // rboConsultarEstadoDeCuenta
             // 
             this.rboConsultarEstadoDeCuenta.AutoSize = true;
             this.rboConsultarEstadoDeCuenta.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.rboConsultarEstadoDeCuenta.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.rboConsultarEstadoDeCuenta.Location = new System.Drawing.Point(23, 172);
+            this.rboConsultarEstadoDeCuenta.Location = new System.Drawing.Point(23, 165);
             this.rboConsultarEstadoDeCuenta.Name = "rboConsultarEstadoDeCuenta";
             this.rboConsultarEstadoDeCuenta.Size = new System.Drawing.Size(219, 25);
             this.rboConsultarEstadoDeCuenta.TabIndex = 1;
@@ -69,7 +68,7 @@
             this.rboConsultarEstadoDeServicio.AutoSize = true;
             this.rboConsultarEstadoDeServicio.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.rboConsultarEstadoDeServicio.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.rboConsultarEstadoDeServicio.Location = new System.Drawing.Point(23, 128);
+            this.rboConsultarEstadoDeServicio.Location = new System.Drawing.Point(23, 104);
             this.rboConsultarEstadoDeServicio.Name = "rboConsultarEstadoDeServicio";
             this.rboConsultarEstadoDeServicio.Size = new System.Drawing.Size(225, 25);
             this.rboConsultarEstadoDeServicio.TabIndex = 4;
@@ -89,10 +88,9 @@
             // 
             // groupBox1
             // 
-            this.groupBox1.Controls.Add(this.rboSolicitarServicioInternacional);
             this.groupBox1.Controls.Add(this.rboConsultarEstadoDeServicio);
             this.groupBox1.Controls.Add(this.rboConsultarEstadoDeCuenta);
-            this.groupBox1.Controls.Add(this.rboSolicitarServicioNacional);
+            this.groupBox1.Controls.Add(this.rboSolicitarServicio);
             this.groupBox1.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.groupBox1.ForeColor = System.Drawing.Color.Purple;
             this.groupBox1.Location = new System.Drawing.Point(25, 20);
@@ -101,19 +99,6 @@
             this.groupBox1.TabIndex = 6;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Selecciona la operación a realizar:";
-            // 
-            // rboSolicitarServicioInternacional
-            // 
-            this.rboSolicitarServicioInternacional.AutoSize = true;
-            this.rboSolicitarServicioInternacional.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.rboSolicitarServicioInternacional.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.rboSolicitarServicioInternacional.Location = new System.Drawing.Point(23, 84);
-            this.rboSolicitarServicioInternacional.Name = "rboSolicitarServicioInternacional";
-            this.rboSolicitarServicioInternacional.Size = new System.Drawing.Size(267, 25);
-            this.rboSolicitarServicioInternacional.TabIndex = 5;
-            this.rboSolicitarServicioInternacional.TabStop = true;
-            this.rboSolicitarServicioInternacional.Text = "Solicitar Servicio INTERNACIONAL";
-            this.rboSolicitarServicioInternacional.UseVisualStyleBackColor = true;
             // 
             // btnContinuar
             // 
@@ -148,7 +133,7 @@
 
         #endregion
 
-        private RadioButton rboSolicitarServicioNacional;
+        private RadioButton rboSolicitarServicio;
         private RadioButton rboConsultarEstadoDeCuenta;
         private RadioButton rboConsultarEstadoDeServicio;
         private RadioButton rboS;
@@ -157,6 +142,5 @@
         private Label lblMenuPrincipal;
         private GroupBox groupBox1;
         private Button btnContinuar;
-        private RadioButton rboSolicitarServicioInternacional;
     }
 }

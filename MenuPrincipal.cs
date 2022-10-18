@@ -20,15 +20,10 @@ namespace grupoB_TP
 
         private void btnContinuar_Click(object sender, EventArgs e)
         {
-            if (rboSolicitarServicioNacional.Checked)
+            if (rboSolicitarServicio.Checked)
             {
                 this.Hide();
-                new SolicitudDeServicioNacional().ShowDialog();
-            }
-            if (rboSolicitarServicioInternacional.Checked)
-            {
-                this.Hide();
-                new SolicitudDeServicioInternacional().ShowDialog();
+                new SolicitudDeServiciol().ShowDialog();
             }
             if (rboConsultarEstadoDeServicio.Checked)
             {
