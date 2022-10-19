@@ -309,7 +309,7 @@
             this.grpInternacional.TabIndex = 6;
             this.grpInternacional.TabStop = false;
             this.grpInternacional.Text = "Tipo de Entrega";
-            this.grpInternacional.Visible = true;
+            this.grpInternacional.Visible = false;
             this.grpInternacional.Enter += new System.EventHandler(this.groupBox2_Enter);
 
             // 
@@ -1079,10 +1079,15 @@
                     urgente = "No Urgente";
                 }
 
+                // generamos CUIT random porque no tenemos registro txt aun
+                Random generatorCuitRandom = new Random();
+                String randomCUIT = generatorCuitRandom.Next(100000, 99999).ToString("D6");
+
                 lblCotizacion.Text = "$" + calculatePrecio();
                 lblOrigen.Text = cmbProvinciaOrigen.Text + " - " + cmbCiudadOrigen.Text;
                 lblDestino.Text = cmbCiudadDestino.Text + " - " + cmbProvincia.Text;
                 lblUrgente.Text = urgente;
+                lblCuitI.Text = randomCUIT + randomCUIT;
             }
         }
       
