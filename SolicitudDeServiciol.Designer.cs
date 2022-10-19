@@ -93,8 +93,8 @@
             this.label13 = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.rboNacional = new System.Windows.Forms.RadioButton();
             this.rboInternacional = new System.Windows.Forms.RadioButton();
+            this.rboNacional = new System.Windows.Forms.RadioButton();
             txtDirrecionNacional = new System.Windows.Forms.TextBox();
             txtAlturaNacional = new System.Windows.Forms.TextBox();
             txtDirrecionOrigen = new System.Windows.Forms.TextBox();
@@ -286,7 +286,7 @@
             this.grpNacional.Size = new System.Drawing.Size(489, 362);
             this.grpNacional.TabIndex = 9;
             this.grpNacional.TabStop = false;
-            this.grpNacional.Text = "Tipo de Entrega";
+            this.grpNacional.Text = "NACIONAL";
             this.grpNacional.Enter += new System.EventHandler(this.groupBox2_Enter);
             // 
             // grpInternacional
@@ -302,12 +302,12 @@
             this.grpInternacional.Controls.Add(txtDireccionI);
             this.grpInternacional.Controls.Add(this.cmbPaisCiudadDestino);
             this.grpInternacional.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.grpInternacional.Location = new System.Drawing.Point(0, 0);
+            this.grpInternacional.Location = new System.Drawing.Point(0, 28);
             this.grpInternacional.Name = "grpInternacional";
             this.grpInternacional.Size = new System.Drawing.Size(489, 362);
             this.grpInternacional.TabIndex = 17;
             this.grpInternacional.TabStop = false;
-            this.grpInternacional.Text = "Tipo de Entrega";
+            this.grpInternacional.Text = "INTERNACIONAL";
             // 
             // cmbRegionI
             // 
@@ -897,17 +897,6 @@
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Elija el tipo de envio";
             // 
-            // rboNacional
-            // 
-            this.rboNacional.AutoSize = true;
-            this.rboNacional.Location = new System.Drawing.Point(158, 26);
-            this.rboNacional.Name = "rboNacional";
-            this.rboNacional.Size = new System.Drawing.Size(86, 24);
-            this.rboNacional.TabIndex = 0;
-            this.rboNacional.TabStop = true;
-            this.rboNacional.Text = "Nacional";
-            this.rboNacional.UseVisualStyleBackColor = true;
-            // 
             // rboInternacional
             // 
             this.rboInternacional.AutoSize = true;
@@ -918,6 +907,17 @@
             this.rboInternacional.TabStop = true;
             this.rboInternacional.Text = "Internacional";
             this.rboInternacional.UseVisualStyleBackColor = true;
+            // 
+            // rboNacional
+            // 
+            this.rboNacional.AutoSize = true;
+            this.rboNacional.Location = new System.Drawing.Point(158, 26);
+            this.rboNacional.Name = "rboNacional";
+            this.rboNacional.Size = new System.Drawing.Size(86, 24);
+            this.rboNacional.TabIndex = 0;
+            this.rboNacional.TabStop = true;
+            this.rboNacional.Text = "Nacional";
+            this.rboNacional.UseVisualStyleBackColor = true;
             // 
             // SolicitudDeServiciol
             // 
