@@ -998,8 +998,8 @@
         }
 
         private void btnCotizar_Click(object sender, EventArgs e)
-        {
-            
+        {            
+            // Condiciones generales para todos los envios
             if (cmbRangoPeso.SelectedIndex == -1)
             {
                 MessageBox.Show("Debe seleccionar un rango de peso");
@@ -1008,18 +1008,80 @@
             {
                 MessageBox.Show("Debe seleccionar la cantidad de Bultos");
             }
-            else if (cmbSucursalesDestino.SelectedIndex == -1)
+            
+            
+
+            // Condiciones para el Origen
+            // Si es envio a domicilio
+            if (radioButton1.Checked)
             {
-                MessageBox.Show("Debe elgir una sucursal para este tipo de Recepcion");
+                if (cmbProvinciaOrigen.SelectedIndex == -1)
+                {
+                    MessageBox.Show("Debe seleccionar una provincia de ORIGEN");
+                }
+                else if (cmbCiudadOrigen.SelectedIndex == -1)
+                {
+                    MessageBox.Show("Debe seleccionar una ciudad de ORIGEN");
+                }
             }
-            else if (cmbProvinciaOrigen.SelectedIndex == -1)
+            // Si es sucursal
+            if (radioButton2.Checked)
             {
-                MessageBox.Show("Debe seleccionar una provincia de ORIGEN");
+                if (cmbSucursalOrigen.SelectedIndex == -1)
+                {
+                    MessageBox.Show("Debe seleccionar una Sucursal");
+                }
             }
-            else if (cmbCiudadOrigen.SelectedIndex == -1)
+
+
+            // Condiciones para Envios Nacionales
+            if (rboNacional.Checked)
             {
-                MessageBox.Show("Debe seleccionar una ciudad de ORIGEN");
+                //rboRecibeSucursal
+                //rboRetiroEnDomiclio
+                //radiobutton1
+                //radiobutton2
+
+                // Condiciones para el Destino
+                if(rboRetiroDomicilio.Checked == true )
+                {
+
+                    if (cmbProvincia.SelectedIndex == -1)
+                    {
+                        MessageBox.Show("Debe seleccionar una provincia de DESTINO");
+                    }
+                    else if (cmbCiudadDestino.SelectedIndex == -1)
+                    {
+                        MessageBox.Show("Debe seleccionar una ciudad de DESTINO");
+                    }
+                }
+
+                if(rboRecibeSucursal.Checked == true){
+                    if (cmbSucursalesDestino.SelectedIndex == -1)
+                    {
+                        MessageBox.Show("Debe elgir una sucursal para este tipo de Recepcion");
+                    }
+                }
             }
+            else if (rboInternacional.Checked)
+            {
+                if (cmbRegionI.SelectedIndex == -1)
+                {
+                    MessageBox.Show("Debe seleccionar una provincia de DESTINO");
+                }
+                else if (cmbPaisCiudadDestino.SelectedIndex == -1)
+                {
+                    MessageBox.Show("Debe seleccionar una ciudad de DESTINO");
+                }
+            }
+
+            else if (!rboInternacional.Checked || !rboNacional.Checked)
+            {
+                MessageBox.Show("Debe seleccionar un tipo de envio");
+            }
+            
+            
+
             /* if (txtDirrecionNacional.Text == "")
             {
                 MessageBox.Show("Debe completar una dirrecion de ORIGEN");
@@ -1039,18 +1101,7 @@
                 MessageBox.Show("La altura de Origen debe ser mayor a 0 y menor a 10000");
                 return;
             } */
-            else if (cmbSucursalesDestino.SelectedIndex == -1)
-            {
-                MessageBox.Show("Debe elgir una sucursal para este tipo de Entrega");
-            }
-            else if (cmbProvincia.SelectedIndex == -1)
-            {
-                MessageBox.Show("Debe seleccionar una provincia de DESTINO");
-            }
-            else if (cmbCiudadDestino.SelectedIndex == -1)
-            {
-                MessageBox.Show("Debe seleccionar una ciudad de DESTINO");
-            }
+            
             /* else if (txtDirrecionNacional.Text == "")
             {
                 MessageBox.Show("Debe completar una dirrecion de DESTINO");
