@@ -46,7 +46,6 @@ namespace grupoB_TP
                 this.Hide();
                 MessageBox.Show("Bienvenido/a " + DNI);
                 new MenuPrincipal().ShowDialog();
-
             }
             /*
             else
