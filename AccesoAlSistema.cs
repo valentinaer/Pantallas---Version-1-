@@ -57,11 +57,13 @@ namespace grupoB_TP
             else if (DNI == "12345678" && Contraseña == "1234")
             {
                 this.Hide();
+                
                 MessageBox.Show("Bienvenido/a " + DNI);
                 new MenuPrincipal().ShowDialog();
+                
             }
 
-            Usuario.DNI = DNI;
+            
             /*
             else
             
