@@ -74,11 +74,6 @@ namespace grupoB_TP
 
         }
 
-        private void btnCotizar_Click(object sender, EventArgs e)
-        {
-            grpCotizacion.Visible = true;
-
-        }
 
         private void rboRecibeSucursal_CheckedChanged(object sender, EventArgs e)
         {
