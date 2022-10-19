@@ -26,7 +26,7 @@ namespace grupoB_TP
             mensaje += Usuario.PedirEntero("Numero de tracking", 0, 1000, numeroTrack);
             if (mensaje != "")
             {
-                MessageBox.Show(mensaje);
+                MessageBox.Show(mensaje, "Errores");
             }
             //FALTA QUE SEA EFECTIVAMENTE UN NUMERO DE TRACKEO REAL
             else
@@ -39,15 +39,15 @@ namespace grupoB_TP
                     {
                         if (int.Parse(numeroTrack) == 123)
                         {
-                            MessageBox.Show("Recibida");
+                            MessageBox.Show("Recibida", "Estado de servicio");
                         }
                         else if (int.Parse(numeroTrack) == 456)
                         {
-                            MessageBox.Show("En Tránsito");
+                            MessageBox.Show("En Tránsito", "Estado de servicio");
                         }
                         else
                         {
-                            MessageBox.Show("Cerrada");
+                            MessageBox.Show("Cerrada", "Estado de servicio");
                         }
                     }
                 }
