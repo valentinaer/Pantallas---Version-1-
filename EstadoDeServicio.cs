@@ -33,27 +33,25 @@ namespace grupoB_TP
             {
                 //AGREGAR QUE MUESTRE LO QUE TIENE QUE HACER
 
-            }
-
-            foreach (int i in numerosdeTrackeo)
-            {
-                if (numerosdeTrackeo.Contains(int.Parse(numeroTrack)))
+                foreach (int i in numerosdeTrackeo)
                 {
-                    if (int.Parse(numeroTrack) == 123) {
-                        MessageBox.Show("Recibida");
-                    }else if(int.Parse(numeroTrack) == 456)
+                    if (numerosdeTrackeo.Contains(int.Parse(numeroTrack)))
                     {
-                        MessageBox.Show("En Tránsito");
+                        if (int.Parse(numeroTrack) == 123)
+                        {
+                            MessageBox.Show("Recibida");
+                        }
+                        else if (int.Parse(numeroTrack) == 456)
+                        {
+                            MessageBox.Show("En Tránsito");
+                        }
+                        else
+                        {
+                            MessageBox.Show("Cerrada");
+                        }
                     }
-                    else
-                    {
-                        MessageBox.Show("Cerrada");
-                    }
-                             
                 }
-            }
-            
-            
+            }  
         }
     }
 }
