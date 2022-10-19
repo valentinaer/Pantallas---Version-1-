@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace grupoB_TP
 {
-    public partial class SolicitudDeServiciol : Form
+    public partial class SolicitudDeServicio : Form
     {
-        public SolicitudDeServiciol()
+        public SolicitudDeServicio()
         {
             InitializeComponent();
         }

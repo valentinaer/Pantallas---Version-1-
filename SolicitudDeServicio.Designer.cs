@@ -1,6 +1,6 @@
 ﻿namespace grupoB_TP
 {
-    partial class SolicitudDeServiciol
+    partial class SolicitudDeServicio
     {
         /// <summary>
         /// Required designer variable.

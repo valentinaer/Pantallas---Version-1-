@@ -23,7 +23,7 @@ namespace grupoB_TP
             if (rboSolicitarServicio.Checked)
             {
                 this.Hide();
-                new SolicitudDeServiciol().ShowDialog();
+                new SolicitudDeServicio().ShowDialog();
             }
             if (rboConsultarEstadoDeServicio.Checked)
             {
