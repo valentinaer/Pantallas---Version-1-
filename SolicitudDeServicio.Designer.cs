@@ -456,10 +456,11 @@
             this.cmbRegionI.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmbRegionI.FormattingEnabled = true;
             this.cmbRegionI.Items.AddRange(new object[] {
-            "Mar del Plata",
-            "Quilmes",
-            "Bahia Blanca",
-            "Salto"});
+            "Paises limitrofes", 
+            "Resto de america latina",
+            "America del norte",
+            "Europa",
+            "Asia"});
             this.cmbRegionI.Location = new System.Drawing.Point(177, 56);
             this.cmbRegionI.Name = "cmbRegionI";
             this.cmbRegionI.Size = new System.Drawing.Size(197, 29);
@@ -523,10 +524,11 @@
             this.cmbPaisCiudadDestino.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmbPaisCiudadDestino.FormattingEnabled = true;
             this.cmbPaisCiudadDestino.Items.AddRange(new object[] {
-            "Mar del Plata",
-            "Quilmes",
-            "Bahia Blanca",
-            "Salto"});
+            "Madrid, España",
+            "Paris, Francia",
+            "Roma, Italia",
+            "Londres, UK",
+            "Berlin, Alemania"});
             this.cmbPaisCiudadDestino.Location = new System.Drawing.Point(177, 116);
             this.cmbPaisCiudadDestino.Name = "cmbPaisCiudadDestino";
             this.cmbPaisCiudadDestino.Size = new System.Drawing.Size(197, 29);
