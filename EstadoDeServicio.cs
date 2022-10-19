@@ -28,8 +28,10 @@ namespace grupoB_TP
             {
                 MessageBox.Show(mensaje);
             }
+            //FALTA QUE SEA EFECTIVAMENTE UN NUMERO DE TRACKEO REAL
             else
             {
+                //AGREGAR QUE MUESTRE LO QUE TIENE QUE HACER
 
             }
         }
