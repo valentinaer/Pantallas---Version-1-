@@ -288,6 +288,7 @@
             this.grpNacional.TabStop = false;
             this.grpNacional.Text = "NACIONAL";
             this.grpNacional.Enter += new System.EventHandler(this.groupBox2_Enter);
+            this.grpNacional.Visible = false;
             // 
             // label16
             // 
@@ -441,6 +442,7 @@
             this.grpInternacional.TabIndex = 17;
             this.grpInternacional.TabStop = false;
             this.grpInternacional.Text = "INTERNACIONAL";
+            this.grpInternacional.Visible = false;
             // 
             // cmbRegionI
             // 
@@ -705,7 +707,7 @@
             this.btnCotizar.TabIndex = 12;
             this.btnCotizar.Text = "Cotizar";
             this.btnCotizar.UseVisualStyleBackColor = false;
-            this.btnCotizar.Click += new System.EventHandler(this.btnCotizar_Click);
+            this.btnCotizar.Click += new System.EventHandler(this.cotizar);
             // 
             // grpCotizacion
             // 
@@ -909,6 +911,7 @@
             this.rboInternacional.TabStop = true;
             this.rboInternacional.Text = "Internacional";
             this.rboInternacional.UseVisualStyleBackColor = true;
+            this.rboNacional.CheckedChanged += new System.EventHandler(this.mostrarOcultar);
             // 
             // rboNacional
             // 
@@ -981,6 +984,25 @@
                 grpInternacional.Visible = true;
             }
         }
+
+        private void cotizar(object sender, EventArgs e)
+        {
+            grpCotizacion.Visible = true;
+            if (rboNacional.Checked)
+            {
+                string urgente = "Urgente";
+            }
+            else
+            {
+                string urgente = "No Urgente";
+            }
+
+            lblCotizacion.Text = "$" + 100;
+            //lblOrigen.Text = txtOrigen.Text;
+            //lblDestino.Text = "" + txtDestino.Text;
+            //lblUrgente.Text = urgente;
+        }
+
 
         private ComboBox cmbRangoPeso;
         private TextBox txtDirrecionNacional;
