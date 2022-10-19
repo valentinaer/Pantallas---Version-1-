@@ -9,6 +9,8 @@ namespace grupoB_TP
     static class Usuario
     {
         public static string DNI = "12345678";
+        public static string DNI2 = "87654321";
+        
         internal static string PedirEntero(string campo, int min, int max, string valor)
         {
             
