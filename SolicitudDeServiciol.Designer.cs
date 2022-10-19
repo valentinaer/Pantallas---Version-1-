@@ -93,8 +93,8 @@
             this.label13 = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.rboNacional = new System.Windows.Forms.RadioButton();
             this.rboInternacional = new System.Windows.Forms.RadioButton();
+            this.rboNacional = new System.Windows.Forms.RadioButton();
             txtDirrecionNacional = new System.Windows.Forms.TextBox();
             txtAlturaNacional = new System.Windows.Forms.TextBox();
             txtDirrecionOrigen = new System.Windows.Forms.TextBox();
@@ -266,7 +266,7 @@
             // 
             // grpNacional
             // 
-            this.grpNacional.Controls.Add(this.grpInternacional);
+            this.grpNacional.BackColor = System.Drawing.Color.Transparent;
             this.grpNacional.Controls.Add(txtPisoDeptoNacional);
             this.grpNacional.Controls.Add(this.label16);
             this.grpNacional.Controls.Add(this.radioButton2);
@@ -281,17 +281,18 @@
             this.grpNacional.Controls.Add(txtDirrecionNacional);
             this.grpNacional.Controls.Add(this.cmbCiudadDestino);
             this.grpNacional.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.grpNacional.Location = new System.Drawing.Point(460, 166);
+            this.grpNacional.Location = new System.Drawing.Point(476, 177);
             this.grpNacional.Name = "grpNacional";
-            this.grpNacional.Size = new System.Drawing.Size(489, 362);
+            this.grpNacional.Size = new System.Drawing.Size(489, 321);
             this.grpNacional.TabIndex = 9;
             this.grpNacional.TabStop = false;
-            this.grpNacional.Text = "Tipo de Entrega";
+            this.grpNacional.Text = "NACIONAL";
             this.grpNacional.Visible = false;
             this.grpNacional.Enter += new System.EventHandler(this.groupBox2_Enter);
             // 
             // grpInternacional
             // 
+            this.grpInternacional.BackColor = System.Drawing.Color.Transparent;
             this.grpInternacional.Controls.Add(this.cmbRegionI);
             this.grpInternacional.Controls.Add(this.label20);
             this.grpInternacional.Controls.Add(this.label19);
@@ -303,15 +304,14 @@
             this.grpInternacional.Controls.Add(txtDireccionI);
             this.grpInternacional.Controls.Add(this.cmbPaisCiudadDestino);
             this.grpInternacional.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.grpInternacional.Location = new System.Drawing.Point(0, 0);
+            this.grpInternacional.Location = new System.Drawing.Point(476, 177);
             this.grpInternacional.Name = "grpInternacional";
-            this.grpInternacional.Size = new System.Drawing.Size(489, 362);
+            this.grpInternacional.Size = new System.Drawing.Size(489, 321);
             this.grpInternacional.TabIndex = 6;
             this.grpInternacional.TabStop = false;
-            this.grpInternacional.Text = "Tipo de Entrega";
+            this.grpInternacional.Text = "INTERNACIONAL";
             this.grpInternacional.Visible = false;
             this.grpInternacional.Enter += new System.EventHandler(this.groupBox2_Enter);
-
             // 
             // cmbRegionI
             // 
@@ -549,7 +549,7 @@
             this.groupBox5.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.groupBox5.Location = new System.Drawing.Point(12, 166);
             this.groupBox5.Name = "groupBox5";
-            this.groupBox5.Size = new System.Drawing.Size(442, 362);
+            this.groupBox5.Size = new System.Drawing.Size(442, 332);
             this.groupBox5.TabIndex = 10;
             this.groupBox5.TabStop = false;
             this.groupBox5.Text = "Tipo de Recepcion";
@@ -701,7 +701,7 @@
             // 
             this.btnCotizar.BackColor = System.Drawing.Color.DodgerBlue;
             this.btnCotizar.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.btnCotizar.Location = new System.Drawing.Point(360, 555);
+            this.btnCotizar.Location = new System.Drawing.Point(373, 513);
             this.btnCotizar.Name = "btnCotizar";
             this.btnCotizar.Size = new System.Drawing.Size(206, 30);
             this.btnCotizar.TabIndex = 12;
@@ -724,7 +724,7 @@
             this.grpCotizacion.Controls.Add(this.label12);
             this.grpCotizacion.Font = new System.Drawing.Font("Segoe UI", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.grpCotizacion.ForeColor = System.Drawing.Color.Purple;
-            this.grpCotizacion.Location = new System.Drawing.Point(971, 177);
+            this.grpCotizacion.Location = new System.Drawing.Point(972, 141);
             this.grpCotizacion.Name = "grpCotizacion";
             this.grpCotizacion.Size = new System.Drawing.Size(279, 305);
             this.grpCotizacion.TabIndex = 13;
@@ -901,18 +901,6 @@
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Elija el tipo de envio";
             // 
-            // rboNacional
-            // 
-            this.rboNacional.AutoSize = true;
-            this.rboNacional.Location = new System.Drawing.Point(158, 26);
-            this.rboNacional.Name = "rboNacional";
-            this.rboNacional.Size = new System.Drawing.Size(86, 24);
-            this.rboNacional.TabIndex = 0;
-            this.rboNacional.TabStop = true;
-            this.rboNacional.Text = "Nacional";
-            this.rboNacional.UseVisualStyleBackColor = true;
-            this.rboNacional.CheckedChanged += new System.EventHandler(this.mostrarOcultar);
-            // 
             // rboInternacional
             // 
             this.rboInternacional.AutoSize = true;
@@ -925,12 +913,24 @@
             this.rboInternacional.UseVisualStyleBackColor = true;
             this.rboInternacional.CheckedChanged += new System.EventHandler(this.mostrarOcultar);
             // 
+            // rboNacional
+            // 
+            this.rboNacional.AutoSize = true;
+            this.rboNacional.Location = new System.Drawing.Point(158, 26);
+            this.rboNacional.Name = "rboNacional";
+            this.rboNacional.Size = new System.Drawing.Size(86, 24);
+            this.rboNacional.TabIndex = 0;
+            this.rboNacional.TabStop = true;
+            this.rboNacional.Text = "Nacional";
+            this.rboNacional.UseVisualStyleBackColor = true;
+            this.rboNacional.CheckedChanged += new System.EventHandler(this.mostrarOcultar);
+            // 
             // SolicitudDeServiciol
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
-            this.ClientSize = new System.Drawing.Size(1263, 546);
+            this.ClientSize = new System.Drawing.Size(1263, 542);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.grpCotizacion);
             this.Controls.Add(this.btnCotizar);
@@ -938,6 +938,7 @@
             this.Controls.Add(this.groupBox5);
             this.Controls.Add(this.grpNacional);
             this.Controls.Add(this.groupBox1);
+            this.Controls.Add(this.grpInternacional);
             this.Name = "SolicitudDeServiciol";
             this.Text = "Solicitud de Servicio";
             this.Load += new System.EventHandler(this.SolicitudDeServicioNacional_Load);
