@@ -13,34 +13,46 @@ namespace grupoB_TP
         {
 
         }
-
+        public string DNI = "";
         private void btnIngresar_Click(object sender, EventArgs e)
         {
+            
             string mensaje="";
-                        
-            string DNI = txtIngresarDNI.Text;
+
+            DNI = txtIngresarDNI.Text;
             string Contraseña = txtContraseña.Text;
-            //Validamos que esten Vacios
+            
+            //Validamos que esten Vacios (Flujo 1)
 
             mensaje = Usuario.PedirVacio("DNI", DNI);
             mensaje += Usuario.PedirVacio("Contraseña", Contraseña);
-
-            if (DNI.Length != 8)
+            if (mensaje != "")
             {
-                mensaje += "El DNI está incompleto debe tener 8 caracteres";
+                MessageBox.Show(mensaje,"Errores");
             }
-            if (Contraseña.Length >30)
+            //Validamos DNI debe tener 8 caracteres (Flujo 2)
+            else if (DNI.Length != 8)
             {
-                mensaje += "La contraseña debe tener como máximo 30 caracteres";
+                MessageBox.Show("El DNI está incompleto debe tener 8 caracteres", "Errores");
+               
             }
-
-
-            mensaje += Usuario.PedirEntero("DNI", 0, 99999999, DNI);
-            if(mensaje !="" )
+            //La contraseña excede los 30 caracteres (Flujo )
+            else if (Contraseña.Length >30)
             {
-                MessageBox.Show(mensaje);
+                MessageBox.Show("La contraseña debe tener como máximo 30 caracteres","Errores");
             }
-            
+            else if (DNI == "12345678" && Contraseña == "1234") //Con Saldo
+            {
+                this.Hide();
+                MessageBox.Show("Bienvenido/a " + DNI);
+                new MenuPrincipal().ShowDialog();
+            }
+            else if (DNI == "87654321" && Contraseña == "1234") //Sin Saldo
+            {
+                this.Hide();
+                MessageBox.Show("Bienvenido/a " + DNI);
+                new MenuPrincipal().ShowDialog();
+            }     
             else if (DNI == "12345678" && Contraseña == "1234")
             {
                 this.Hide();
