@@ -45,8 +45,8 @@
             this.cmbCantidadBultosN = new System.Windows.Forms.ComboBox();
             this.grpNacional = new System.Windows.Forms.GroupBox();
             this.label16 = new System.Windows.Forms.Label();
-            this.radioButton2 = new System.Windows.Forms.RadioButton();
-            this.radioButton1 = new System.Windows.Forms.RadioButton();
+            this.rboEntregaDomicilio = new System.Windows.Forms.RadioButton();
+            this.rboSucursalDestino = new System.Windows.Forms.RadioButton();
             this.label7 = new System.Windows.Forms.Label();
             this.cmbSucursalesDestino = new System.Windows.Forms.ComboBox();
             this.label2 = new System.Windows.Forms.Label();
@@ -76,6 +76,7 @@
             this.lblMenuPrincipal = new System.Windows.Forms.Label();
             this.btnCotizar = new System.Windows.Forms.Button();
             this.grpCotizacion = new System.Windows.Forms.GroupBox();
+            this.btnModificar = new System.Windows.Forms.Button();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.lblCuitI = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
@@ -95,7 +96,6 @@
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.rboInternacional = new System.Windows.Forms.RadioButton();
             this.rboNacional = new System.Windows.Forms.RadioButton();
-            this.btnModificar = new System.Windows.Forms.Button();
             txtDirrecionNacional = new System.Windows.Forms.TextBox();
             txtAlturaNacional = new System.Windows.Forms.TextBox();
             txtDirrecionOrigen = new System.Windows.Forms.TextBox();
@@ -270,8 +270,8 @@
             this.grpNacional.BackColor = System.Drawing.Color.Transparent;
             this.grpNacional.Controls.Add(txtPisoDeptoNacional);
             this.grpNacional.Controls.Add(this.label16);
-            this.grpNacional.Controls.Add(this.radioButton2);
-            this.grpNacional.Controls.Add(this.radioButton1);
+            this.grpNacional.Controls.Add(this.rboEntregaDomicilio);
+            this.grpNacional.Controls.Add(this.rboSucursalDestino);
             this.grpNacional.Controls.Add(this.label7);
             this.grpNacional.Controls.Add(txtAlturaNacional);
             this.grpNacional.Controls.Add(this.cmbSucursalesDestino);
@@ -300,27 +300,27 @@
             this.label16.TabIndex = 15;
             this.label16.Text = "Piso / Departamento:";
             // 
-            // radioButton2
+            // rboEntregaDomicilio
             // 
-            this.radioButton2.AutoSize = true;
-            this.radioButton2.Location = new System.Drawing.Point(26, 78);
-            this.radioButton2.Name = "radioButton2";
-            this.radioButton2.Size = new System.Drawing.Size(163, 25);
-            this.radioButton2.TabIndex = 7;
-            this.radioButton2.TabStop = true;
-            this.radioButton2.Text = "Entrega a Domicilio";
-            this.radioButton2.UseVisualStyleBackColor = true;
+            this.rboEntregaDomicilio.AutoSize = true;
+            this.rboEntregaDomicilio.Location = new System.Drawing.Point(26, 78);
+            this.rboEntregaDomicilio.Name = "rboEntregaDomicilio";
+            this.rboEntregaDomicilio.Size = new System.Drawing.Size(163, 25);
+            this.rboEntregaDomicilio.TabIndex = 7;
+            this.rboEntregaDomicilio.TabStop = true;
+            this.rboEntregaDomicilio.Text = "Entrega a Domicilio";
+            this.rboEntregaDomicilio.UseVisualStyleBackColor = true;
             // 
-            // radioButton1
+            // rboSucursalDestino
             // 
-            this.radioButton1.AutoSize = true;
-            this.radioButton1.Location = new System.Drawing.Point(26, 35);
-            this.radioButton1.Name = "radioButton1";
-            this.radioButton1.Size = new System.Drawing.Size(113, 25);
-            this.radioButton1.TabIndex = 6;
-            this.radioButton1.TabStop = true;
-            this.radioButton1.Text = "En sucursal: ";
-            this.radioButton1.UseVisualStyleBackColor = true;
+            this.rboSucursalDestino.AutoSize = true;
+            this.rboSucursalDestino.Location = new System.Drawing.Point(26, 35);
+            this.rboSucursalDestino.Name = "rboSucursalDestino";
+            this.rboSucursalDestino.Size = new System.Drawing.Size(113, 25);
+            this.rboSucursalDestino.TabIndex = 6;
+            this.rboSucursalDestino.TabStop = true;
+            this.rboSucursalDestino.Text = "En sucursal: ";
+            this.rboSucursalDestino.UseVisualStyleBackColor = true;
             // 
             // label7
             // 
@@ -735,6 +735,18 @@
             this.grpCotizacion.Visible = false;
             this.grpCotizacion.Enter += new System.EventHandler(this.grpCotizacion_Enter);
             // 
+            // btnModificar
+            // 
+            this.btnModificar.BackColor = System.Drawing.Color.DodgerBlue;
+            this.btnModificar.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.btnModificar.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.btnModificar.Location = new System.Drawing.Point(39, 304);
+            this.btnModificar.Name = "btnModificar";
+            this.btnModificar.Size = new System.Drawing.Size(199, 32);
+            this.btnModificar.TabIndex = 19;
+            this.btnModificar.Text = "Modificar Datos";
+            this.btnModificar.UseVisualStyleBackColor = false;
+            // 
             // groupBox3
             // 
             this.groupBox3.Controls.Add(this.lblCuitI);
@@ -927,18 +939,6 @@
             this.rboNacional.UseVisualStyleBackColor = true;
             this.rboNacional.CheckedChanged += new System.EventHandler(this.mostrarOcultar);
             // 
-            // btnModificar
-            // 
-            this.btnModificar.BackColor = System.Drawing.Color.DodgerBlue;
-            this.btnModificar.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.btnModificar.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.btnModificar.Location = new System.Drawing.Point(39, 304);
-            this.btnModificar.Name = "btnModificar";
-            this.btnModificar.Size = new System.Drawing.Size(199, 32);
-            this.btnModificar.TabIndex = 19;
-            this.btnModificar.Text = "Modificar Datos";
-            this.btnModificar.UseVisualStyleBackColor = false;
-            // 
             // SolicitudDeServiciol
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
@@ -1013,7 +1013,7 @@
 
             // Condiciones para el Origen
             // Si es envio a domicilio
-            if (radioButton1.Checked)
+            if (rboSucursalDestino.Checked)
             {
                 if (cmbProvinciaOrigen.SelectedIndex == -1)
                 {
@@ -1025,7 +1025,7 @@
                 }
             }
             // Si es sucursal
-            if (radioButton2.Checked)
+            if (rboEntregaDomicilio.Checked)
             {
                 if (cmbSucursalOrigen.SelectedIndex == -1)
                 {
@@ -1296,8 +1296,8 @@
         private Button btnConfirmar;
         private Label label16;
         private Label label17;
-        private RadioButton radioButton2;
-        private RadioButton radioButton1;
+        private RadioButton rboEntregaDomicilio;
+        private RadioButton rboSucursalDestino;
         private ComboBox cmbSucursalesDestino;
         private Label label2;
         private ComboBox cmbProvincia;
