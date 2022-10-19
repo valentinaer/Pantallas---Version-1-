@@ -18,7 +18,7 @@ namespace grupoB_TP
         }
 
 
-        private void btnContinuar_Click(object sender, EventArgs e)
+        public void btnContinuar_Click(object sender, EventArgs e)
         {
             if (rboSolicitarServicio.Checked)
             {

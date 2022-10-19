@@ -8,6 +8,8 @@ namespace grupoB_TP
 {
     static class Usuario
     {
+        // create a public string DNI accessible to all classess
+        public static string DNI { get; set; }
         internal static string PedirEntero(string campo, int min, int max, string valor)
         {
             

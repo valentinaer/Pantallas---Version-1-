@@ -18,6 +18,7 @@ namespace grupoB_TP
         {
             
             string mensaje="";
+            
 
             DNI = txtIngresarDNI.Text;
             string Contraseña = txtContraseña.Text;
@@ -59,6 +60,8 @@ namespace grupoB_TP
                 MessageBox.Show("Bienvenido/a " + DNI);
                 new MenuPrincipal().ShowDialog();
             }
+
+            Usuario.DNI = DNI;
             /*
             else
             

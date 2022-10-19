@@ -1080,15 +1080,12 @@
                     urgente = "No Urgente";
                 }
 
-                // generamos CUIT random porque no tenemos registro txt aun
-                Random generatorCuitRandom = new Random();
-                String randomCUIT = generatorCuitRandom.Next(100000, 99999).ToString("D6");
 
                 lblCotizacion.Text = "$" + calculatePrecio();
                 lblOrigen.Text = cmbProvinciaOrigen.Text + " - " + cmbCiudadOrigen.Text;
                 lblDestino.Text = cmbCiudadDestino.Text + " - " + cmbProvincia.Text;
                 lblUrgente.Text = urgente;
-                lblCuitI.Text = randomCUIT + randomCUIT;
+                lblCuitI.Text = "30" + Usuario.DNI + "9";
             }
         }
       
