@@ -19,12 +19,12 @@ namespace grupoB_TP
                 }
                 else
                 {
-                    return $"El valor {campo} está fuera del rango [{min} .. {max}]. \n";
+                    return $"Debe ingresar un valor {campo} mayor a {min} y menor a {max}]. \n";
                 }
             }
             else
             {
-                return $"{campo} No es un valor entero válido. \n";
+                return $"Debe ingresar un valor de {campo} Numerico. \n";
             }
         }
 
@@ -44,7 +44,7 @@ namespace grupoB_TP
         {
             if(text == "")
             {
-                return $"{campo} es un campo vacio. \n";
+                return $"El {campo} no puede estar Vacio . \n";
             }
             else
             {

@@ -778,7 +778,7 @@
             // groupBox9
             // 
             this.groupBox9.Controls.Add(this.lblCotizacion);
-            this.groupBox9.Location = new System.Drawing.Point(106, 208);
+            this.groupBox9.Location = new System.Drawing.Point(106, 207);
             this.groupBox9.Name = "groupBox9";
             this.groupBox9.Size = new System.Drawing.Size(178, 39);
             this.groupBox9.TabIndex = 7;
