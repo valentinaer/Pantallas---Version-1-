@@ -19,12 +19,12 @@ namespace grupoB_TP
                 }
                 else
                 {
-                    return $"El valor {campo} está fuera del rango [{min} .. {max}]. Inténtalo de nuevo. \n";
+                    return $"El valor {campo} está fuera del rango [{min} .. {max}]. \n";
                 }
             }
             else
             {
-                return $"{campo} No es un valor entero válido. Inténtalo de nuevo. \n";
+                return $"{campo} No es un valor entero válido. \n";
             }
         }
 
@@ -36,7 +36,7 @@ namespace grupoB_TP
             }
             else
             {
-                return $"El valor {campo} debe tener una longitud de {longitud} caracteres. Inténtalo de nuevo. \n";
+                return $"El valor {campo} debe tener una longitud de {longitud} caracteres. \n";
             }
         }
 
@@ -44,7 +44,7 @@ namespace grupoB_TP
         {
             if(text == "")
             {
-                return $"{campo} es un campo vacio. Inténtalo de nuevo. \n";
+                return $"{campo} es un campo vacio. \n";
             }
             else
             {
