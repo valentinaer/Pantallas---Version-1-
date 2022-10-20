@@ -1047,10 +1047,10 @@
                     mensaje += "Debe seleccionar una Ciudad de ORIGEN" + "\n";
                    
                 }
-                mensaje += Usuario.PedirVacio("El domicilio de Retiro a Domicilio", );
+                mensaje += Usuario.PedirVacio("El domicilio de Retiro a Domicilio", "" );
+                 
+                }
 
->>>>>>> 844f2e0447ebe1582d13ab028ae87ea1b1a1e0f1
-            }
             // Si es sucursal
             else if (rboRecibeSucursal.Checked && !rboRetiroDomicilio.Checked)
             {
