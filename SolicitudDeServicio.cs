@@ -65,10 +65,6 @@ namespace grupoB_TP
 
         }
 
-        private void cmbCiudad_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
-        }
 
         private void lblMenuPrincipal_Click(object sender, EventArgs e)
         {
@@ -113,6 +109,10 @@ namespace grupoB_TP
         {
 
         }
+        private void cmbCiudad_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
 
         private void cmbProvinciaOrigen_SelectedIndexChanged(object sender, EventArgs e)
         {
@@ -124,16 +124,29 @@ namespace grupoB_TP
                 cmbCiudadOrigen.Items.Add("Bahia Blanca");
                 cmbCiudadOrigen.Items.Add("Salto");
             }
-            else if(cmbProvinciaOrigen.Text != "BUENOS AIRES")
+            else if (cmbProvinciaOrigen.Text != "BUENOS AIRES")
             {
                 cmbCiudadOrigen.Items.Clear();
                 cmbCiudadOrigen.Items.Add("NO IMPLEMENTADO");
             }
         }
 
-        private void SolicitudDeServicio_FormClosing(object sender, FormClosingEventArgs e)
+        private void cmbProvincia_SelectedIndexChanged(object sender, EventArgs e)
         {
-            System.Windows.Forms.Application.Exit();
+            if (cmbProvinciaDestino.Text == "BUENOS AIRES")
+            {
+                cmbCiudadDestino.Items.Clear();
+                cmbCiudadDestino.Items.Add("Mar del Plata");
+                cmbCiudadDestino.Items.Add("Quilmes");
+                cmbCiudadDestino.Items.Add("Bahia Blanca");
+                cmbCiudadDestino.Items.Add("Salto");
+            }
+            else if (cmbProvinciaOrigen.Text != "BUENOS AIRES")
+            {
+                cmbCiudadDestino.Items.Clear();
+                cmbCiudadDestino.Items.Add("NO IMPLEMENTADO");
+            }
+
         }
     }
 }

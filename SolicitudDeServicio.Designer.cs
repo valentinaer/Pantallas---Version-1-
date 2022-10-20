@@ -51,7 +51,7 @@
             this.cmbSucursalesDestino = new System.Windows.Forms.ComboBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
-            this.cmbProvincia = new System.Windows.Forms.ComboBox();
+            this.cmbProvinciaDestino = new System.Windows.Forms.ComboBox();
             this.label3 = new System.Windows.Forms.Label();
             this.cmbCiudadDestino = new System.Windows.Forms.ComboBox();
             this.grpInternacional = new System.Windows.Forms.GroupBox();
@@ -277,7 +277,7 @@
             this.grpNacional.Controls.Add(this.cmbSucursalesDestino);
             this.grpNacional.Controls.Add(this.label2);
             this.grpNacional.Controls.Add(this.label6);
-            this.grpNacional.Controls.Add(this.cmbProvincia);
+            this.grpNacional.Controls.Add(this.cmbProvinciaDestino);
             this.grpNacional.Controls.Add(this.label3);
             this.grpNacional.Controls.Add(txtDirrecionNacional);
             this.grpNacional.Controls.Add(this.cmbCiudadDestino);
@@ -364,11 +364,11 @@
             this.label6.TabIndex = 12;
             this.label6.Text = "Dirección : ";
             // 
-            // cmbProvincia
+            // cmbProvinciaDestino
             // 
-            this.cmbProvincia.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cmbProvincia.FormattingEnabled = true;
-            this.cmbProvincia.Items.AddRange(new object[] {
+            this.cmbProvinciaDestino.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbProvinciaDestino.FormattingEnabled = true;
+            this.cmbProvinciaDestino.Items.AddRange(new object[] {
             "BUENOS AIRES",
             "CIUDAD AUTÓNOMA DE BUENOS AIRES",
             "CATAMARCA",
@@ -393,10 +393,10 @@
             "SANTIAGO DEL ESTERO",
             "TIERRA DEL FUEGO, ANTÁRTIDA E ISLAS DEL ATLÁNTICO SUR",
             "TUCUMÁN"});
-            this.cmbProvincia.Location = new System.Drawing.Point(163, 122);
-            this.cmbProvincia.Name = "cmbProvincia";
-            this.cmbProvincia.Size = new System.Drawing.Size(307, 29);
-            this.cmbProvincia.TabIndex = 3;
+            this.cmbProvinciaDestino.Location = new System.Drawing.Point(163, 122);
+            this.cmbProvinciaDestino.Name = "cmbProvinciaDestino";
+            this.cmbProvinciaDestino.Size = new System.Drawing.Size(307, 29);
+            this.cmbProvinciaDestino.TabIndex = 3;
             // 
             // label3
             // 
@@ -1118,7 +1118,7 @@
                 }
                 else if (rboEntregaDomicilio.Checked && !rboSucursalDestino.Checked)
                 {
-                    destino = cmbCiudadDestino.Text + " - " + cmbProvincia.Text;
+                    destino = cmbCiudadDestino.Text + " - " + cmbProvinciaDestino.Text;
                 }
 
                 cotizar(origen, destino);
@@ -1215,18 +1215,18 @@
             {
 
                 // ----------------- Local -----------------//
-                if (cmbProvincia.SelectedIndex == 0)
+                if (cmbProvinciaDestino.SelectedIndex == 0)
                 {
                     precio = 20;
                 }
 
                 // ----------------- Provincial -----------------//
-                else if (cmbProvincia.SelectedIndex == 1)
+                else if (cmbProvinciaDestino.SelectedIndex == 1)
                 {
                     precio = 60;
                 }
                 // ----------------- Regional -----------------//
-                else if (cmbProvincia.SelectedIndex == 2 || cmbProvincia.SelectedIndex == 3 || cmbProvincia.SelectedIndex == 4)
+                else if (cmbProvinciaDestino.SelectedIndex == 2 || cmbProvinciaDestino.SelectedIndex == 3 || cmbProvinciaDestino.SelectedIndex == 4)
                 {
                     precio = 100;
                 }
@@ -1241,17 +1241,17 @@
             else if (cmbCantidadBultosN.SelectedIndex == 1)
             {
                 // ----------------- Local -----------------//
-                if (cmbProvincia.SelectedIndex == 0)
+                if (cmbProvinciaDestino.SelectedIndex == 0)
                 {
                     precio = 30;
                 }
                 // ----------------- Provincial -----------------//
-                else if (cmbProvincia.SelectedIndex == 1)
+                else if (cmbProvinciaDestino.SelectedIndex == 1)
                 {
                     precio = 70;
                 }
                 // ----------------- Regional -----------------//
-                else if (cmbProvincia.SelectedIndex == 2 || cmbProvincia.SelectedIndex == 3 || cmbProvincia.SelectedIndex == 4)
+                else if (cmbProvinciaDestino.SelectedIndex == 2 || cmbProvinciaDestino.SelectedIndex == 3 || cmbProvinciaDestino.SelectedIndex == 4)
                 {
                     precio = 110;
                 }
@@ -1266,17 +1266,17 @@
             else if (cmbCantidadBultosN.SelectedIndex == 2)
             {
                 // ----------------- Local -----------------//
-                if (cmbProvincia.SelectedIndex == 0)
+                if (cmbProvinciaDestino.SelectedIndex == 0)
                 {
                     precio = 40;
                 }
                 // ----------------- Provincial -----------------//
-                else if (cmbProvincia.SelectedIndex == 1)
+                else if (cmbProvinciaDestino.SelectedIndex == 1)
                 {
                     precio = 80;
                 }
                 // ----------------- Regional -----------------//
-                else if (cmbProvincia.SelectedIndex == 2 || cmbProvincia.SelectedIndex == 3 || cmbProvincia.SelectedIndex == 4)
+                else if (cmbProvinciaDestino.SelectedIndex == 2 || cmbProvinciaDestino.SelectedIndex == 3 || cmbProvinciaDestino.SelectedIndex == 4)
                 {
                     precio = 120;
                 }
@@ -1291,17 +1291,17 @@
             else if (cmbCantidadBultosN.SelectedIndex == 3)
             {
                 // ----------------- Local -----------------//
-                if (cmbProvincia.SelectedIndex == 0)
+                if (cmbProvinciaDestino.SelectedIndex == 0)
                 {
                     precio = 50;
                 }
                 // ----------------- Provincial -----------------//
-                else if (cmbProvincia.SelectedIndex == 1)
+                else if (cmbProvinciaDestino.SelectedIndex == 1)
                 {
                     precio = 90;
                 }
                 // ----------------- Regional -----------------//
-                else if (cmbProvincia.SelectedIndex == 2 || cmbProvincia.SelectedIndex == 3 || cmbProvincia.SelectedIndex == 4)
+                else if (cmbProvinciaDestino.SelectedIndex == 2 || cmbProvinciaDestino.SelectedIndex == 3 || cmbProvinciaDestino.SelectedIndex == 4)
                 {
                     precio = 130;
                 }
@@ -1372,7 +1372,7 @@
         private RadioButton rboSucursalDestino;
         private ComboBox cmbSucursalesDestino;
         private Label label2;
-        private ComboBox cmbProvincia;
+        private ComboBox cmbProvinciaDestino;
         private Label label3;
         private ComboBox cmbCiudadDestino;
         private ComboBox cmbCantidadBultosN;
