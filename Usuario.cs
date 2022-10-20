@@ -67,7 +67,7 @@ namespace grupoB_TP
 
         internal static string PedirVacio(string campo, string text)
         {
-            if (text == "")
+            if (string.IsNullOrEmpty(text))
             {
                 return $"{campo} no puede estar vacio. \n";
             }
