@@ -22,17 +22,17 @@ namespace grupoB_TP
         {
             if (rboSolicitarServicio.Checked)
             {
-                this.Hide();
+                
                 new SolicitudDeServicio().ShowDialog();
             }
             if (rboConsultarEstadoDeServicio.Checked)
             {
-                this.Hide();
+                
                 new EstadoDeServicio().ShowDialog();
             }
             if (rboConsultarEstadoDeCuenta.Checked)
             {
-                this.Hide();
+               
                 new EstadoDeCuenta().ShowDialog();
             }
         }
