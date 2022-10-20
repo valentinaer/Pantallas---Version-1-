@@ -60,7 +60,7 @@ namespace grupoB_TP
                         new MenuPrincipal().ShowDialog();
                     }
                 }
-                else if (DNI == "87654321" && Contraseña == "1234")
+                else if (DNI == "87654321")
                 {
                     if (Contraseña != "1234")
                     {

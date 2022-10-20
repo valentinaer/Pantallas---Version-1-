@@ -19,7 +19,7 @@ namespace grupoB_TP
         }
         public void cotizar(string origen, string destino)
         {
-
+            txtDirrecionNacional.Text = origen;
             // -------------- Escondemos elementos -----------------//
 
             btnCotizar.Visible = false;
@@ -239,10 +239,6 @@ namespace grupoB_TP
 
         }
 
-        private void txtOrigen_TextChanged(object sender, EventArgs e)
-        {
-
-        }
 
         private void lblMenuPrincipal_Click(object sender, EventArgs e)
         {
