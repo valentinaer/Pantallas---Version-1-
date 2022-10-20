@@ -30,7 +30,6 @@
         {
             System.Windows.Forms.TextBox txtDirrecionNacional;
             System.Windows.Forms.TextBox txtAlturaNacional;
-            System.Windows.Forms.TextBox txtDirrecionOrigen;
             System.Windows.Forms.TextBox txtAlturaOrigen;
             System.Windows.Forms.TextBox txtPisoDeptoNacional;
             System.Windows.Forms.TextBox txtPisoDepartamentoRecepcion;
@@ -38,6 +37,7 @@
             System.Windows.Forms.TextBox txtPisoDeptoI;
             System.Windows.Forms.TextBox txtAlturaI;
             System.Windows.Forms.TextBox txtDireccionI;
+            System.Windows.Forms.TextBox txtDirrecionOrigen;
             this.cmbRangoPeso = new System.Windows.Forms.ComboBox();
             this.label1 = new System.Windows.Forms.Label();
             this.chkUrgente = new System.Windows.Forms.CheckBox();
@@ -98,7 +98,6 @@
             this.rboNacional = new System.Windows.Forms.RadioButton();
             txtDirrecionNacional = new System.Windows.Forms.TextBox();
             txtAlturaNacional = new System.Windows.Forms.TextBox();
-            txtDirrecionOrigen = new System.Windows.Forms.TextBox();
             txtAlturaOrigen = new System.Windows.Forms.TextBox();
             txtPisoDeptoNacional = new System.Windows.Forms.TextBox();
             txtPisoDepartamentoRecepcion = new System.Windows.Forms.TextBox();
@@ -106,6 +105,7 @@
             txtPisoDeptoI = new System.Windows.Forms.TextBox();
             txtAlturaI = new System.Windows.Forms.TextBox();
             txtDireccionI = new System.Windows.Forms.TextBox();
+            txtDirrecionOrigen = new System.Windows.Forms.TextBox();
             this.grpCaracteristicaServicio.SuspendLayout();
             this.grpNacional.SuspendLayout();
             this.grpInternacional.SuspendLayout();
@@ -132,14 +132,6 @@
             txtAlturaNacional.Name = "txtAlturaNacional";
             txtAlturaNacional.Size = new System.Drawing.Size(111, 29);
             txtAlturaNacional.TabIndex = 14;
-            // 
-            // txtDirrecionOrigen
-            // 
-            txtDirrecionOrigen.Location = new System.Drawing.Point(133, 206);
-            txtDirrecionOrigen.Name = "txtDirrecionOrigen";
-            txtDirrecionOrigen.Size = new System.Drawing.Size(294, 29);
-            txtDirrecionOrigen.TabIndex = 1;
-            txtDirrecionOrigen.TextChanged += new System.EventHandler(this.txtOrigen_TextChanged);
             // 
             // txtAlturaOrigen
             // 
@@ -527,9 +519,9 @@
             // 
             // grpTipoRecepcion
             // 
+            this.grpTipoRecepcion.Controls.Add(txtDirrecionOrigen);
             this.grpTipoRecepcion.Controls.Add(txtPisoDepartamentoRecepcion);
             this.grpTipoRecepcion.Controls.Add(this.label17);
-            this.grpTipoRecepcion.Controls.Add(txtDirrecionOrigen);
             this.grpTipoRecepcion.Controls.Add(this.label9);
             this.grpTipoRecepcion.Controls.Add(txtAlturaOrigen);
             this.grpTipoRecepcion.Controls.Add(this.cmbCiudadOrigen);
@@ -929,6 +921,13 @@
             this.rboNacional.Text = "Nacional";
             this.rboNacional.UseVisualStyleBackColor = true;
             this.rboNacional.CheckedChanged += new System.EventHandler(this.mostrarOcultar);
+            // 
+            // txtDirrecionOrigen
+            // 
+            txtDirrecionOrigen.Location = new System.Drawing.Point(133, 206);
+            txtDirrecionOrigen.Name = "txtDirrecionOrigen";
+            txtDirrecionOrigen.Size = new System.Drawing.Size(291, 29);
+            txtDirrecionOrigen.TabIndex = 18;
             // 
             // SolicitudDeServicio
             // 
