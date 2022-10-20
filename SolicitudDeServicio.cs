@@ -4,6 +4,7 @@ using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
+using System.Runtime.InteropServices;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -93,6 +94,41 @@ namespace grupoB_TP
         private void SolicitudDeServicioNacional_Load(object sender, EventArgs e)
         {
 
+        }
+
+        private void btnConfirmar_Click(object sender, EventArgs e)
+        {
+            int tracking = Autonumerar();
+            MessageBox.Show($"La solicitud de servicio se registro de forma exitosa. \n " +
+                $"Su numero de trackeo es: tracking");
+        }
+
+        private int Autonumerar()
+        {
+            Random r = new Random();
+            return r.Next(0001, 9999);
+        }
+
+        private void btnModificar_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void cmbProvinciaOrigen_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (cmbProvinciaOrigen.Text == "BUENOS AIRES")
+            {
+                cmbCiudadOrigen.SelectedIndex = -1;
+                cmbCiudadOrigen.Items.Add("Mar del Plata");
+                cmbCiudadOrigen.Items.Add("Quilmes");
+                cmbCiudadOrigen.Items.Add("Bahia Blanca");
+                cmbCiudadOrigen.Items.Add("Salto");
+            }
+            else
+            {
+                cmbCiudadOrigen.SelectedIndex = -1;
+                cmbCiudadOrigen.Items.Add("NO IMPLEMENTADO");
+            }
         }
     }
 }

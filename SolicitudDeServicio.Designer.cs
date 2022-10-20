@@ -456,7 +456,7 @@
             this.cmbRegionI.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmbRegionI.FormattingEnabled = true;
             this.cmbRegionI.Items.AddRange(new object[] {
-            "Paises limitrofes", 
+            "Paises limitrofes",
             "Resto de america latina",
             "America del norte",
             "Europa",
@@ -580,11 +580,6 @@
             // 
             this.cmbCiudadOrigen.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmbCiudadOrigen.FormattingEnabled = true;
-            this.cmbCiudadOrigen.Items.AddRange(new object[] {
-            "Mar del Plata",
-            "Quilmes",
-            "Bahia Blanca",
-            "Salto"});
             this.cmbCiudadOrigen.Location = new System.Drawing.Point(133, 165);
             this.cmbCiudadOrigen.Name = "cmbCiudadOrigen";
             this.cmbCiudadOrigen.Size = new System.Drawing.Size(294, 29);
@@ -657,6 +652,7 @@
             this.cmbProvinciaOrigen.Name = "cmbProvinciaOrigen";
             this.cmbProvinciaOrigen.Size = new System.Drawing.Size(294, 29);
             this.cmbProvinciaOrigen.TabIndex = 7;
+            this.cmbProvinciaOrigen.SelectedIndexChanged += new System.EventHandler(this.cmbProvinciaOrigen_SelectedIndexChanged);
             // 
             // label10
             // 
@@ -748,6 +744,7 @@
             this.btnModificar.TabIndex = 19;
             this.btnModificar.Text = "Modificar Datos";
             this.btnModificar.UseVisualStyleBackColor = false;
+            this.btnModificar.Click += new System.EventHandler(this.btnModificar_Click);
             // 
             // groupBox3
             // 
@@ -788,6 +785,7 @@
             this.btnConfirmar.TabIndex = 14;
             this.btnConfirmar.Text = "Confirmar envio";
             this.btnConfirmar.UseVisualStyleBackColor = false;
+            this.btnConfirmar.Click += new System.EventHandler(this.btnConfirmar_Click);
             // 
             // groupBox9
             // 
@@ -941,7 +939,7 @@
             this.rboNacional.UseVisualStyleBackColor = true;
             this.rboNacional.CheckedChanged += new System.EventHandler(this.mostrarOcultar);
             // 
-            // SolicitudDeServiciol
+            // SolicitudDeServicio
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -955,7 +953,7 @@
             this.Controls.Add(this.grpNacional);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.grpInternacional);
-            this.Name = "SolicitudDeServiciol";
+            this.Name = "SolicitudDeServicio";
             this.Text = "Solicitud de Servicio";
             this.Load += new System.EventHandler(this.SolicitudDeServicioNacional_Load);
             this.groupBox1.ResumeLayout(false);
