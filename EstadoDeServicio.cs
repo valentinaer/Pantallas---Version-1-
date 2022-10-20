@@ -23,7 +23,7 @@ namespace grupoB_TP
             string numeroTrack = textBox1.Text;
             Console.WriteLine($"codigo de track: {numeroTrack}");
             mensaje += Usuario.PedirVacio("tracking", numeroTrack);
-            mensaje += Usuario.PedirEntero("tracking", 0 ,1000, numeroTrack);
+            mensaje += Usuario.PedirEntero("tracking", 0 ,9999, numeroTrack);
 
             if (mensaje != "")
             {
