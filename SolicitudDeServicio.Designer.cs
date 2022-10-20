@@ -1090,16 +1090,16 @@
                 }
 
                 // Condiciones para el Origen de Retirmo a Domicilio
-                if(rboRetiroDomicilio.Checked && !rboRecibeSucursal.Checked)
+                if(rboEntregaDomicilio.Checked && !rboSucursalDestino.Checked)
                 {
                     //Checkear que se haya seleccionado una Provincia de origen
-                    if (cmbProvinciaOrigen.SelectedIndex == -1)
+                    if (cmbProvinciaDestino.SelectedIndex == -1)
                     {
                         MessageBox.Show("Debe seleccionar una provincia de DESTINO", "Errores");
                         return;
                     }
                     //Checkear que se haya seleccionado una Ciudad de origen
-                    else if (cmbCiudadOrigen.SelectedIndex == -1)
+                    else if (cmbCiudadDestino.SelectedIndex == -1)
                     {
                         MessageBox.Show("Debe seleccionar una ciudad de DESTINO", "Errores");
                         return;
