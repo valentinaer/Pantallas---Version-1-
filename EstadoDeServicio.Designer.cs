@@ -87,6 +87,7 @@
             this.Controls.Add(this.label1);
             this.Name = "EstadoDeServicio";
             this.Text = "Estado del Servicio";
+            this.Load += new System.EventHandler(this.EstadoDeServicio_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

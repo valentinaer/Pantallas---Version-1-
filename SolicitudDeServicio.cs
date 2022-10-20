@@ -130,5 +130,10 @@ namespace grupoB_TP
                 cmbCiudadOrigen.Items.Add("NO IMPLEMENTADO");
             }
         }
+
+        private void SolicitudDeServicio_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            System.Windows.Forms.Application.Exit();
+        }
     }
 }

@@ -63,5 +63,15 @@ namespace grupoB_TP
                 
             }  
         }
+
+        private void EstadoDeServicio_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            System.Windows.Forms.Application.Exit();
+        }
+
+        private void EstadoDeServicio_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

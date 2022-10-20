@@ -44,18 +44,15 @@
             this.txtIngresarDNI.Size = new System.Drawing.Size(181, 23);
             this.txtIngresarDNI.TabIndex = 0;
             this.txtIngresarDNI.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBox1_KeyPress);
-
-
             // 
             // txtContraseña
             // 
             this.txtContraseña.BackColor = System.Drawing.SystemColors.Control;
             this.txtContraseña.Location = new System.Drawing.Point(24, 158);
             this.txtContraseña.Name = "txtContraseña";
-            this.txtContraseña.Size = new System.Drawing.Size(181, 23);
             this.txtContraseña.PlaceholderText = "Contraseña";
+            this.txtContraseña.Size = new System.Drawing.Size(181, 23);
             this.txtContraseña.TabIndex = 1;
-            
             // 
             // lblDNI
             // 
@@ -66,8 +63,6 @@
             this.lblDNI.Size = new System.Drawing.Size(111, 21);
             this.lblDNI.TabIndex = 2;
             this.lblDNI.Text = "Ingrese el DNI:";
-            
-
             // 
             // lblContraseña
             // 
@@ -117,6 +112,7 @@
             this.Controls.Add(this.txtIngresarDNI);
             this.Name = "AccesoAlSistema";
             this.Text = "Acceso al Sistema";
+            this.Load += new System.EventHandler(this.AccesoAlSistema_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

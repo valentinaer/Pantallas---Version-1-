@@ -44,5 +44,10 @@ namespace grupoB_TP
    
         
         }
+
+        private void EstadoDeCuenta_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            System.Windows.Forms.Application.Exit();
+        }
     }
 }
