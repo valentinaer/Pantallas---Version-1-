@@ -18,12 +18,12 @@ namespace grupoB_TP
         }
 
 
-        private void btnContinuar_Click(object sender, EventArgs e)
+        public void btnContinuar_Click(object sender, EventArgs e)
         {
             if (rboSolicitarServicio.Checked)
             {
                 this.Hide();
-                new SolicitudDeServiciol().ShowDialog();
+                new SolicitudDeServicio().ShowDialog();
             }
             if (rboConsultarEstadoDeServicio.Checked)
             {

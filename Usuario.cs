@@ -8,11 +8,14 @@ namespace grupoB_TP
 {
     static class Usuario
     {
+        public static string DNI = "12345678";
+        public static string DNI2 = "87654321";
+        
         internal static string PedirEntero(string campo, int min, int max, string valor)
         {
-            
+
             if (int.TryParse(valor, out int result))
-            { 
+            {
                 if (result >= min && result <= max)
                 {
                     return "";
@@ -40,9 +43,31 @@ namespace grupoB_TP
             }
         }
 
+        internal static string PedirNumerico(string campo, string ingreso)
+        {
+            while (true)
+            {
+                bool estaOK = true;
+                foreach (char caracter in ingreso)
+                {
+                    if (caracter > '0' && caracter < '9')
+                    {
+                        return ($" El {campo} debe tener solamente numeros");
+                        estaOK = false;
+                        break;
+                    }
+                }
+                if (!estaOK)
+                {
+                    continue;
+                }
+            }
+
+        }
+
         internal static string PedirVacio(string campo, string text)
         {
-            if(text == "")
+            if (text == "")
             {
                 return $"El {campo} no puede estar Vacio . \n";
             }
@@ -50,7 +75,7 @@ namespace grupoB_TP
             {
                 return "";
             }
-            
+
         }
     }
 }

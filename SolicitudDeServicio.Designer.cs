@@ -1,6 +1,6 @@
 ﻿namespace grupoB_TP
 {
-    partial class SolicitudDeServiciol
+    partial class SolicitudDeServicio
     {
         /// <summary>
         /// Required designer variable.
@@ -45,8 +45,8 @@
             this.cmbCantidadBultosN = new System.Windows.Forms.ComboBox();
             this.grpNacional = new System.Windows.Forms.GroupBox();
             this.label16 = new System.Windows.Forms.Label();
-            this.radioButton2 = new System.Windows.Forms.RadioButton();
-            this.radioButton1 = new System.Windows.Forms.RadioButton();
+            this.rboEntregaDomicilio = new System.Windows.Forms.RadioButton();
+            this.rboSucursalDestino = new System.Windows.Forms.RadioButton();
             this.label7 = new System.Windows.Forms.Label();
             this.cmbSucursalesDestino = new System.Windows.Forms.ComboBox();
             this.label2 = new System.Windows.Forms.Label();
@@ -76,6 +76,7 @@
             this.lblMenuPrincipal = new System.Windows.Forms.Label();
             this.btnCotizar = new System.Windows.Forms.Button();
             this.grpCotizacion = new System.Windows.Forms.GroupBox();
+            this.btnModificar = new System.Windows.Forms.Button();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.lblCuitI = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
@@ -95,7 +96,6 @@
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.rboInternacional = new System.Windows.Forms.RadioButton();
             this.rboNacional = new System.Windows.Forms.RadioButton();
-            this.btnModificar = new System.Windows.Forms.Button();
             txtDirrecionNacional = new System.Windows.Forms.TextBox();
             txtAlturaNacional = new System.Windows.Forms.TextBox();
             txtDirrecionOrigen = new System.Windows.Forms.TextBox();
@@ -270,8 +270,8 @@
             this.grpNacional.BackColor = System.Drawing.Color.Transparent;
             this.grpNacional.Controls.Add(txtPisoDeptoNacional);
             this.grpNacional.Controls.Add(this.label16);
-            this.grpNacional.Controls.Add(this.radioButton2);
-            this.grpNacional.Controls.Add(this.radioButton1);
+            this.grpNacional.Controls.Add(this.rboEntregaDomicilio);
+            this.grpNacional.Controls.Add(this.rboSucursalDestino);
             this.grpNacional.Controls.Add(this.label7);
             this.grpNacional.Controls.Add(txtAlturaNacional);
             this.grpNacional.Controls.Add(this.cmbSucursalesDestino);
@@ -300,27 +300,27 @@
             this.label16.TabIndex = 15;
             this.label16.Text = "Piso / Departamento:";
             // 
-            // radioButton2
+            // rboEntregaDomicilio
             // 
-            this.radioButton2.AutoSize = true;
-            this.radioButton2.Location = new System.Drawing.Point(26, 78);
-            this.radioButton2.Name = "radioButton2";
-            this.radioButton2.Size = new System.Drawing.Size(163, 25);
-            this.radioButton2.TabIndex = 7;
-            this.radioButton2.TabStop = true;
-            this.radioButton2.Text = "Entrega a Domicilio";
-            this.radioButton2.UseVisualStyleBackColor = true;
+            this.rboEntregaDomicilio.AutoSize = true;
+            this.rboEntregaDomicilio.Location = new System.Drawing.Point(26, 78);
+            this.rboEntregaDomicilio.Name = "rboEntregaDomicilio";
+            this.rboEntregaDomicilio.Size = new System.Drawing.Size(163, 25);
+            this.rboEntregaDomicilio.TabIndex = 7;
+            this.rboEntregaDomicilio.TabStop = true;
+            this.rboEntregaDomicilio.Text = "Entrega a Domicilio";
+            this.rboEntregaDomicilio.UseVisualStyleBackColor = true;
             // 
-            // radioButton1
+            // rboSucursalDestino
             // 
-            this.radioButton1.AutoSize = true;
-            this.radioButton1.Location = new System.Drawing.Point(26, 35);
-            this.radioButton1.Name = "radioButton1";
-            this.radioButton1.Size = new System.Drawing.Size(113, 25);
-            this.radioButton1.TabIndex = 6;
-            this.radioButton1.TabStop = true;
-            this.radioButton1.Text = "En sucursal: ";
-            this.radioButton1.UseVisualStyleBackColor = true;
+            this.rboSucursalDestino.AutoSize = true;
+            this.rboSucursalDestino.Location = new System.Drawing.Point(26, 35);
+            this.rboSucursalDestino.Name = "rboSucursalDestino";
+            this.rboSucursalDestino.Size = new System.Drawing.Size(113, 25);
+            this.rboSucursalDestino.TabIndex = 6;
+            this.rboSucursalDestino.TabStop = true;
+            this.rboSucursalDestino.Text = "En sucursal: ";
+            this.rboSucursalDestino.UseVisualStyleBackColor = true;
             // 
             // label7
             // 
@@ -456,10 +456,11 @@
             this.cmbRegionI.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmbRegionI.FormattingEnabled = true;
             this.cmbRegionI.Items.AddRange(new object[] {
-            "Mar del Plata",
-            "Quilmes",
-            "Bahia Blanca",
-            "Salto"});
+            "Paises limitrofes", 
+            "Resto de america latina",
+            "America del norte",
+            "Europa",
+            "Asia"});
             this.cmbRegionI.Location = new System.Drawing.Point(177, 56);
             this.cmbRegionI.Name = "cmbRegionI";
             this.cmbRegionI.Size = new System.Drawing.Size(197, 29);
@@ -523,10 +524,11 @@
             this.cmbPaisCiudadDestino.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmbPaisCiudadDestino.FormattingEnabled = true;
             this.cmbPaisCiudadDestino.Items.AddRange(new object[] {
-            "Mar del Plata",
-            "Quilmes",
-            "Bahia Blanca",
-            "Salto"});
+            "Madrid, España",
+            "Paris, Francia",
+            "Roma, Italia",
+            "Londres, UK",
+            "Berlin, Alemania"});
             this.cmbPaisCiudadDestino.Location = new System.Drawing.Point(177, 116);
             this.cmbPaisCiudadDestino.Name = "cmbPaisCiudadDestino";
             this.cmbPaisCiudadDestino.Size = new System.Drawing.Size(197, 29);
@@ -735,6 +737,18 @@
             this.grpCotizacion.Visible = false;
             this.grpCotizacion.Enter += new System.EventHandler(this.grpCotizacion_Enter);
             // 
+            // btnModificar
+            // 
+            this.btnModificar.BackColor = System.Drawing.Color.DodgerBlue;
+            this.btnModificar.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.btnModificar.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.btnModificar.Location = new System.Drawing.Point(39, 304);
+            this.btnModificar.Name = "btnModificar";
+            this.btnModificar.Size = new System.Drawing.Size(199, 32);
+            this.btnModificar.TabIndex = 19;
+            this.btnModificar.Text = "Modificar Datos";
+            this.btnModificar.UseVisualStyleBackColor = false;
+            // 
             // groupBox3
             // 
             this.groupBox3.Controls.Add(this.lblCuitI);
@@ -927,18 +941,6 @@
             this.rboNacional.UseVisualStyleBackColor = true;
             this.rboNacional.CheckedChanged += new System.EventHandler(this.mostrarOcultar);
             // 
-            // btnModificar
-            // 
-            this.btnModificar.BackColor = System.Drawing.Color.DodgerBlue;
-            this.btnModificar.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.btnModificar.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.btnModificar.Location = new System.Drawing.Point(39, 304);
-            this.btnModificar.Name = "btnModificar";
-            this.btnModificar.Size = new System.Drawing.Size(199, 32);
-            this.btnModificar.TabIndex = 19;
-            this.btnModificar.Text = "Modificar Datos";
-            this.btnModificar.UseVisualStyleBackColor = false;
-            // 
             // SolicitudDeServiciol
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
@@ -998,8 +1000,8 @@
         }
 
         private void btnCotizar_Click(object sender, EventArgs e)
-        {
-            
+        {            
+            // Condiciones generales para todos los envios
             if (cmbRangoPeso.SelectedIndex == -1)
             {
                 MessageBox.Show("Debe seleccionar un rango de peso");
@@ -1008,18 +1010,80 @@
             {
                 MessageBox.Show("Debe seleccionar la cantidad de Bultos");
             }
-            else if (cmbSucursalesDestino.SelectedIndex == -1)
+            
+            
+
+            // Condiciones para el Origen
+            // Si es envio a domicilio
+            if (rboSucursalDestino.Checked)
             {
-                MessageBox.Show("Debe elgir una sucursal para este tipo de Recepcion");
+                if (cmbProvinciaOrigen.SelectedIndex == -1)
+                {
+                    MessageBox.Show("Debe seleccionar una provincia de ORIGEN");
+                }
+                else if (cmbCiudadOrigen.SelectedIndex == -1)
+                {
+                    MessageBox.Show("Debe seleccionar una ciudad de ORIGEN");
+                }
             }
-            else if (cmbProvinciaOrigen.SelectedIndex == -1)
+            // Si es sucursal
+            if (rboEntregaDomicilio.Checked)
             {
-                MessageBox.Show("Debe seleccionar una provincia de ORIGEN");
+                if (cmbSucursalOrigen.SelectedIndex == -1)
+                {
+                    MessageBox.Show("Debe seleccionar una Sucursal");
+                }
             }
-            else if (cmbCiudadOrigen.SelectedIndex == -1)
+
+
+            // Condiciones para Envios Nacionales
+            if (rboNacional.Checked)
             {
-                MessageBox.Show("Debe seleccionar una ciudad de ORIGEN");
+                //rboRecibeSucursal
+                //rboRetiroEnDomiclio
+                //radiobutton1
+                //radiobutton2
+
+                // Condiciones para el Destino
+                if(rboRetiroDomicilio.Checked == true )
+                {
+
+                    if (cmbProvincia.SelectedIndex == -1)
+                    {
+                        MessageBox.Show("Debe seleccionar una provincia de DESTINO");
+                    }
+                    else if (cmbCiudadDestino.SelectedIndex == -1)
+                    {
+                        MessageBox.Show("Debe seleccionar una ciudad de DESTINO");
+                    }
+                }
+
+                if(rboRecibeSucursal.Checked == true){
+                    if (cmbSucursalesDestino.SelectedIndex == -1)
+                    {
+                        MessageBox.Show("Debe elgir una sucursal para este tipo de Recepcion");
+                    }
+                }
             }
+            else if (rboInternacional.Checked)
+            {
+                if (cmbRegionI.SelectedIndex == -1)
+                {
+                    MessageBox.Show("Debe seleccionar una provincia de DESTINO");
+                }
+                else if (cmbPaisCiudadDestino.SelectedIndex == -1)
+                {
+                    MessageBox.Show("Debe seleccionar una ciudad de DESTINO");
+                }
+            }
+
+            else if (!rboInternacional.Checked || !rboNacional.Checked)
+            {
+                MessageBox.Show("Debe seleccionar un tipo de envio");
+            }
+            
+            
+
             /* if (txtDirrecionNacional.Text == "")
             {
                 MessageBox.Show("Debe completar una dirrecion de ORIGEN");
@@ -1039,18 +1103,7 @@
                 MessageBox.Show("La altura de Origen debe ser mayor a 0 y menor a 10000");
                 return;
             } */
-            else if (cmbSucursalesDestino.SelectedIndex == -1)
-            {
-                MessageBox.Show("Debe elgir una sucursal para este tipo de Entrega");
-            }
-            else if (cmbProvincia.SelectedIndex == -1)
-            {
-                MessageBox.Show("Debe seleccionar una provincia de DESTINO");
-            }
-            else if (cmbCiudadDestino.SelectedIndex == -1)
-            {
-                MessageBox.Show("Debe seleccionar una ciudad de DESTINO");
-            }
+            
             /* else if (txtDirrecionNacional.Text == "")
             {
                 MessageBox.Show("Debe completar una dirrecion de DESTINO");
@@ -1094,15 +1147,12 @@
                     urgente = "No Urgente";
                 }
 
-                // generamos CUIT random porque no tenemos registro txt aun
-                Random generatorCuitRandom = new Random();
-                String randomCUIT = generatorCuitRandom.Next(10000, 99999).ToString("D6");
 
                 lblCotizacion.Text = "$" + calculatePrecio();
                 lblOrigen.Text = cmbProvinciaOrigen.Text + " - " + cmbCiudadOrigen.Text;
                 lblDestino.Text = cmbCiudadDestino.Text + " - " + cmbProvincia.Text;
                 lblUrgente.Text = urgente;
-                lblCuitI.Text = randomCUIT + randomCUIT;
+                lblCuitI.Text = "30" + Usuario.DNI + "9";
             }
         }
       
@@ -1248,8 +1298,8 @@
         private Button btnConfirmar;
         private Label label16;
         private Label label17;
-        private RadioButton radioButton2;
-        private RadioButton radioButton1;
+        private RadioButton rboEntregaDomicilio;
+        private RadioButton rboSucursalDestino;
         private ComboBox cmbSucursalesDestino;
         private Label label2;
         private ComboBox cmbProvincia;
