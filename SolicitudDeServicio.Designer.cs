@@ -282,7 +282,7 @@
             this.grpNacional.Controls.Add(txtDirrecionNacional);
             this.grpNacional.Controls.Add(this.cmbCiudadDestino);
             this.grpNacional.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.grpNacional.Location = new System.Drawing.Point(329, 20);
+            this.grpNacional.Location = new System.Drawing.Point(476, 171);
             this.grpNacional.Name = "grpNacional";
             this.grpNacional.Size = new System.Drawing.Size(489, 321);
             this.grpNacional.TabIndex = 9;
@@ -393,10 +393,11 @@
             "SANTIAGO DEL ESTERO",
             "TIERRA DEL FUEGO, ANTÁRTIDA E ISLAS DEL ATLÁNTICO SUR",
             "TUCUMÁN"});
-            this.cmbProvinciaDestino.Location = new System.Drawing.Point(163, 122);
+            this.cmbProvinciaDestino.Location = new System.Drawing.Point(163, 121);
             this.cmbProvinciaDestino.Name = "cmbProvinciaDestino";
             this.cmbProvinciaDestino.Size = new System.Drawing.Size(307, 29);
             this.cmbProvinciaDestino.TabIndex = 3;
+            this.cmbProvinciaDestino.SelectedIndexChanged += new System.EventHandler(this.cmbProvinciaDestino_SelectedIndexChanged);
             // 
             // label3
             // 
@@ -411,11 +412,6 @@
             // 
             this.cmbCiudadDestino.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmbCiudadDestino.FormattingEnabled = true;
-            this.cmbCiudadDestino.Items.AddRange(new object[] {
-            "Mar del Plata",
-            "Quilmes",
-            "Bahia Blanca",
-            "Salto"});
             this.cmbCiudadDestino.Location = new System.Drawing.Point(163, 160);
             this.cmbCiudadDestino.Name = "cmbCiudadDestino";
             this.cmbCiudadDestino.Size = new System.Drawing.Size(307, 29);
@@ -430,7 +426,6 @@
             this.grpInternacional.Controls.Add(this.label19);
             this.grpInternacional.Controls.Add(txtPisoDeptoI);
             this.grpInternacional.Controls.Add(this.label4);
-            this.grpInternacional.Controls.Add(this.grpNacional);
             this.grpInternacional.Controls.Add(this.label21);
             this.grpInternacional.Controls.Add(txtAlturaI);
             this.grpInternacional.Controls.Add(this.label22);
@@ -946,6 +941,7 @@
             this.Controls.Add(this.btnCotizar);
             this.Controls.Add(this.lblMenuPrincipal);
             this.Controls.Add(this.groupBox5);
+            this.Controls.Add(this.grpNacional);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.grpInternacional);
             this.Name = "SolicitudDeServicio";

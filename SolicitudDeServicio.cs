@@ -131,23 +131,6 @@ namespace grupoB_TP
             }
         }
 
-        private void cmbProvincia_SelectedIndexChanged(object sender, EventArgs e)
-        {
-            if (cmbProvinciaDestino.Text == "BUENOS AIRES")
-            {
-                cmbCiudadDestino.Items.Clear();
-                cmbCiudadDestino.Items.Add("Mar del Plata");
-                cmbCiudadDestino.Items.Add("Quilmes");
-                cmbCiudadDestino.Items.Add("Bahia Blanca");
-                cmbCiudadDestino.Items.Add("Salto");
-            }
-            else if (cmbProvinciaDestino.Text != "BUENOS AIRES")
-            {
-                cmbCiudadDestino.Items.Clear();
-                cmbCiudadDestino.Items.Add("NO IMPLEMENTADO");
-            }
-
-        }
 
         private void cmbRegionI_SelectedIndexChanged(object sender, EventArgs e)
         {
@@ -160,6 +143,23 @@ namespace grupoB_TP
                 cmbPaisCiudadDestino.Items.Add("Berlin, Alemania");
             }
             else if (cmbProvinciaDestino.Text != "Europa")
+            {
+                cmbPaisCiudadDestino.Items.Clear();
+                cmbPaisCiudadDestino.Items.Add("NO IMPLEMENTADO");
+            }
+        }
+
+        private void cmbProvinciaDestino_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (cmbProvinciaDestino.Text == "BUENOS AIRES")
+            {
+                cmbCiudadDestino.Items.Clear();
+                cmbCiudadDestino.Items.Add("Mar del Plata");
+                cmbCiudadDestino.Items.Add("Quilmes");
+                cmbCiudadDestino.Items.Add("Bahia Blanca");
+                cmbCiudadDestino.Items.Add("Salto");
+            }
+            else if (cmbProvinciaDestino.Text != "BUENOS AIRES")
             {
                 cmbCiudadDestino.Items.Clear();
                 cmbCiudadDestino.Items.Add("NO IMPLEMENTADO");
