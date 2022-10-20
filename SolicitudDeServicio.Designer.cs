@@ -1006,7 +1006,7 @@
                 origen = cmbProvinciaOrigen.Text + " - " + cmbCiudadOrigen.Text;
             }
 
-
+            dirrecion = txtDirrecionOrigen.Text;
             //----------------- Validaciones -----------------//
 
 
@@ -1033,18 +1033,21 @@
             }
 
             // Condiciones para el Origen
-            // Si es envio a domicilio
+            // Si es RETIRO a domicilio
             else if (rboRetiroDomicilio.Checked && !rboRecibeSucursal.Checked)
             {
+                string mensaje ="";
                 if (cmbProvinciaOrigen.SelectedIndex == -1)
                 {
-                    MessageBox.Show("Debe seleccionar una provincia de ORIGEN", "Errores");
+                   mensaje = "Debe seleccionar una provincia de ORIGEN"+ "\n";
                 }
                 if (cmbCiudadOrigen.SelectedIndex == -1)
                 {
-                    MessageBox.Show("Debe seleccionar una ciudad de ORIGEN", "Errores");
+                    mensaje += "Debe seleccionar una CIUDAD de ORIGEN" + "\n";
+                   
                 }
-                if() 
+                mensaje += Usuario.PedirVacio("El domicilio de Retiro a Domicilio", );
+
             }
             // Si es sucursal
             else if (rboRecibeSucursal.Checked && !rboRetiroDomicilio.Checked)
