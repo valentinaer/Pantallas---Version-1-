@@ -27,7 +27,7 @@ namespace grupoB_TP
             }
             else
             {
-                return $"Debe ingresar un valor de {campo} Numerico. \n";
+                return $"Debe ingresar un valor de {campo} numérico. \n";
             }
         }
 
@@ -52,7 +52,7 @@ namespace grupoB_TP
                 {
                     if (caracter > '0' && caracter < '9')
                     {
-                        return ($" El {campo} debe tener solamente numeros");
+                        return ($" El {campo} debe tener solamente números.");
                         estaOK = false;
                         break;
                     }
@@ -69,7 +69,7 @@ namespace grupoB_TP
         {
             if (text == "")
             {
-                return $"{campo} no puede estar Vacio . \n";
+                return $"{campo} no puede estar vacio. \n";
             }
             else
             {

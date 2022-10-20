@@ -21,9 +21,9 @@ namespace grupoB_TP
             string mensaje = "";
             int[] numerosdeTrackeo = { 123, 456, 789};
             string numeroTrack = txtTrackeo.Text;
-            Console.WriteLine($"Codigo de track: {numeroTrack}");
-            mensaje += Usuario.PedirVacio("El numero de Tracking", numeroTrack);
-            mensaje += Usuario.PedirEntero("El numero de Tracking tracking", 0 ,9999, numeroTrack);
+            Console.WriteLine($"Código de trackeo: {numeroTrack}");
+            mensaje += Usuario.PedirVacio("El número de Tracking", numeroTrack);
+            mensaje += Usuario.PedirEntero("tracking", 0 ,9999, numeroTrack);
 
             if (mensaje != "")
             {
@@ -58,7 +58,7 @@ namespace grupoB_TP
                 }
                 else
                 {
-                    MessageBox.Show("No existe un servicio con el Número de Trackeo ingresado.", "Estado de servicio");
+                    MessageBox.Show("No existe un servicio con el número de trackeo ingresado.", "Estado de servicio");
                 }
                 
             }  
