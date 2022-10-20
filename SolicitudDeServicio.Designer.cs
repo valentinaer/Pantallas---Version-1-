@@ -41,7 +41,7 @@
             this.cmbRangoPeso = new System.Windows.Forms.ComboBox();
             this.label1 = new System.Windows.Forms.Label();
             this.chkUrgente = new System.Windows.Forms.CheckBox();
-            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.grpCaracteristicaServicio = new System.Windows.Forms.GroupBox();
             this.cmbCantidadBultosN = new System.Windows.Forms.ComboBox();
             this.grpNacional = new System.Windows.Forms.GroupBox();
             this.label16 = new System.Windows.Forms.Label();
@@ -62,7 +62,7 @@
             this.label21 = new System.Windows.Forms.Label();
             this.label22 = new System.Windows.Forms.Label();
             this.cmbPaisCiudadDestino = new System.Windows.Forms.ComboBox();
-            this.groupBox5 = new System.Windows.Forms.GroupBox();
+            this.grpTipoRecepcion = new System.Windows.Forms.GroupBox();
             this.label17 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
             this.cmbCiudadOrigen = new System.Windows.Forms.ComboBox();
@@ -93,7 +93,7 @@
             this.label14 = new System.Windows.Forms.Label();
             this.label13 = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
-            this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.grpTipoEnvio = new System.Windows.Forms.GroupBox();
             this.rboInternacional = new System.Windows.Forms.RadioButton();
             this.rboNacional = new System.Windows.Forms.RadioButton();
             txtDirrecionNacional = new System.Windows.Forms.TextBox();
@@ -106,17 +106,17 @@
             txtPisoDeptoI = new System.Windows.Forms.TextBox();
             txtAlturaI = new System.Windows.Forms.TextBox();
             txtDireccionI = new System.Windows.Forms.TextBox();
-            this.groupBox1.SuspendLayout();
+            this.grpCaracteristicaServicio.SuspendLayout();
             this.grpNacional.SuspendLayout();
             this.grpInternacional.SuspendLayout();
-            this.groupBox5.SuspendLayout();
+            this.grpTipoRecepcion.SuspendLayout();
             this.grpCotizacion.SuspendLayout();
             this.groupBox3.SuspendLayout();
             this.groupBox9.SuspendLayout();
             this.groupBox8.SuspendLayout();
             this.groupBox7.SuspendLayout();
             this.groupBox6.SuspendLayout();
-            this.groupBox2.SuspendLayout();
+            this.grpTipoEnvio.SuspendLayout();
             this.SuspendLayout();
             // 
             // txtDirrecionNacional
@@ -229,20 +229,20 @@
             this.chkUrgente.UseVisualStyleBackColor = true;
             this.chkUrgente.CheckedChanged += new System.EventHandler(this.checkBox1_CheckedChanged);
             // 
-            // groupBox1
+            // grpCaracteristicaServicio
             // 
-            this.groupBox1.Controls.Add(this.cmbCantidadBultosN);
-            this.groupBox1.Controls.Add(label18);
-            this.groupBox1.Controls.Add(this.label1);
-            this.groupBox1.Controls.Add(this.cmbRangoPeso);
-            this.groupBox1.Controls.Add(this.chkUrgente);
-            this.groupBox1.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.groupBox1.Location = new System.Drawing.Point(12, 95);
-            this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(939, 65);
-            this.groupBox1.TabIndex = 8;
-            this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "Caracteristica del Servicio";
+            this.grpCaracteristicaServicio.Controls.Add(this.cmbCantidadBultosN);
+            this.grpCaracteristicaServicio.Controls.Add(label18);
+            this.grpCaracteristicaServicio.Controls.Add(this.label1);
+            this.grpCaracteristicaServicio.Controls.Add(this.cmbRangoPeso);
+            this.grpCaracteristicaServicio.Controls.Add(this.chkUrgente);
+            this.grpCaracteristicaServicio.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.grpCaracteristicaServicio.Location = new System.Drawing.Point(12, 95);
+            this.grpCaracteristicaServicio.Name = "grpCaracteristicaServicio";
+            this.grpCaracteristicaServicio.Size = new System.Drawing.Size(939, 65);
+            this.grpCaracteristicaServicio.TabIndex = 8;
+            this.grpCaracteristicaServicio.TabStop = false;
+            this.grpCaracteristicaServicio.Text = "Caracteristica del Servicio";
             // 
             // cmbCantidadBultosN
             // 
@@ -284,7 +284,7 @@
             this.grpNacional.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.grpNacional.Location = new System.Drawing.Point(476, 171);
             this.grpNacional.Name = "grpNacional";
-            this.grpNacional.Size = new System.Drawing.Size(489, 321);
+            this.grpNacional.Size = new System.Drawing.Size(489, 327);
             this.grpNacional.TabIndex = 9;
             this.grpNacional.TabStop = false;
             this.grpNacional.Text = "NACIONAL";
@@ -525,29 +525,29 @@
             this.cmbPaisCiudadDestino.Size = new System.Drawing.Size(197, 29);
             this.cmbPaisCiudadDestino.TabIndex = 4;
             // 
-            // groupBox5
+            // grpTipoRecepcion
             // 
-            this.groupBox5.Controls.Add(txtPisoDepartamentoRecepcion);
-            this.groupBox5.Controls.Add(this.label17);
-            this.groupBox5.Controls.Add(txtDirrecionOrigen);
-            this.groupBox5.Controls.Add(this.label9);
-            this.groupBox5.Controls.Add(txtAlturaOrigen);
-            this.groupBox5.Controls.Add(this.cmbCiudadOrigen);
-            this.groupBox5.Controls.Add(this.label8);
-            this.groupBox5.Controls.Add(this.cmbSucursalOrigen);
-            this.groupBox5.Controls.Add(this.rboRetiroDomicilio);
-            this.groupBox5.Controls.Add(this.cmbProvinciaOrigen);
-            this.groupBox5.Controls.Add(this.label10);
-            this.groupBox5.Controls.Add(this.rboRecibeSucursal);
-            this.groupBox5.Controls.Add(this.label11);
-            this.groupBox5.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.groupBox5.Location = new System.Drawing.Point(12, 166);
-            this.groupBox5.Name = "groupBox5";
-            this.groupBox5.Size = new System.Drawing.Size(442, 332);
-            this.groupBox5.TabIndex = 10;
-            this.groupBox5.TabStop = false;
-            this.groupBox5.Text = "Tipo de Recepcion";
-            this.groupBox5.Enter += new System.EventHandler(this.groupBox5_Enter);
+            this.grpTipoRecepcion.Controls.Add(txtPisoDepartamentoRecepcion);
+            this.grpTipoRecepcion.Controls.Add(this.label17);
+            this.grpTipoRecepcion.Controls.Add(txtDirrecionOrigen);
+            this.grpTipoRecepcion.Controls.Add(this.label9);
+            this.grpTipoRecepcion.Controls.Add(txtAlturaOrigen);
+            this.grpTipoRecepcion.Controls.Add(this.cmbCiudadOrigen);
+            this.grpTipoRecepcion.Controls.Add(this.label8);
+            this.grpTipoRecepcion.Controls.Add(this.cmbSucursalOrigen);
+            this.grpTipoRecepcion.Controls.Add(this.rboRetiroDomicilio);
+            this.grpTipoRecepcion.Controls.Add(this.cmbProvinciaOrigen);
+            this.grpTipoRecepcion.Controls.Add(this.label10);
+            this.grpTipoRecepcion.Controls.Add(this.rboRecibeSucursal);
+            this.grpTipoRecepcion.Controls.Add(this.label11);
+            this.grpTipoRecepcion.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.grpTipoRecepcion.Location = new System.Drawing.Point(12, 166);
+            this.grpTipoRecepcion.Name = "grpTipoRecepcion";
+            this.grpTipoRecepcion.Size = new System.Drawing.Size(442, 332);
+            this.grpTipoRecepcion.TabIndex = 10;
+            this.grpTipoRecepcion.TabStop = false;
+            this.grpTipoRecepcion.Text = "Tipo de Recepcion";
+            this.grpTipoRecepcion.Enter += new System.EventHandler(this.groupBox5_Enter);
             // 
             // label17
             // 
@@ -729,7 +729,7 @@
             this.btnModificar.BackColor = System.Drawing.Color.DodgerBlue;
             this.btnModificar.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.btnModificar.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.btnModificar.Location = new System.Drawing.Point(39, 304);
+            this.btnModificar.Location = new System.Drawing.Point(97, 300);
             this.btnModificar.Name = "btnModificar";
             this.btnModificar.Size = new System.Drawing.Size(199, 32);
             this.btnModificar.TabIndex = 19;
@@ -770,7 +770,7 @@
             this.btnConfirmar.BackColor = System.Drawing.Color.DodgerBlue;
             this.btnConfirmar.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.btnConfirmar.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.btnConfirmar.Location = new System.Drawing.Point(39, 262);
+            this.btnConfirmar.Location = new System.Drawing.Point(97, 262);
             this.btnConfirmar.Name = "btnConfirmar";
             this.btnConfirmar.Size = new System.Drawing.Size(199, 32);
             this.btnConfirmar.TabIndex = 14;
@@ -894,17 +894,17 @@
             this.label12.TabIndex = 0;
             this.label12.Text = "Origen:";
             // 
-            // groupBox2
+            // grpTipoEnvio
             // 
-            this.groupBox2.Controls.Add(this.rboInternacional);
-            this.groupBox2.Controls.Add(this.rboNacional);
-            this.groupBox2.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.groupBox2.Location = new System.Drawing.Point(235, 25);
-            this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(536, 56);
-            this.groupBox2.TabIndex = 14;
-            this.groupBox2.TabStop = false;
-            this.groupBox2.Text = "Elija el tipo de envio";
+            this.grpTipoEnvio.Controls.Add(this.rboInternacional);
+            this.grpTipoEnvio.Controls.Add(this.rboNacional);
+            this.grpTipoEnvio.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.grpTipoEnvio.Location = new System.Drawing.Point(235, 25);
+            this.grpTipoEnvio.Name = "grpTipoEnvio";
+            this.grpTipoEnvio.Size = new System.Drawing.Size(536, 56);
+            this.grpTipoEnvio.TabIndex = 14;
+            this.grpTipoEnvio.TabStop = false;
+            this.grpTipoEnvio.Text = "Elija el tipo de envio";
             // 
             // rboInternacional
             // 
@@ -936,25 +936,25 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
             this.ClientSize = new System.Drawing.Size(1370, 542);
-            this.Controls.Add(this.groupBox2);
+            this.Controls.Add(this.grpTipoEnvio);
             this.Controls.Add(this.grpCotizacion);
             this.Controls.Add(this.btnCotizar);
             this.Controls.Add(this.lblMenuPrincipal);
-            this.Controls.Add(this.groupBox5);
+            this.Controls.Add(this.grpTipoRecepcion);
             this.Controls.Add(this.grpNacional);
-            this.Controls.Add(this.groupBox1);
+            this.Controls.Add(this.grpCaracteristicaServicio);
             this.Controls.Add(this.grpInternacional);
             this.Name = "SolicitudDeServicio";
             this.Text = "Solicitud de Servicio";
             this.Load += new System.EventHandler(this.SolicitudDeServicioNacional_Load);
-            this.groupBox1.ResumeLayout(false);
-            this.groupBox1.PerformLayout();
+            this.grpCaracteristicaServicio.ResumeLayout(false);
+            this.grpCaracteristicaServicio.PerformLayout();
             this.grpNacional.ResumeLayout(false);
             this.grpNacional.PerformLayout();
             this.grpInternacional.ResumeLayout(false);
             this.grpInternacional.PerformLayout();
-            this.groupBox5.ResumeLayout(false);
-            this.groupBox5.PerformLayout();
+            this.grpTipoRecepcion.ResumeLayout(false);
+            this.grpTipoRecepcion.PerformLayout();
             this.grpCotizacion.ResumeLayout(false);
             this.grpCotizacion.PerformLayout();
             this.groupBox3.ResumeLayout(false);
@@ -967,8 +967,8 @@
             this.groupBox7.PerformLayout();
             this.groupBox6.ResumeLayout(false);
             this.groupBox6.PerformLayout();
-            this.groupBox2.ResumeLayout(false);
-            this.groupBox2.PerformLayout();
+            this.grpTipoEnvio.ResumeLayout(false);
+            this.grpTipoEnvio.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -1013,23 +1013,23 @@
             // Validar que sea Nacional o Internacional
             if (!rboInternacional.Checked && !rboNacional.Checked)
             {
-                MessageBox.Show("Debe seleccionar un tipo de envio");
+                MessageBox.Show("Debe seleccionar un tipo de envio", "Errores");
             }
 
             // Condiciones generales para todos los envios
             else if (cmbRangoPeso.SelectedIndex == -1)
             {
-                MessageBox.Show("Debe seleccionar un rango de peso");
+                MessageBox.Show("Debe seleccionar un rango de peso", "Errores");
             }
             else if (cmbCantidadBultosN.SelectedIndex == -1)
             {
-                MessageBox.Show("Debe seleccionar la cantidad de Bultos");
+                MessageBox.Show("Debe seleccionar la cantidad de Bultos", "Errores");
             }
             
             //valida que se haya seleccionado un tipo de envio con los radio buttons Sucursal y Domicilio
             else if (!rboRecibeSucursal.Checked && !rboRetiroDomicilio.Checked)
             {
-                MessageBox.Show("Debe seleccionar un tipo de recepcion");
+                MessageBox.Show("Debe seleccionar un tipo de recepcion", "Errores");
             }
 
             // Condiciones para el Origen
@@ -1038,11 +1038,11 @@
             {
                 if (cmbProvinciaOrigen.SelectedIndex == -1)
                 {
-                    MessageBox.Show("Debe seleccionar una provincia de ORIGEN");
+                    MessageBox.Show("Debe seleccionar una provincia de ORIGEN", "Errores");
                 }
                 else if (cmbCiudadOrigen.SelectedIndex == -1)
                 {
-                    MessageBox.Show("Debe seleccionar una ciudad de ORIGEN");
+                    MessageBox.Show("Debe seleccionar una ciudad de ORIGEN", "Errores");
                 }
             }
             // Si es sucursal
@@ -1050,13 +1050,13 @@
             {
                 if (cmbSucursalOrigen.SelectedIndex == -1)
                 {
-                    MessageBox.Show("Debe seleccionar una Sucursal");
+                    MessageBox.Show("Debe seleccionar una Sucursal", "Errores");
                 }
             }
 
             else if (!rboEntregaDomicilio.Checked && !rboSucursalDestino.Checked)
             {
-                MessageBox.Show("Debe seleccionar un tipo de envio");
+                MessageBox.Show("Debe seleccionar un tipo de envio", "Errores");
             }
 
             // Validaciones para Envios Nacionales
@@ -1065,7 +1065,7 @@
 
                 if (!rboEntregaDomicilio.Checked && !rboSucursalDestino.Checked)
                 {
-                    MessageBox.Show("Debe seleccionar un tipo de envio");
+                    MessageBox.Show("Debe seleccionar un tipo de envio", "Errores");
                     return;
                 }
 
@@ -1075,13 +1075,13 @@
                     //Checkear que se haya seleccionado una Provincia de origen
                     if (cmbProvinciaOrigen.SelectedIndex == -1)
                     {
-                        MessageBox.Show("Debe seleccionar una provincia de DESTINO");
+                        MessageBox.Show("Debe seleccionar una provincia de DESTINO", "Errores");
                         return;
                     }
                     //Checkear que se haya seleccionado una Ciudad de origen
                     else if (cmbCiudadOrigen.SelectedIndex == -1)
                     {
-                        MessageBox.Show("Debe seleccionar una ciudad de DESTINO");
+                        MessageBox.Show("Debe seleccionar una ciudad de DESTINO", "Errores");
                         return;
                     }
                 }
@@ -1092,17 +1092,14 @@
                     //Checkear que se haya seleccionado una sucursal de destino
                     if (cmbSucursalesDestino.SelectedIndex == -1)
                     {
-                        MessageBox.Show("Debe elgir una sucursal para este tipo de Recepcion");
+                        MessageBox.Show("Debe elgir una sucursal para este tipo de Recepcion", "Errores");
                         return;
                     }
                 }
 
                 string destino = "";
-                
-
-                
-
-                // same logic above but to the destino
+                                
+                // Igual logica en DESTINO
                 if (rboSucursalDestino.Checked && !rboEntregaDomicilio.Checked)
                 {
                     destino = cmbSucursalesDestino.Text;
@@ -1122,28 +1119,28 @@
                 // Condiciones para el Origen
                 if (cmbRegionI.SelectedIndex == -1)
                 {
-                    MessageBox.Show("Debe seleccionar una provincia de DESTINO");
+                    MessageBox.Show("Debe seleccionar una provincia de DESTINO", "Errores");
                     return;
                 }
 
                 if (cmbPaisCiudadDestino.SelectedIndex == -1)
                 {
-                    MessageBox.Show("Debe seleccionar una ciudad de DESTINO");
+                    MessageBox.Show("Debe seleccionar una ciudad de DESTINO", "Errores");
                     return;
                 }
                 cotizar(origen, cmbPaisCiudadDestino.Text + " - " + cmbRegionI.Text );
             }
         }
 
-    private void cotizar(string origen, string destino )
+    public void cotizar(string origen, string destino )
     {
 
         // -------------- Escondemos elementos -----------------//
         grpCotizacion.Visible = true;
         lblMenuPrincipal.Visible = true;
-        groupBox1.Visible = false;
-        groupBox2.Visible = false;
-        groupBox5.Visible = false;
+        grpCaracteristicaServicio.Visible = false;
+        grpTipoEnvio.Visible = false;
+        grpTipoRecepcion.Visible = false;
         grpNacional.Visible = false;
         grpInternacional.Visible = false;
         grpCotizacion.Visible = true;
@@ -1192,7 +1189,7 @@
         lblOrigen.Text = origen;
         lblDestino.Text = destino;
         lblUrgente.Text = urgente;
-        lblCuitI.Text = "30" + Usuario.DNI + "9";
+        lblCuitI.Text = "30- " + Usuario.DNI + "-9";
     }
 
         private double calculatePrecio()
@@ -1327,11 +1324,11 @@
         private TextBox txtDirrecionNacional;
         private Label label1;
         private CheckBox chkUrgente;
-        private GroupBox groupBox1;
+        private GroupBox grpCaracteristicaServicio;
         private GroupBox grpNacional;
         private Label label6;
         private Label label7;
-        private GroupBox groupBox5;
+        private GroupBox grpTipoRecepcion;
         private ComboBox cmbSucursalOrigen;
         private RadioButton rboRecibeSucursal;
         private RadioButton rboRetiroDomicilio;
@@ -1378,7 +1375,7 @@
         private Label label21;
         private Label label22;
         private ComboBox cmbPaisCiudadDestino;
-        private GroupBox groupBox2;
+        private GroupBox grpTipoEnvio;
         private RadioButton rboInternacional;
         private RadioButton rboNacional;
         private Button btnModificar;
