@@ -33,7 +33,14 @@ namespace grupoB_TP
             string[] y = { "-$750", "$250", "$-102", "$123" };
             string saldo = y[(new Random()).Next(4)];
 
-            lblNombreCliente.Text = "------";
+            //NOMBRES LISTA
+            string[] z = { "Copito S.A.", "EcoLogic S.R.L." };
+            string nombre = z[(new Random()).Next(2)];
+
+
+
+
+            lblNombreCliente.Text = nombre;
             lblCuit.Text = "30" + "-" + result + "-" + "9"; ;
             lblFecha.Text = "14/10/2022";
             lblNroFactura.Text = "16-0461";
