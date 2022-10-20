@@ -162,7 +162,7 @@
             label18.RightToLeft = System.Windows.Forms.RightToLeft.No;
             label18.Size = new System.Drawing.Size(140, 21);
             label18.TabIndex = 8;
-            label18.Text = "Cantidad de bultos";
+            label18.Text = "Cantidad de bultos *";
             // 
             // txtPisoDeptoI
             // 
@@ -207,7 +207,7 @@
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(112, 21);
             this.label1.TabIndex = 2;
-            this.label1.Text = "Rango de Peso";
+            this.label1.Text = "Rango de Peso *";
             this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // chkUrgente
@@ -279,7 +279,7 @@
             this.grpNacional.Size = new System.Drawing.Size(489, 327);
             this.grpNacional.TabIndex = 9;
             this.grpNacional.TabStop = false;
-            this.grpNacional.Text = "NACIONAL";
+            this.grpNacional.Text = "NACIONAL *";
             this.grpNacional.Visible = false;
             this.grpNacional.Enter += new System.EventHandler(this.groupBox2_Enter);
             // 
@@ -290,7 +290,7 @@
             this.label16.Name = "label16";
             this.label16.Size = new System.Drawing.Size(156, 21);
             this.label16.TabIndex = 15;
-            this.label16.Text = "Piso / Departamento:";
+            this.label16.Text = "Piso / Departamento";
             // 
             // rboEntregaDomicilio
             // 
@@ -300,7 +300,7 @@
             this.rboEntregaDomicilio.Size = new System.Drawing.Size(163, 25);
             this.rboEntregaDomicilio.TabIndex = 7;
             this.rboEntregaDomicilio.TabStop = true;
-            this.rboEntregaDomicilio.Text = "Entrega a Domicilio";
+            this.rboEntregaDomicilio.Text = "Entrega a Domicilio ";
             this.rboEntregaDomicilio.UseVisualStyleBackColor = true;
             // 
             // rboSucursalDestino
@@ -311,7 +311,7 @@
             this.rboSucursalDestino.Size = new System.Drawing.Size(113, 25);
             this.rboSucursalDestino.TabIndex = 6;
             this.rboSucursalDestino.TabStop = true;
-            this.rboSucursalDestino.Text = "En sucursal: ";
+            this.rboSucursalDestino.Text = "En sucursal ";
             this.rboSucursalDestino.UseVisualStyleBackColor = true;
             // 
             // label7
@@ -321,7 +321,7 @@
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(63, 21);
             this.label7.TabIndex = 13;
-            this.label7.Text = "Altura : ";
+            this.label7.Text = "Altura * ";
             // 
             // cmbSucursalesDestino
             // 
@@ -345,7 +345,7 @@
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(85, 21);
             this.label2.TabIndex = 1;
-            this.label2.Text = "Provincia : ";
+            this.label2.Text = "Provincia * ";
             // 
             // label6
             // 
@@ -354,7 +354,7 @@
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(86, 21);
             this.label6.TabIndex = 12;
-            this.label6.Text = "Dirección : ";
+            this.label6.Text = "Dirección * ";
             // 
             // cmbProvinciaDestino
             // 
@@ -398,7 +398,7 @@
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(70, 21);
             this.label3.TabIndex = 2;
-            this.label3.Text = "Ciudad : ";
+            this.label3.Text = "Ciudad * ";
             // 
             // cmbCiudadDestino
             // 
@@ -462,7 +462,7 @@
             this.label20.Name = "label20";
             this.label20.Size = new System.Drawing.Size(100, 21);
             this.label20.TabIndex = 18;
-            this.label20.Text = "Ciudad / Pais";
+            this.label20.Text = "Ciudad / Pais *";
             this.label20.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
             // label19
@@ -472,7 +472,7 @@
             this.label19.Name = "label19";
             this.label19.Size = new System.Drawing.Size(59, 21);
             this.label19.TabIndex = 17;
-            this.label19.Text = "Region";
+            this.label19.Text = "Region *";
             this.label19.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
             // label4
@@ -482,7 +482,7 @@
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(156, 21);
             this.label4.TabIndex = 15;
-            this.label4.Text = "Piso / Departamento:";
+            this.label4.Text = "Piso / Departamento";
             // 
             // label21
             // 
@@ -491,7 +491,7 @@
             this.label21.Name = "label21";
             this.label21.Size = new System.Drawing.Size(63, 21);
             this.label21.TabIndex = 13;
-            this.label21.Text = "Altura : ";
+            this.label21.Text = "Altura *";
             // 
             // label22
             // 
@@ -500,7 +500,7 @@
             this.label22.Name = "label22";
             this.label22.Size = new System.Drawing.Size(79, 21);
             this.label22.TabIndex = 12;
-            this.label22.Text = "Direcion : ";
+            this.label22.Text = "Direcion *";
             // 
             // cmbPaisCiudadDestino
             // 
@@ -538,7 +538,7 @@
             this.grpTipoRecepcion.Size = new System.Drawing.Size(442, 332);
             this.grpTipoRecepcion.TabIndex = 10;
             this.grpTipoRecepcion.TabStop = false;
-            this.grpTipoRecepcion.Text = "Tipo de Recepcion";
+            this.grpTipoRecepcion.Text = "Tipo de Recepcion *";
             this.grpTipoRecepcion.Enter += new System.EventHandler(this.groupBox5_Enter);
             // 
             // label17
@@ -548,7 +548,7 @@
             this.label17.Name = "label17";
             this.label17.Size = new System.Drawing.Size(156, 21);
             this.label17.TabIndex = 16;
-            this.label17.Text = "Piso / Departamento:";
+            this.label17.Text = "Piso / Departamento";
             // 
             // label9
             // 
@@ -557,7 +557,7 @@
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(86, 21);
             this.label9.TabIndex = 12;
-            this.label9.Text = "Dirección : ";
+            this.label9.Text = "Dirección *";
             // 
             // cmbCiudadOrigen
             // 
@@ -575,7 +575,7 @@
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(63, 21);
             this.label8.TabIndex = 13;
-            this.label8.Text = "Altura : ";
+            this.label8.Text = "Altura *";
             // 
             // cmbSucursalOrigen
             // 
@@ -644,7 +644,7 @@
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(70, 21);
             this.label10.TabIndex = 6;
-            this.label10.Text = "Ciudad : ";
+            this.label10.Text = "Ciudad *";
             // 
             // rboRecibeSucursal
             // 
@@ -654,7 +654,7 @@
             this.rboRecibeSucursal.Size = new System.Drawing.Size(113, 25);
             this.rboRecibeSucursal.TabIndex = 4;
             this.rboRecibeSucursal.TabStop = true;
-            this.rboRecibeSucursal.Text = "En sucursal: ";
+            this.rboRecibeSucursal.Text = "En sucursal ";
             this.rboRecibeSucursal.UseVisualStyleBackColor = true;
             this.rboRecibeSucursal.CheckedChanged += new System.EventHandler(this.rboRecibeSucursal_CheckedChanged);
             // 
@@ -665,7 +665,7 @@
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(85, 21);
             this.label11.TabIndex = 5;
-            this.label11.Text = "Provincia : ";
+            this.label11.Text = "Provincia *";
             // 
             // lblMenuPrincipal
             // 
@@ -1048,7 +1048,6 @@
                 if (cmbCiudadOrigen.SelectedIndex == -1)
                 {
                     mensaje += "Debe seleccionar una Ciudad de ORIGEN" + "\n";
-                   
                 }
                 if(string.IsNullOrEmpty(txtDirrecionOrigen.Text))
                 {
@@ -1058,13 +1057,13 @@
                 {
                     mensaje += "La altura de Retiro" + "\n";
                 }
-                
-
+                else
+                {
+                    mensaje += Usuario.PedirEntero("Altura de Retiro", 0 , 99999, txtAlturaOrigen.Text);
+                }
 
                 if (mensaje != "")
                 {
-                    mensaje += Usuario.PedirEntero("Altura", 0 , 99999, txtAlturaOrigen.Text);
-                    
                     MessageBox.Show(mensaje, "Errores");
                     return;
                 }
@@ -1103,6 +1102,26 @@
                     else if (cmbCiudadOrigen.SelectedIndex == -1)
                     {
                         MessageBox.Show("Debe seleccionar una ciudad de DESTINO", "Errores");
+                        return;
+                    }
+
+                    string mensaje = "";
+                    if(string.IsNullOrEmpty(txtDirrecionNacional.Text))
+                    {
+                        mensaje += "El domicilio de Entrega a Domicilio" + "\n";
+                    }
+                    if(string.IsNullOrEmpty(txtAlturaNacional.Text))
+                    {
+                        mensaje += "La altura de Entrega" + "\n";
+                    }
+                    else
+                    {
+                        mensaje += Usuario.PedirEntero("Altura de Entrega", 0 , 99999, txtAlturaNacional.Text);
+                    }
+
+                    if (mensaje != "")
+                    {
+                        MessageBox.Show(mensaje, "Errores");
                         return;
                     }
                 }
@@ -1147,6 +1166,26 @@
                 if (cmbPaisCiudadDestino.SelectedIndex == -1)
                 {
                     MessageBox.Show("Debe seleccionar una País y Ciudad de DESTINO", "Errores");
+                    return;
+                }
+
+                string mensaje = "";
+                if(string.IsNullOrEmpty(txtDireccionI.Text))
+                {
+                    mensaje += "El domicilio de Entrega a Domicilio Internacional" + "\n";
+                }
+                if(string.IsNullOrEmpty(txtAlturaI.Text))
+                {
+                    mensaje += "La altura de Entrega Internacional" + "\n";
+                }
+                else
+                {
+                    mensaje += Usuario.PedirEntero("Altura de Entrega Internacional ", 0 , 99999, txtAlturaI.Text);
+                }
+
+                if (mensaje != "")
+                {
+                    MessageBox.Show(mensaje, "Errores");
                     return;
                 }
                 cotizar(origen, cmbPaisCiudadDestino.Text + " - " + cmbRegionI.Text );
