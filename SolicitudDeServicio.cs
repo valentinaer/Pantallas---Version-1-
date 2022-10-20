@@ -141,12 +141,29 @@ namespace grupoB_TP
                 cmbCiudadDestino.Items.Add("Bahia Blanca");
                 cmbCiudadDestino.Items.Add("Salto");
             }
-            else if (cmbProvinciaOrigen.Text != "BUENOS AIRES")
+            else if (cmbProvinciaDestino.Text != "BUENOS AIRES")
             {
                 cmbCiudadDestino.Items.Clear();
                 cmbCiudadDestino.Items.Add("NO IMPLEMENTADO");
             }
 
+        }
+
+        private void cmbRegionI_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (cmbRegionI.Text == "Europa")
+            {
+                cmbPaisCiudadDestino.Items.Clear();
+                cmbPaisCiudadDestino.Items.Add("Madrid España");
+                cmbPaisCiudadDestino.Items.Add("Paris, Francia");
+                cmbPaisCiudadDestino.Items.Add("Roma, Italia");
+                cmbPaisCiudadDestino.Items.Add("Berlin, Alemania");
+            }
+            else if (cmbProvinciaDestino.Text != "Europa")
+            {
+                cmbCiudadDestino.Items.Clear();
+                cmbCiudadDestino.Items.Add("NO IMPLEMENTADO");
+            }
         }
     }
 }

@@ -282,7 +282,7 @@
             this.grpNacional.Controls.Add(txtDirrecionNacional);
             this.grpNacional.Controls.Add(this.cmbCiudadDestino);
             this.grpNacional.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.grpNacional.Location = new System.Drawing.Point(476, 177);
+            this.grpNacional.Location = new System.Drawing.Point(329, 20);
             this.grpNacional.Name = "grpNacional";
             this.grpNacional.Size = new System.Drawing.Size(489, 321);
             this.grpNacional.TabIndex = 9;
@@ -430,6 +430,7 @@
             this.grpInternacional.Controls.Add(this.label19);
             this.grpInternacional.Controls.Add(txtPisoDeptoI);
             this.grpInternacional.Controls.Add(this.label4);
+            this.grpInternacional.Controls.Add(this.grpNacional);
             this.grpInternacional.Controls.Add(this.label21);
             this.grpInternacional.Controls.Add(txtAlturaI);
             this.grpInternacional.Controls.Add(this.label22);
@@ -465,6 +466,7 @@
             this.cmbRegionI.Name = "cmbRegionI";
             this.cmbRegionI.Size = new System.Drawing.Size(197, 29);
             this.cmbRegionI.TabIndex = 19;
+            this.cmbRegionI.SelectedIndexChanged += new System.EventHandler(this.cmbRegionI_SelectedIndexChanged);
             // 
             // label20
             // 
@@ -515,12 +517,6 @@
             // 
             // cmbPaisCiudadDestino
             // 
-            this.cmbPaisCiudadDestino.AutoCompleteCustomSource.AddRange(new string[] {
-            "Madrid, España",
-            "Paris, Francia",
-            "Roma, Italia",
-            "Londres, UK",
-            "Berlin, Alemania"});
             this.cmbPaisCiudadDestino.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmbPaisCiudadDestino.FormattingEnabled = true;
             this.cmbPaisCiudadDestino.Items.AddRange(new object[] {
@@ -950,7 +946,6 @@
             this.Controls.Add(this.btnCotizar);
             this.Controls.Add(this.lblMenuPrincipal);
             this.Controls.Add(this.groupBox5);
-            this.Controls.Add(this.grpNacional);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.grpInternacional);
             this.Name = "SolicitudDeServicio";
