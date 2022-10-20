@@ -1002,40 +1002,43 @@
                 origen = cmbSucursalOrigen.Text;
             }
             
-            else if (rboRetiroDomicilio.Checked && !rboRecibeSucursal.Checked)
+            if (rboRetiroDomicilio.Checked && !rboRecibeSucursal.Checked)
             {
                 origen = cmbProvinciaOrigen.Text + " - " + cmbCiudadOrigen.Text;
             }
 
-            //dirrecion = txtDirrecionOrigen.Text;
             //----------------- Validaciones -----------------//
 
 
             // Validar que sea Nacional o Internacional
-            else if (!rboInternacional.Checked && !rboNacional.Checked)
+            if (!rboInternacional.Checked && !rboNacional.Checked)
             {
                 MessageBox.Show("Debe seleccionar un tipo de envio", "Errores");
+                return;
             }
 
             // Condiciones generales para todos los envios
-            else if (cmbRangoPeso.SelectedIndex == -1)
+            if (cmbRangoPeso.SelectedIndex == -1)
             {
                 MessageBox.Show("Debe seleccionar un rango de peso", "Errores");
+                return;
             }
-            else if (cmbCantidadBultosN.SelectedIndex == -1)
+            if (cmbCantidadBultosN.SelectedIndex == -1)
             {
                 MessageBox.Show("Debe seleccionar la cantidad de Bultos", "Errores");
+                return;
             }
             
             //valida que se haya seleccionado un tipo de envio con los radio buttons Sucursal y Domicilio
-            else if (!rboRecibeSucursal.Checked && !rboRetiroDomicilio.Checked)
+            if (!rboRecibeSucursal.Checked && !rboRetiroDomicilio.Checked)
             {
                 MessageBox.Show("Debe seleccionar un tipo de recepcion", "Errores");
+                return;
             }
 
             // Condiciones para el Origen
             // Si es RETIRO a domicilio
-            else if (rboRetiroDomicilio.Checked && !rboRecibeSucursal.Checked)
+            if (rboRetiroDomicilio.Checked && !rboRecibeSucursal.Checked)
             {
                 string mensaje ="";
                 if (cmbProvinciaOrigen.SelectedIndex == -1)
@@ -1048,21 +1051,28 @@
                    
                 }
                 mensaje += Usuario.PedirVacio("El domicilio de Retiro a Domicilio", "" );
+                if (mensaje != "")
+                {
+                    MessageBox.Show(mensaje, "Errores");
+                    return;
+                }
+                return;
+                
                  
                 }
 
             // Si es sucursal
-            else if (rboRecibeSucursal.Checked && !rboRetiroDomicilio.Checked)
+            if (rboRecibeSucursal.Checked && !rboRetiroDomicilio.Checked)
             {
                 if (cmbSucursalOrigen.SelectedIndex == -1)
                 {
-                    MessageBox.Show("Debe seleccionar una Sucursal", "Errores");
+                    MessageBox.Show("Debe seleccionar una Sucursal de ORIGEN", "Errores");
+                    return;
                 }
             }
-            
 
             // Validaciones para Envios Nacionales
-            else if (rboNacional.Checked && !rboInternacional.Checked)
+            if (rboNacional.Checked && !rboInternacional.Checked)
             {
 
                 if (!rboEntregaDomicilio.Checked && !rboSucursalDestino.Checked)
@@ -1086,19 +1096,15 @@
                         MessageBox.Show("Debe seleccionar una ciudad de DESTINO", "Errores");
                         return;
                     }
-
-                    // ----------------------------------------------------------------------------
-                    // Agregar validacion de que se haya ingresado una Altura y Direccion de origen
-                    // ----------------------------------------------------------------------------
                 }
 
                 // Condiciones para el Destino, si es envio a sucursal 
-                if(rboRecibeSucursal.Checked && !rboRetiroDomicilio.Checked)
+                if(rboSucursalDestino.Checked && !rboEntregaDomicilio.Checked)
                 {
                     //Checkear que se haya seleccionado una sucursal de destino
                     if (cmbSucursalesDestino.SelectedIndex == -1)
                     {
-                        MessageBox.Show("Debe elgir una sucursal para este tipo de Recepcion", "Errores");
+                        MessageBox.Show("Debe seleccionar una sucursal de destino", "Errores");
                         return;
                     }
                 }
@@ -1120,7 +1126,7 @@
 
 
             // Validaciones para Envios Internacionales
-            else if (rboInternacional.Checked && !rboNacional.Checked)
+            if (rboInternacional.Checked && !rboNacional.Checked)
             {
                 // Condiciones para el Origen
                 if (cmbRegionI.SelectedIndex == -1)

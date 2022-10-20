@@ -288,6 +288,7 @@ namespace grupoB_TP
             grpTipoRecepcion.Visible = true;
             grpNacional.Visible = true;
             grpInternacional.Visible = false;
+            btnCotizar.Visible = true;
         }
 
         //Mostrar Provincia Origen
