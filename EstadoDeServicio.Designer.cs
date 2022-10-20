@@ -30,7 +30,7 @@
         {
             this.label1 = new System.Windows.Forms.Label();
             this.lblNumeroTrackeo = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txtTrackeo = new System.Windows.Forms.TextBox();
             this.btnBuscar = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
@@ -55,13 +55,13 @@
             this.lblNumeroTrackeo.TabIndex = 1;
             this.lblNumeroTrackeo.Text = "Nº de trackeo:";
             // 
-            // textBox1
+            // txtTrackeo
             // 
-            this.textBox1.Location = new System.Drawing.Point(139, 66);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(149, 23);
-            this.textBox1.TabIndex = 2;
-            this.textBox1.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBox1_KeyPress);
+            this.txtTrackeo.Location = new System.Drawing.Point(139, 66);
+            this.txtTrackeo.Name = "txtTrackeo";
+            this.txtTrackeo.Size = new System.Drawing.Size(149, 23);
+            this.txtTrackeo.TabIndex = 2;
+            this.txtTrackeo.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBox1_KeyPress);
             // 
             // btnBuscar
             // 
@@ -82,7 +82,7 @@
             this.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
             this.ClientSize = new System.Drawing.Size(438, 130);
             this.Controls.Add(this.btnBuscar);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.txtTrackeo);
             this.Controls.Add(this.lblNumeroTrackeo);
             this.Controls.Add(this.label1);
             this.Name = "EstadoDeServicio";
@@ -112,7 +112,7 @@
 
         private Label label1;
         private Label lblNumeroTrackeo;
-        private TextBox textBox1;
+        private TextBox txtTrackeo;
         private Button btnBuscar;
     }
 }

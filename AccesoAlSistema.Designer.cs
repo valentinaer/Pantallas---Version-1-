@@ -43,6 +43,7 @@
             this.txtIngresarDNI.PlaceholderText = "Documento";
             this.txtIngresarDNI.Size = new System.Drawing.Size(181, 23);
             this.txtIngresarDNI.TabIndex = 0;
+            this.txtIngresarDNI.TextChanged += new System.EventHandler(this.txtIngresarDNI_TextChanged);
             this.txtIngresarDNI.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBox1_KeyPress);
             // 
             // txtContraseña

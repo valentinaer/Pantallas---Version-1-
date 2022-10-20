@@ -21,8 +21,8 @@ namespace grupoB_TP
 
             //Validamos que esten Vacios (Flujo 1)
 
-            mensaje = Usuario.PedirVacio("DNI", DNI);
-            mensaje += Usuario.PedirVacio("Contraseña", Contraseña);
+            mensaje = Usuario.PedirVacio("El DNI", DNI);
+            mensaje += Usuario.PedirVacio(" La Contraseña", Contraseña);
             try
             {
                 if (mensaje != "")
@@ -32,7 +32,7 @@ namespace grupoB_TP
                 //Validamos DNI debe tener 8 caracteres (Flujo 2)
                 else if (DNI.Length != 8)
                 {
-                    MessageBox.Show("El DNI está incompleto debe tener 8 caracteres", "Errores");
+                    MessageBox.Show("El DNI debe tener 8 caracteres", "Errores");
                 }
                 //DNI no Autorizado (Flujo 3)
                 else if (DNI != "12345678" && DNI != "87654321")
@@ -88,6 +88,11 @@ namespace grupoB_TP
         private void AccesoAlSistema_FormClosing(object sender, FormClosingEventArgs e)
         {
             System.Windows.Forms.Application.Exit();
+        }
+
+        private void txtIngresarDNI_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

@@ -46,7 +46,7 @@ namespace grupoB_TP
 
         private void cmbSucursales_SelectedIndexChanged(object sender, EventArgs e)
         {
-            cmbSucursalesDestino.Items.Add("1- Cordoba 6571, CABA");
+          
 
         }
 
@@ -95,8 +95,8 @@ namespace grupoB_TP
         private void btnConfirmar_Click(object sender, EventArgs e)
         {
             int tracking = Autonumerar();
-            MessageBox.Show($"La solicitud de servicio se registro de forma exitosa. \n " +
-                $"Su numero de trackeo es: tracking");
+            MessageBox.Show($"La solicitud de servicio se registro de forma exitosa." +
+                $" {"\n"} Su numero de trackeo es: {tracking}");
         }
 
         private int Autonumerar()

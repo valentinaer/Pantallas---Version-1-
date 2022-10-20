@@ -40,7 +40,7 @@
             System.Windows.Forms.TextBox txtDireccionI;
             this.cmbRangoPeso = new System.Windows.Forms.ComboBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.chkUrgenteN = new System.Windows.Forms.CheckBox();
+            this.chkUrgente = new System.Windows.Forms.CheckBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.cmbCantidadBultosN = new System.Windows.Forms.ComboBox();
             this.grpNacional = new System.Windows.Forms.GroupBox();
@@ -218,16 +218,16 @@
             this.label1.Text = "Rango de Peso";
             this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
-            // chkUrgenteN
+            // chkUrgente
             // 
-            this.chkUrgenteN.AutoSize = true;
-            this.chkUrgenteN.Location = new System.Drawing.Point(747, 26);
-            this.chkUrgenteN.Name = "chkUrgenteN";
-            this.chkUrgenteN.Size = new System.Drawing.Size(186, 25);
-            this.chkUrgenteN.TabIndex = 3;
-            this.chkUrgenteN.Text = "Urgente (Recargo X %)";
-            this.chkUrgenteN.UseVisualStyleBackColor = true;
-            this.chkUrgenteN.CheckedChanged += new System.EventHandler(this.checkBox1_CheckedChanged);
+            this.chkUrgente.AutoSize = true;
+            this.chkUrgente.Location = new System.Drawing.Point(747, 26);
+            this.chkUrgente.Name = "chkUrgente";
+            this.chkUrgente.Size = new System.Drawing.Size(186, 25);
+            this.chkUrgente.TabIndex = 3;
+            this.chkUrgente.Text = "Urgente (Recargo X %)";
+            this.chkUrgente.UseVisualStyleBackColor = true;
+            this.chkUrgente.CheckedChanged += new System.EventHandler(this.checkBox1_CheckedChanged);
             // 
             // groupBox1
             // 
@@ -235,7 +235,7 @@
             this.groupBox1.Controls.Add(label18);
             this.groupBox1.Controls.Add(this.label1);
             this.groupBox1.Controls.Add(this.cmbRangoPeso);
-            this.groupBox1.Controls.Add(this.chkUrgenteN);
+            this.groupBox1.Controls.Add(this.chkUrgente);
             this.groupBox1.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.groupBox1.Location = new System.Drawing.Point(12, 95);
             this.groupBox1.Name = "groupBox1";
@@ -717,7 +717,7 @@
             this.grpCotizacion.ForeColor = System.Drawing.Color.Purple;
             this.grpCotizacion.Location = new System.Drawing.Point(972, 141);
             this.grpCotizacion.Name = "grpCotizacion";
-            this.grpCotizacion.Size = new System.Drawing.Size(290, 352);
+            this.grpCotizacion.Size = new System.Drawing.Size(394, 352);
             this.grpCotizacion.TabIndex = 13;
             this.grpCotizacion.TabStop = false;
             this.grpCotizacion.Text = "Datos del pedido";
@@ -740,9 +740,9 @@
             // groupBox3
             // 
             this.groupBox3.Controls.Add(this.lblCuitI);
-            this.groupBox3.Location = new System.Drawing.Point(106, 26);
+            this.groupBox3.Location = new System.Drawing.Point(106, 30);
             this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Size = new System.Drawing.Size(178, 36);
+            this.groupBox3.Size = new System.Drawing.Size(280, 36);
             this.groupBox3.TabIndex = 18;
             this.groupBox3.TabStop = false;
             // 
@@ -783,7 +783,7 @@
             this.groupBox9.Controls.Add(this.lblCotizacion);
             this.groupBox9.Location = new System.Drawing.Point(106, 207);
             this.groupBox9.Name = "groupBox9";
-            this.groupBox9.Size = new System.Drawing.Size(178, 39);
+            this.groupBox9.Size = new System.Drawing.Size(280, 39);
             this.groupBox9.TabIndex = 7;
             this.groupBox9.TabStop = false;
             // 
@@ -801,7 +801,7 @@
             this.groupBox8.Controls.Add(this.lblUrgente);
             this.groupBox8.Location = new System.Drawing.Point(106, 157);
             this.groupBox8.Name = "groupBox8";
-            this.groupBox8.Size = new System.Drawing.Size(178, 39);
+            this.groupBox8.Size = new System.Drawing.Size(280, 39);
             this.groupBox8.TabIndex = 6;
             this.groupBox8.TabStop = false;
             // 
@@ -819,7 +819,7 @@
             this.groupBox7.Controls.Add(this.lblDestino);
             this.groupBox7.Location = new System.Drawing.Point(106, 112);
             this.groupBox7.Name = "groupBox7";
-            this.groupBox7.Size = new System.Drawing.Size(178, 39);
+            this.groupBox7.Size = new System.Drawing.Size(280, 39);
             this.groupBox7.TabIndex = 5;
             this.groupBox7.TabStop = false;
             // 
@@ -835,9 +835,9 @@
             // groupBox6
             // 
             this.groupBox6.Controls.Add(this.lblOrigen);
-            this.groupBox6.Location = new System.Drawing.Point(106, 67);
+            this.groupBox6.Location = new System.Drawing.Point(106, 72);
             this.groupBox6.Name = "groupBox6";
-            this.groupBox6.Size = new System.Drawing.Size(178, 39);
+            this.groupBox6.Size = new System.Drawing.Size(282, 39);
             this.groupBox6.TabIndex = 4;
             this.groupBox6.TabStop = false;
             // 
@@ -935,7 +935,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
-            this.ClientSize = new System.Drawing.Size(1291, 542);
+            this.ClientSize = new System.Drawing.Size(1370, 542);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.grpCotizacion);
             this.Controls.Add(this.btnCotizar);
@@ -1167,7 +1167,7 @@
 
         // Si el checkbox de urgente esta marcado seteamos la variable a Urgente para utilizar como texto 
         string urgente = "";
-        if (rboNacional.Checked)
+        if (chkUrgente.Checked)
         {
             urgente = "Urgente";
         }
@@ -1304,7 +1304,7 @@
             }
 
             // si es urgente sumamos 20% al precio
-            if (chkUrgenteN.Checked)
+            if (chkUrgente.Checked)
             {
                 precioUrgente = precio * 0.2;
             }
@@ -1326,7 +1326,7 @@
         private ComboBox cmbRangoPeso;
         private TextBox txtDirrecionNacional;
         private Label label1;
-        private CheckBox chkUrgenteN;
+        private CheckBox chkUrgente;
         private GroupBox groupBox1;
         private GroupBox grpNacional;
         private Label label6;

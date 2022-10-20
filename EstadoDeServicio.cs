@@ -20,8 +20,8 @@ namespace grupoB_TP
         {
             string mensaje = "";
             int[] numerosdeTrackeo = { 123, 456, 789};
-            string numeroTrack = textBox1.Text;
-            Console.WriteLine($"codigo de track: {numeroTrack}");
+            string numeroTrack = txtTrackeo.Text;
+            Console.WriteLine($"Codigo de track: {numeroTrack}");
             mensaje += Usuario.PedirVacio("tracking", numeroTrack);
             mensaje += Usuario.PedirEntero("tracking", 0 ,9999, numeroTrack);
 
@@ -29,10 +29,10 @@ namespace grupoB_TP
             {
                 MessageBox.Show(mensaje, "Errores");
             }
-            //FALTA QUE SEA EFECTIVAMENTE UN NUMERO DE TRACKEO REAL
+            
             else
             {
-                //AGREGAR QUE MUESTRE LO QUE TIENE QUE HACER
+               
                 string estado = "";
                 foreach (int i in numerosdeTrackeo)
                 {
@@ -58,7 +58,7 @@ namespace grupoB_TP
                 }
                 else
                 {
-                    MessageBox.Show("No existe un servicio con el Número de Trackeo ingresado.Inténtalo Nuevamente", "Estado de servicio");
+                    MessageBox.Show("No existe un servicio con el Número de Trackeo ingresado.", "Estado de servicio");
                 }
                 
             }  
