@@ -19,7 +19,7 @@ namespace grupoB_TP
         private void btnBuscar_Click(object sender, EventArgs e)
         {
             string mensaje = "";
-            int[] numerosdeTrackeo = {123, 456, 789};
+            int[] numerosdeTrackeo = { 123, 456, 789};
             string numeroTrack = textBox1.Text;
             Console.WriteLine($"codigo de track: {numeroTrack}");
             mensaje += Usuario.PedirVacio("Numero de tracking", numeroTrack);
@@ -32,25 +32,34 @@ namespace grupoB_TP
             else
             {
                 //AGREGAR QUE MUESTRE LO QUE TIENE QUE HACER
-
+                string estado = "";
                 foreach (int i in numerosdeTrackeo)
                 {
                     if (numerosdeTrackeo.Contains(int.Parse(numeroTrack)))
                     {
                         if (int.Parse(numeroTrack) == 123)
                         {
-                            MessageBox.Show("Recibida", "Estado de servicio");
+                            estado = "Recibida";
                         }
                         else if (int.Parse(numeroTrack) == 456)
                         {
-                            MessageBox.Show("En Tránsito", "Estado de servicio");
+                            estado = "En Tránsito";
                         }
-                        else
+                        else if(int.Parse(numeroTrack) == 789)
                         {
-                            MessageBox.Show("Cerrada", "Estado de servicio");
-                        }
+                            estado = "Cerrada";
+                        }      
                     }
                 }
+                if(estado != "")
+                {
+                    MessageBox.Show(estado, "Estado de servicio");
+                }
+                else
+                {
+                    MessageBox.Show("No existe un servicio con el Número de Trackeo ingresado.Inténtalo Nuevamente", "Estado de servicio");
+                }
+                
             }  
         }
     }
