@@ -21,6 +21,8 @@ namespace grupoB_TP
         {
 
             // -------------- Escondemos elementos -----------------//
+
+            btnCotizar.Visible = false;
             grpCotizacion.Visible = true;
             lblMenuPrincipal.Visible = true;
             grpCaracteristicaServicio.Visible = false;
@@ -279,11 +281,12 @@ namespace grupoB_TP
         {
             // -------------- Escondemos elementos -----------------//
             grpCotizacion.Visible = false;
+            
             lblMenuPrincipal.Visible = false;
             grpCaracteristicaServicio.Visible = true;
             grpTipoEnvio.Visible = true;
             grpTipoRecepcion.Visible = true;
-            grpNacional.Visible = false;
+            grpNacional.Visible = true;
             grpInternacional.Visible = false;
         }
 

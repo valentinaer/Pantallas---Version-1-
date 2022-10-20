@@ -1040,10 +1040,11 @@
                 {
                     MessageBox.Show("Debe seleccionar una provincia de ORIGEN", "Errores");
                 }
-                else if (cmbCiudadOrigen.SelectedIndex == -1)
+                if (cmbCiudadOrigen.SelectedIndex == -1)
                 {
                     MessageBox.Show("Debe seleccionar una ciudad de ORIGEN", "Errores");
                 }
+                if() 
             }
             // Si es sucursal
             else if (rboRecibeSucursal.Checked && !rboRetiroDomicilio.Checked)

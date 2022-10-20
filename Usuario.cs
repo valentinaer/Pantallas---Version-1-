@@ -69,7 +69,7 @@ namespace grupoB_TP
         {
             if (text == "")
             {
-                return $" {campo} no puede estar Vacio . \n";
+                return $"{campo} no puede estar Vacio . \n";
             }
             else
             {
