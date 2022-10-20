@@ -1044,7 +1044,7 @@
                 {
                     MessageBox.Show("Debe seleccionar una ciudad de ORIGEN", "Errores");
                 }
-                if() 
+               
             }
             // Si es sucursal
             else if (rboRecibeSucursal.Checked && !rboRetiroDomicilio.Checked)
