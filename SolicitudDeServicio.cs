@@ -118,15 +118,15 @@ namespace grupoB_TP
         {
             if (cmbProvinciaOrigen.Text == "BUENOS AIRES")
             {
-                cmbCiudadOrigen.SelectedIndex = -1;
+                cmbCiudadOrigen.Items.Clear();
                 cmbCiudadOrigen.Items.Add("Mar del Plata");
                 cmbCiudadOrigen.Items.Add("Quilmes");
                 cmbCiudadOrigen.Items.Add("Bahia Blanca");
                 cmbCiudadOrigen.Items.Add("Salto");
             }
-            else
+            else if(cmbProvinciaOrigen.Text != "BUENOS AIRES")
             {
-                cmbCiudadOrigen.SelectedIndex = -1;
+                cmbCiudadOrigen.Items.Clear();
                 cmbCiudadOrigen.Items.Add("NO IMPLEMENTADO");
             }
         }
