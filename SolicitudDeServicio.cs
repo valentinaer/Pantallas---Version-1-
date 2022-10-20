@@ -17,6 +17,190 @@ namespace grupoB_TP
         {
             InitializeComponent();
         }
+        public void cotizar(string origen, string destino)
+        {
+
+            // -------------- Escondemos elementos -----------------//
+            grpCotizacion.Visible = true;
+            lblMenuPrincipal.Visible = true;
+            grpCaracteristicaServicio.Visible = false;
+            grpTipoEnvio.Visible = false;
+            grpTipoRecepcion.Visible = false;
+            grpNacional.Visible = false;
+            grpInternacional.Visible = false;
+            grpCotizacion.Visible = true;
+
+            // -------------- Centramos el elemento de cotizacion -----------------//
+            //centra el elemento de cotizacion hoirzontalmente y verticalmente
+            grpCotizacion.Location = new Point(
+                this.ClientSize.Width / 2 - grpCotizacion.Size.Width / 2,
+                this.ClientSize.Height / 2 - grpCotizacion.Size.Height / 2);
+
+            // centra el titulo horizontalmente
+            lblMenuPrincipal.Location = new Point(
+                this.ClientSize.Width / 2 - lblMenuPrincipal.Size.Width / 2,
+                lblMenuPrincipal.Location.Y);
+
+            // centra el boton cotizar horizontalmente
+            btnCotizar.Location = new Point(
+                this.ClientSize.Width / 2 - btnCotizar.Size.Width / 2,
+                btnCotizar.Location.Y);
+
+
+            // Si el checkbox de urgente esta marcado seteamos la variable a Urgente para utilizar como texto 
+            string urgente = "";
+            if (chkUrgente.Checked)
+            {
+                urgente = "Urgente";
+            }
+            else
+            {
+                urgente = "No Urgente";
+            }
+
+            // Calculamos el precio y multiplicamos por 4 para obtener el precio final de envio internacional
+            double price = 0;
+            if (rboNacional.Checked)
+            {
+                price = calculatePrecio();
+            }
+            else
+            {
+                price = calculatePrecio() * 4;
+            }
+
+            // Seteamos el texto de la cotizacion
+            lblCotizacion.Text = "$" + price;
+            lblOrigen.Text = origen;
+            lblDestino.Text = destino;
+            lblUrgente.Text = urgente;
+            lblCuitI.Text = "30-" + Usuario.DNI + "-9";
+        }
+        private double calculatePrecio()
+        {
+            double precio = 0;
+            double precioUrgente = 0;
+            double precioFinal = 0;
+
+            // -------------- Sobres Hasta 500g -----------------//
+            if (cmbCantidadBultosN.SelectedIndex == 0)
+            {
+
+                // ----------------- Local -----------------//
+                if (cmbProvinciaDestino.SelectedIndex == 0)
+                {
+                    precio = 20;
+                }
+
+                // ----------------- Provincial -----------------//
+                else if (cmbProvinciaDestino.SelectedIndex == 1)
+                {
+                    precio = 60;
+                }
+                // ----------------- Regional -----------------//
+                else if (cmbProvinciaDestino.SelectedIndex == 2 || cmbProvinciaDestino.SelectedIndex == 3 || cmbProvinciaDestino.SelectedIndex == 4)
+                {
+                    precio = 100;
+                }
+                // ----------------- Nacional -----------------//
+                else
+                {
+                    precio = 140;
+                }
+            }
+
+            // ----------------- Segun la cantidad de bultos -----------------//
+            else if (cmbCantidadBultosN.SelectedIndex == 1)
+            {
+                // ----------------- Local -----------------//
+                if (cmbProvinciaDestino.SelectedIndex == 0)
+                {
+                    precio = 30;
+                }
+                // ----------------- Provincial -----------------//
+                else if (cmbProvinciaDestino.SelectedIndex == 1)
+                {
+                    precio = 70;
+                }
+                // ----------------- Regional -----------------//
+                else if (cmbProvinciaDestino.SelectedIndex == 2 || cmbProvinciaDestino.SelectedIndex == 3 || cmbProvinciaDestino.SelectedIndex == 4)
+                {
+                    precio = 110;
+                }
+                // ----------------- Nacional -----------------//
+                else
+                {
+                    precio = 150;
+                }
+            }
+
+            // ------------- Bultos hasta 20Kg --------//
+            else if (cmbCantidadBultosN.SelectedIndex == 2)
+            {
+                // ----------------- Local -----------------//
+                if (cmbProvinciaDestino.SelectedIndex == 0)
+                {
+                    precio = 40;
+                }
+                // ----------------- Provincial -----------------//
+                else if (cmbProvinciaDestino.SelectedIndex == 1)
+                {
+                    precio = 80;
+                }
+                // ----------------- Regional -----------------//
+                else if (cmbProvinciaDestino.SelectedIndex == 2 || cmbProvinciaDestino.SelectedIndex == 3 || cmbProvinciaDestino.SelectedIndex == 4)
+                {
+                    precio = 120;
+                }
+                // ----------------- Nacional -----------------//
+                else
+                {
+                    precio = 160;
+                }
+            }
+
+            // ------------- Bultos hasta 30Kg --------//
+            else if (cmbCantidadBultosN.SelectedIndex == 3)
+            {
+                // ----------------- Local -----------------//
+                if (cmbProvinciaDestino.SelectedIndex == 0)
+                {
+                    precio = 50;
+                }
+                // ----------------- Provincial -----------------//
+                else if (cmbProvinciaDestino.SelectedIndex == 1)
+                {
+                    precio = 90;
+                }
+                // ----------------- Regional -----------------//
+                else if (cmbProvinciaDestino.SelectedIndex == 2 || cmbProvinciaDestino.SelectedIndex == 3 || cmbProvinciaDestino.SelectedIndex == 4)
+                {
+                    precio = 130;
+                }
+                // ----------------- Nacional -----------------//
+                else
+                {
+                    precio = 170;
+                }
+            }
+
+            // si es urgente sumamos 20% al precio
+            if (chkUrgente.Checked)
+            {
+                precioUrgente = precio * 0.2;
+            }
+
+            // tope maximo de urgencia es 50, por eso si es mas alto sobre escribimos 50
+            if (precioUrgente > 50)
+            {
+                precioUrgente = 50;
+            }
+
+            // retiro fijo es 30 y destino fijo 40
+            precioFinal = precio + precioUrgente + 30 + 40;
+
+            return precioFinal;
+        }
         private void cmbCiudad_SelectedIndexChanged(object sender, EventArgs e)
         {
 
