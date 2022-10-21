@@ -262,7 +262,7 @@ namespace grupoB_TP
         {
             int tracking = Autonumerar();
             MessageBox.Show($"La solicitud de servicio se registro de forma exitosa." +
-                $" {"\n"} Su numero de trackeo es: {tracking}");
+                $" {"\n"}Su numero de trackeo es: {tracking}", "Exito");
         }
         private int Autonumerar()
         {
@@ -332,11 +332,11 @@ namespace grupoB_TP
                 }
                 if (string.IsNullOrEmpty(txtDirrecionOrigen.Text))
                 {
-                    mensaje += "El domicilio de Retiro a Domicilio" + "\n";
+                    mensaje += "El domicilio de Retiro a Domicilio no puede estar VACIO" + "\n";
                 }
                 if (string.IsNullOrEmpty(txtAlturaOrigen.Text))
                 {
-                    mensaje += "La altura de Retiro" + "\n";
+                    mensaje += "La altura de Retiro no puede estar VACIO" + "\n";
                 }
                 else
                 {
@@ -389,11 +389,11 @@ namespace grupoB_TP
                     string mensaje = "";
                     if (string.IsNullOrEmpty(txtDirrecionNacional.Text))
                     {
-                        mensaje += "El domicilio de Entrega a Domicilio" + "\n";
+                        mensaje += "El domicilio de Entrega no puede estar Vacio" + "\n";
                     }
                     if (string.IsNullOrEmpty(txtAlturaNacional.Text))
                     {
-                        mensaje += "La altura de Entrega" + "\n";
+                        mensaje += "La altura de Entrega no puede estar Vacio" + "\n";
                     }
                     else
                     {
@@ -453,11 +453,11 @@ namespace grupoB_TP
                 string mensaje = "";
                 if (string.IsNullOrEmpty(txtDireccionI.Text))
                 {
-                    mensaje += "El domicilio de Entrega a Domicilio Internacional" + "\n";
+                    mensaje += "El domicilio de Entrega a Domicilio Internacional no puede estar VACIO" + "\n";
                 }
                 if (string.IsNullOrEmpty(txtAlturaI.Text))
                 {
-                    mensaje += "La altura de Entrega Internacional" + "\n";
+                    mensaje += "La altura de Entrega Internacional no puede estar VACIO" + "\n";
                 }
                 else
                 {
