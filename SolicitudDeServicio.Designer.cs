@@ -96,16 +96,16 @@
             this.grpTipoEnvio = new System.Windows.Forms.GroupBox();
             this.rboInternacional = new System.Windows.Forms.RadioButton();
             this.rboNacional = new System.Windows.Forms.RadioButton();
-            txtDirrecionNacional = new System.Windows.Forms.TextBox();
-            txtAlturaNacional = new System.Windows.Forms.TextBox();
-            txtAlturaOrigen = new System.Windows.Forms.TextBox();
-            txtPisoDeptoNacional = new System.Windows.Forms.TextBox();
-            txtPisoDepartamentoRecepcion = new System.Windows.Forms.TextBox();
+            this.txtDirrecionNacional = new System.Windows.Forms.TextBox();
+            this.txtAlturaNacional = new System.Windows.Forms.TextBox();
+            this.txtAlturaOrigen = new System.Windows.Forms.TextBox();
+            this.txtPisoDeptoNacional = new System.Windows.Forms.TextBox();
+            this.txtPisoDepartamentoRecepcion = new System.Windows.Forms.TextBox();
             label18 = new System.Windows.Forms.Label();
-            txtPisoDeptoI = new System.Windows.Forms.TextBox();
-            txtAlturaI = new System.Windows.Forms.TextBox();
-            txtDireccionI = new System.Windows.Forms.TextBox();
-            txtDirrecionOrigen = new System.Windows.Forms.TextBox();
+            this.txtPisoDeptoI = new System.Windows.Forms.TextBox();
+            this.txtAlturaI = new System.Windows.Forms.TextBox();
+            this.txtDireccionI = new System.Windows.Forms.TextBox();
+            this.txtDirrecionOrigen = new System.Windows.Forms.TextBox();
             this.grpCaracteristicaServicio.SuspendLayout();
             this.grpNacional.SuspendLayout();
             this.grpInternacional.SuspendLayout();
@@ -121,38 +121,38 @@
             // 
             // txtDirrecionNacional
             // 
-            txtDirrecionNacional.Location = new System.Drawing.Point(163, 201);
-            txtDirrecionNacional.Name = "txtDirrecionNacional";
-            txtDirrecionNacional.Size = new System.Drawing.Size(307, 29);
-            txtDirrecionNacional.TabIndex = 1;
+            this.txtDirrecionNacional.Location = new System.Drawing.Point(163, 201);
+            this.txtDirrecionNacional.Name = "txtDirrecionNacional";
+            this.txtDirrecionNacional.Size = new System.Drawing.Size(307, 29);
+            this.txtDirrecionNacional.TabIndex = 1;
             // 
             // txtAlturaNacional
             // 
-            txtAlturaNacional.Location = new System.Drawing.Point(163, 240);
-            txtAlturaNacional.Name = "txtAlturaNacional";
-            txtAlturaNacional.Size = new System.Drawing.Size(111, 29);
-            txtAlturaNacional.TabIndex = 14;
+            this.txtAlturaNacional.Location = new System.Drawing.Point(163, 240);
+            this.txtAlturaNacional.Name = "txtAlturaNacional";
+            this.txtAlturaNacional.Size = new System.Drawing.Size(111, 29);
+            this.txtAlturaNacional.TabIndex = 14;
             // 
             // txtAlturaOrigen
             // 
-            txtAlturaOrigen.Location = new System.Drawing.Point(133, 245);
-            txtAlturaOrigen.Name = "txtAlturaOrigen";
-            txtAlturaOrigen.Size = new System.Drawing.Size(111, 29);
-            txtAlturaOrigen.TabIndex = 14;
+            this.txtAlturaOrigen.Location = new System.Drawing.Point(133, 245);
+            this.txtAlturaOrigen.Name = "txtAlturaOrigen";
+            this.txtAlturaOrigen.Size = new System.Drawing.Size(111, 29);
+            this.txtAlturaOrigen.TabIndex = 14;
             // 
             // txtPisoDeptoNacional
             // 
-            txtPisoDeptoNacional.Location = new System.Drawing.Point(212, 279);
-            txtPisoDeptoNacional.Name = "txtPisoDeptoNacional";
-            txtPisoDeptoNacional.Size = new System.Drawing.Size(135, 29);
-            txtPisoDeptoNacional.TabIndex = 16;
+            this.txtPisoDeptoNacional.Location = new System.Drawing.Point(212, 279);
+            this.txtPisoDeptoNacional.Name = "txtPisoDeptoNacional";
+            this.txtPisoDeptoNacional.Size = new System.Drawing.Size(135, 29);
+            this.txtPisoDeptoNacional.TabIndex = 16;
             // 
             // txtPisoDepartamentoRecepcion
             // 
-            txtPisoDepartamentoRecepcion.Location = new System.Drawing.Point(209, 287);
-            txtPisoDepartamentoRecepcion.Name = "txtPisoDepartamentoRecepcion";
-            txtPisoDepartamentoRecepcion.Size = new System.Drawing.Size(132, 29);
-            txtPisoDepartamentoRecepcion.TabIndex = 17;
+            this.txtPisoDepartamentoRecepcion.Location = new System.Drawing.Point(209, 287);
+            this.txtPisoDepartamentoRecepcion.Name = "txtPisoDepartamentoRecepcion";
+            this.txtPisoDepartamentoRecepcion.Size = new System.Drawing.Size(132, 29);
+            this.txtPisoDepartamentoRecepcion.TabIndex = 17;
             // 
             // label18
             // 
@@ -166,31 +166,31 @@
             // 
             // txtPisoDeptoI
             // 
-            txtPisoDeptoI.Location = new System.Drawing.Point(239, 292);
-            txtPisoDeptoI.Name = "txtPisoDeptoI";
-            txtPisoDeptoI.Size = new System.Drawing.Size(135, 29);
-            txtPisoDeptoI.TabIndex = 16;
+            this.txtPisoDeptoI.Location = new System.Drawing.Point(239, 292);
+            this.txtPisoDeptoI.Name = "txtPisoDeptoI";
+            this.txtPisoDeptoI.Size = new System.Drawing.Size(135, 29);
+            this.txtPisoDeptoI.TabIndex = 16;
             // 
             // txtAlturaI
             // 
-            txtAlturaI.Location = new System.Drawing.Point(177, 237);
-            txtAlturaI.Name = "txtAlturaI";
-            txtAlturaI.Size = new System.Drawing.Size(111, 29);
-            txtAlturaI.TabIndex = 14;
+            this.txtAlturaI.Location = new System.Drawing.Point(177, 237);
+            this.txtAlturaI.Name = "txtAlturaI";
+            this.txtAlturaI.Size = new System.Drawing.Size(111, 29);
+            this.txtAlturaI.TabIndex = 14;
             // 
             // txtDireccionI
             // 
-            txtDireccionI.Location = new System.Drawing.Point(177, 180);
-            txtDireccionI.Name = "txtDireccionI";
-            txtDireccionI.Size = new System.Drawing.Size(307, 29);
-            txtDireccionI.TabIndex = 1;
+            this.txtDireccionI.Location = new System.Drawing.Point(177, 180);
+            this.txtDireccionI.Name = "txtDireccionI";
+            this.txtDireccionI.Size = new System.Drawing.Size(307, 29);
+            this.txtDireccionI.TabIndex = 1;
             // 
             // txtDirrecionOrigen
             // 
-            txtDirrecionOrigen.Location = new System.Drawing.Point(133, 206);
-            txtDirrecionOrigen.Name = "txtDirrecionOrigen";
-            txtDirrecionOrigen.Size = new System.Drawing.Size(291, 29);
-            txtDirrecionOrigen.TabIndex = 18;
+            this.txtDirrecionOrigen.Location = new System.Drawing.Point(133, 206);
+            this.txtDirrecionOrigen.Name = "txtDirrecionOrigen";
+            this.txtDirrecionOrigen.Size = new System.Drawing.Size(291, 29);
+            this.txtDirrecionOrigen.TabIndex = 18;
             // 
             // cmbRangoPeso
             // 
@@ -267,18 +267,18 @@
             // grpNacional
             // 
             this.grpNacional.BackColor = System.Drawing.Color.Transparent;
-            this.grpNacional.Controls.Add(txtPisoDeptoNacional);
+            this.grpNacional.Controls.Add(this.txtPisoDeptoNacional);
             this.grpNacional.Controls.Add(this.label16);
             this.grpNacional.Controls.Add(this.rboEntregaDomicilio);
             this.grpNacional.Controls.Add(this.rboSucursalDestino);
             this.grpNacional.Controls.Add(this.label7);
-            this.grpNacional.Controls.Add(txtAlturaNacional);
+            this.grpNacional.Controls.Add(this.txtAlturaNacional);
             this.grpNacional.Controls.Add(this.cmbSucursalesDestino);
             this.grpNacional.Controls.Add(this.label2);
             this.grpNacional.Controls.Add(this.label6);
             this.grpNacional.Controls.Add(this.cmbProvinciaDestino);
             this.grpNacional.Controls.Add(this.label3);
-            this.grpNacional.Controls.Add(txtDirrecionNacional);
+            this.grpNacional.Controls.Add(this.txtDirrecionNacional);
             this.grpNacional.Controls.Add(this.cmbCiudadDestino);
             this.grpNacional.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.grpNacional.Location = new System.Drawing.Point(476, 171);
@@ -423,12 +423,12 @@
             this.grpInternacional.Controls.Add(this.cmbRegionI);
             this.grpInternacional.Controls.Add(this.label20);
             this.grpInternacional.Controls.Add(this.label19);
-            this.grpInternacional.Controls.Add(txtPisoDeptoI);
+            this.grpInternacional.Controls.Add(this.txtPisoDeptoI);
             this.grpInternacional.Controls.Add(this.label4);
             this.grpInternacional.Controls.Add(this.label21);
-            this.grpInternacional.Controls.Add(txtAlturaI);
+            this.grpInternacional.Controls.Add(this.txtAlturaI);
             this.grpInternacional.Controls.Add(this.label22);
-            this.grpInternacional.Controls.Add(txtDireccionI);
+            this.grpInternacional.Controls.Add(this.txtDireccionI);
             this.grpInternacional.Controls.Add(this.cmbPaisCiudadDestino);
             this.grpInternacional.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.grpInternacional.Location = new System.Drawing.Point(476, 177);
@@ -526,11 +526,11 @@
             // 
             // grpTipoRecepcion
             // 
-            this.grpTipoRecepcion.Controls.Add(txtDirrecionOrigen);
-            this.grpTipoRecepcion.Controls.Add(txtPisoDepartamentoRecepcion);
+            this.grpTipoRecepcion.Controls.Add(this.txtDirrecionOrigen);
+            this.grpTipoRecepcion.Controls.Add(this.txtPisoDepartamentoRecepcion);
             this.grpTipoRecepcion.Controls.Add(this.label17);
             this.grpTipoRecepcion.Controls.Add(this.label9);
-            this.grpTipoRecepcion.Controls.Add(txtAlturaOrigen);
+            this.grpTipoRecepcion.Controls.Add(this.txtAlturaOrigen);
             this.grpTipoRecepcion.Controls.Add(this.cmbCiudadOrigen);
             this.grpTipoRecepcion.Controls.Add(this.label8);
             this.grpTipoRecepcion.Controls.Add(this.cmbSucursalOrigen);
@@ -972,229 +972,6 @@
             this.PerformLayout();
 
         }
-
-        private void mostrarOcultar(object sender, EventArgs e)
-        {
-            // Si radio button Nacional esta checkeda, mostrar el grupo Nacional
-            if (rboNacional.Checked)
-            {
-                grpNacional.Visible = true;
-                grpInternacional.Visible = false;
-            }
-            // Si radio button Internacional esta checkeda, mostrar el grupo Internacional
-            else if (rboInternacional.Checked)
-            {
-                grpInternacional.Visible = true;
-                grpNacional.Visible = false;
-            }
-        }
-
-        private void btnCotizar_Click(object sender, EventArgs e)
-        {
-
-            //----------------- Logica Extra para Cotizar -----------------//            
-            string origen = "";
-
-            // if sucursal show in a string the sucursal selected from dropdown, if envio a domicilio show in a string the provincia and ciudad selected from dropdown
-            if (rboRecibeSucursal.Checked && !rboRetiroDomicilio.Checked)
-            {
-                origen = cmbSucursalOrigen.Text;
-            }
-            
-            if (rboRetiroDomicilio.Checked && !rboRecibeSucursal.Checked)
-            {
-                origen = cmbProvinciaOrigen.Text + " - " + cmbCiudadOrigen.Text;
-            }
-
-            //----------------- Validaciones -----------------//
-
-
-            // Validar que sea Nacional o Internacional
-            if (!rboInternacional.Checked && !rboNacional.Checked)
-            {
-                MessageBox.Show("Debe seleccionar un tipo de envio", "Errores");
-                return;
-            }
-
-            // Condiciones generales para todos los envios
-            if (cmbRangoPeso.SelectedIndex == -1)
-            {
-                MessageBox.Show("Debe seleccionar un rango de peso", "Errores");
-                return;
-            }
-            if (cmbCantidadBultosN.SelectedIndex == -1)
-            {
-                MessageBox.Show("Debe seleccionar la cantidad de Bultos", "Errores");
-                return;
-            }
-            
-            //valida que se haya seleccionado un tipo de envio con los radio buttons Sucursal y Domicilio
-            if (!rboRecibeSucursal.Checked && !rboRetiroDomicilio.Checked)
-            {
-                MessageBox.Show("Debe seleccionar un tipo de recepcion", "Errores");
-                return;
-            }
-
-            // Condiciones para el Origen
-            // Si es RETIRO a domicilio
-            if (rboRetiroDomicilio.Checked && !rboRecibeSucursal.Checked)
-            {
-                // Validacion de Provincia en el Origen
-                string mensaje ="";
-                if (cmbProvinciaOrigen.SelectedIndex == -1)
-                {
-                   mensaje += "Debe seleccionar una provincia de ORIGEN"+ "\n";
-                }
-                if (cmbCiudadOrigen.SelectedIndex == -1)
-                {
-                    mensaje += "Debe seleccionar una Ciudad de ORIGEN" + "\n";
-                }
-                if(string.IsNullOrEmpty(txtDirrecionOrigen.Text))
-                {
-                    mensaje += "El domicilio de Retiro a Domicilio" + "\n";
-                }
-                if(string.IsNullOrEmpty(txtAlturaOrigen.Text))
-                {
-                    mensaje += "La altura de Retiro" + "\n";
-                }
-                else
-                {
-                    mensaje += Usuario.PedirEntero("Altura de Retiro", 0 , 99999, txtAlturaOrigen.Text);
-                }
-
-                if (mensaje != "")
-                {
-                    MessageBox.Show(mensaje, "Errores");
-                    return;
-                }
-            }
-
-            // Si es sucursal
-            if (rboRecibeSucursal.Checked && !rboRetiroDomicilio.Checked)
-            {
-                if (cmbSucursalOrigen.SelectedIndex == -1)
-                {
-                    MessageBox.Show("Debe seleccionar una Sucursal de ORIGEN", "Errores");
-                    return;
-                }
-            }
-
-            // Validaciones para Envios Nacionales
-            if (rboNacional.Checked && !rboInternacional.Checked)
-            {
-
-                if (!rboEntregaDomicilio.Checked && !rboSucursalDestino.Checked)
-                {
-                    MessageBox.Show("Debe seleccionar el tipo de entrega", "Errores");
-                    return;
-                }
-
-                // Condiciones para el Origen de Retirmo a Domicilio
-                if(rboEntregaDomicilio.Checked && !rboSucursalDestino.Checked)
-                {
-                    //Checkear que se haya seleccionado una Provincia de origen
-                    if (cmbProvinciaDestino.SelectedIndex == -1)
-                    {
-                        MessageBox.Show("Debe seleccionar una provincia de DESTINO", "Errores");
-                        return;
-                    }
-                    //Checkear que se haya seleccionado una Ciudad de origen
-                    else if (cmbCiudadDestino.SelectedIndex == -1)
-                    {
-                        MessageBox.Show("Debe seleccionar una ciudad de DESTINO", "Errores");
-                        return;
-                    }
-
-                    string mensaje = "";
-                    if(string.IsNullOrEmpty(txtDirrecionNacional.Text))
-                    {
-                        mensaje += "El domicilio de Entrega a Domicilio" + "\n";
-                    }
-                    if(string.IsNullOrEmpty(txtAlturaNacional.Text))
-                    {
-                        mensaje += "La altura de Entrega" + "\n";
-                    }
-                    else
-                    {
-                        mensaje += Usuario.PedirEntero("Altura de Entrega", 0 , 99999, txtAlturaNacional.Text);
-                    }
-
-                    if (mensaje != "")
-                    {
-                        MessageBox.Show(mensaje, "Errores");
-                        return;
-                    }
-                }
-
-                // Condiciones para el Destino, si es envio a sucursal 
-                if(rboSucursalDestino.Checked && !rboEntregaDomicilio.Checked)
-                {
-                    //Checkear que se haya seleccionado una sucursal de destino
-                    if (cmbSucursalesDestino.SelectedIndex == -1)
-                    {
-                        MessageBox.Show("Debe seleccionar una sucursal de destino", "Errores");
-                        return;
-                    }
-                }
-
-                string destino = "";
-                                
-                // Mostrar informacion de cotizacion de Destino
-                if (rboSucursalDestino.Checked && !rboEntregaDomicilio.Checked)
-                {
-                    destino = cmbSucursalesDestino.Text;
-                }
-                else if (rboEntregaDomicilio.Checked && !rboSucursalDestino.Checked)
-                {
-                    destino = cmbCiudadDestino.Text + " - " + cmbProvinciaDestino.Text;
-                }
-
-                cotizar(origen, destino);
-            }
-
-
-            // Validaciones para Envios Internacionales
-            if (rboInternacional.Checked && !rboNacional.Checked)
-            {
-                // Condiciones para el Origen
-                if (cmbRegionI.SelectedIndex == -1)
-                {
-                    MessageBox.Show("Debe seleccionar una Region de DESTINO", "Errores");
-                    return;
-                }
-
-                if (cmbPaisCiudadDestino.SelectedIndex == -1)
-                {
-                    MessageBox.Show("Debe seleccionar una País y Ciudad de DESTINO", "Errores");
-                    return;
-                }
-
-                string mensaje = "";
-                if(string.IsNullOrEmpty(txtDireccionI.Text))
-                {
-                    mensaje += "El domicilio de Entrega a Domicilio Internacional" + "\n";
-                }
-                if(string.IsNullOrEmpty(txtAlturaI.Text))
-                {
-                    mensaje += "La altura de Entrega Internacional" + "\n";
-                }
-                else
-                {
-                    mensaje += Usuario.PedirEntero("Altura de Entrega Internacional ", 0 , 99999, txtAlturaI.Text);
-                }
-
-                if (mensaje != "")
-                {
-                    MessageBox.Show(mensaje, "Errores");
-                    return;
-                }
-                cotizar(origen, cmbPaisCiudadDestino.Text + " - " + cmbRegionI.Text );
-            }
-        }
-
-    
-
-
         #endregion
 
         private ComboBox cmbRangoPeso;
